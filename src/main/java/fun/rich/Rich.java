@@ -10,7 +10,6 @@ import fun.rich.utils.connection.auracheckft.FTCheckClient;
 import fun.rich.utils.connection.irc.IRCManager;
 import fun.rich.utils.connection.tps.TPSCalculate;
 import fun.rich.utils.display.scissor.ScissorAssist;
-import fun.rich.utils.client.webhook.WebhookManager;
 import net.fabricmc.api.ModInitializer;
 import fun.rich.common.repository.box.BoxESPRepository;
 import fun.rich.common.repository.rct.RCTRepository;
@@ -116,40 +115,11 @@ public class Rich implements ModInitializer {
         new Thread(() -> {
             try {
                 Thread.sleep(3000);
-                sendStartupWebhook();
             } catch (Exception e) {
             }
         }).start();
     }
 
-    private void sendStartupWebhook() {
-        try {
-            String username = UserProfile.getInstance().profile("username");
-            String uid = UserProfile.getInstance().profile("uid");
-            String role = UserProfile.getInstance().profile("role");
-            String clientName = clientInfoProvider.clientName();
-
-            String discordName = "Not Connected";
-            String discordAvatar = "Not Connected";
-
-            if (discordManager != null && discordManager.getInfo() != null) {
-                String tempName = discordManager.getInfo().userName();
-                String tempAvatar = discordManager.getInfo().avatarUrl();
-
-                if (tempName != null && !tempName.isEmpty() && !tempName.equals("Unknown")) {
-                    discordName = tempName;
-                }
-
-                if (tempAvatar != null && !tempAvatar.isEmpty()) {
-                    discordAvatar = tempAvatar;
-                }
-            }
-
-            WebhookManager.sendClientStartWebhook(username, uid, role, discordName, discordAvatar, clientName);
-        } catch (Exception e) {
-            Logger.error("Failed to send startup webhook: " + e.getMessage());
-        }
-    }
 
     @Native(type = Native.Type.VMProtectBeginMutation)
     private void loadCurrentAccount() {
