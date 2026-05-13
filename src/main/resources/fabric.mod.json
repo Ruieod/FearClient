@@ -1,10 +1,10 @@
 {
   "accessWidener": "accesswidener",
   "schemaVersion": 1,
-  "id": "rich",
+  "id": "fearclient",
   "version": "1.0",
   "icon": "assets/minecraft/icon.png",
-  "name": "rich",
+  "name": "FearClient",
   "description": "Rich Client",
   "authors": [
     "HZeed",
