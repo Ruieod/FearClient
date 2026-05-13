@@ -1,16 +1,16 @@
-package fun.rich.features.impl.render;
+package fun.Fear.features.impl.render;
 
 import com.mojang.authlib.GameProfile;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.BooleanSetting;
-import fun.rich.features.module.setting.implement.SelectSetting;
-import fun.rich.features.module.setting.implement.SliderSettings;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.client.sound.SoundManager;
-import fun.rich.events.player.EntityDeathEvent;
-import fun.rich.events.render.WorldRenderEvent;
-import fun.rich.utils.display.geometry.Render3D;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.BooleanSetting;
+import fun.Fear.features.module.setting.implement.SelectSetting;
+import fun.Fear.features.module.setting.implement.SliderSettings;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.client.sound.SoundManager;
+import fun.Fear.events.player.EntityDeathEvent;
+import fun.Fear.events.render.WorldRenderEvent;
+import fun.Fear.utils.display.geometry.Render3D;
 import net.minecraft.client.network.OtherClientPlayerEntity;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;

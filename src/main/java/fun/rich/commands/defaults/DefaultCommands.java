@@ -1,7 +1,7 @@
-package fun.rich.commands.defaults;
+package fun.Fear.commands.defaults;
 
-import fun.rich.Rich;
-import fun.rich.utils.client.managers.api.command.ICommand;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.managers.api.command.ICommand;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,7 +9,7 @@ import java.util.List;
 
 public final class DefaultCommands {
     public static List<ICommand> createAll() {
-        Rich main = Rich.getInstance();
+        Fear main = Fear.getInstance();
         List<ICommand> commands = new ArrayList<>(Arrays.asList(
                 new ConfigCommand(main),
                 new MacroCommand(main),

@@ -1,6 +1,6 @@
-package fun.rich.utils.display.item;
+package fun.Fear.utils.display.item;
 
-import fun.rich.utils.display.geometry.Render2D;
+import fun.Fear.utils.display.geometry.Render2D;
 import lombok.experimental.UtilityClass;
 import net.minecraft.client.render.item.ItemRenderState;
 import net.minecraft.client.render.model.BakedModel;
@@ -9,11 +9,11 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ModelTransformationMode;
 import net.minecraft.util.math.ColorHelper;
-import fun.rich.utils.display.font.FontRenderer;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.display.color.ColorAssist;
+import fun.Fear.utils.display.font.FontRenderer;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.color.ColorAssist;
 
 import java.util.HashMap;
 

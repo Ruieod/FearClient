@@ -1,13 +1,13 @@
-package fun.rich.display.screens.clickgui.components.implement.autobuy.originalitems;
+package fun.Fear.display.screens.clickgui.components.implement.autobuy.originalitems;
 
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.list.DonatorProvider;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsManager;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.util.krushprovider.KrushProvider;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.list.MiscProvider;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.list.PotionProvider;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.list.SphereProvider;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.list.TalismanProvider;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.list.DonatorProvider;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsManager;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.util.krushprovider.KrushProvider;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.list.MiscProvider;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.list.PotionProvider;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.list.SphereProvider;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.list.TalismanProvider;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,8 @@
-package fun.rich.utils.client.managers.event.events.callables;
+package fun.Fear.utils.client.managers.event.events.callables;
 
 import lombok.Setter;
-import fun.rich.utils.client.managers.event.events.Cancellable;
-import fun.rich.utils.client.managers.event.events.Event;
+import fun.Fear.utils.client.managers.event.events.Cancellable;
+import fun.Fear.utils.client.managers.event.events.Event;
 
 public abstract class EventCancellable implements Event, Cancellable {
 

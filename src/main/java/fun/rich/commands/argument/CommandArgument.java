@@ -15,11 +15,11 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package fun.rich.commands.argument;
+package fun.Fear.commands.argument;
 
-import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
-import fun.rich.utils.client.managers.api.command.exception.CommandInvalidTypeException;
-import fun.rich.commands.argparser.ArgParserManager;
+import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.Fear.utils.client.managers.api.command.exception.CommandInvalidTypeException;
+import fun.Fear.commands.argparser.ArgParserManager;
 
 import java.util.stream.Stream;
 

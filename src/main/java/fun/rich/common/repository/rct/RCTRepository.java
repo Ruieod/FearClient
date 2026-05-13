@@ -1,20 +1,20 @@
-package fun.rich.common.repository.rct;
+package fun.Fear.common.repository.rct;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.utils.interactions.inv.InventoryTask;
+import fun.Fear.utils.interactions.inv.InventoryTask;
 import net.minecraft.client.gui.screen.ingame.GenericContainerScreen;
 import net.minecraft.network.packet.s2c.play.GameMessageS2CPacket;
 import net.minecraft.screen.slot.SlotActionType;
 import net.minecraft.util.Formatting;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.display.interfaces.QuickLogger;
-import fun.rich.utils.client.packet.network.Network;
-import fun.rich.utils.math.time.StopWatch;
-import fun.rich.events.packet.PacketEvent;
-import fun.rich.events.player.TickEvent;
-import fun.rich.display.hud.Notifications;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.interfaces.QuickLogger;
+import fun.Fear.utils.client.packet.network.Network;
+import fun.Fear.utils.math.time.StopWatch;
+import fun.Fear.events.packet.PacketEvent;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.display.hud.Notifications;
 
 public class RCTRepository implements QuickImports, QuickLogger {
     private final StopWatch stopWatch = new StopWatch();

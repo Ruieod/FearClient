@@ -1,4 +1,4 @@
-package fun.rich.features.impl.movement;
+package fun.Fear.features.impl.movement;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
@@ -15,11 +15,11 @@ import net.minecraft.network.packet.s2c.play.PlayerPositionLookS2CPacket;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.events.block.BlockCollisionEvent;
-import fun.rich.events.packet.PacketEvent;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.events.block.BlockCollisionEvent;
+import fun.Fear.events.packet.PacketEvent;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

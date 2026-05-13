@@ -1,30 +1,30 @@
-package fun.rich.features.impl.combat;
+package fun.Fear.features.impl.combat;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.events.player.MotionEvent;
-import fun.rich.events.player.TickEvent;
-import fun.rich.events.render.DrawEvent;
-import fun.rich.events.render.WorldRenderEvent;
-import fun.rich.features.impl.movement.ElytraTarget;
-import fun.rich.features.impl.movement.Strafe;
-import fun.rich.features.impl.movement.TargetStrafe;
-import fun.rich.utils.client.chat.ChatMessage;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.geometry.Render3D;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.display.shape.implement.Arc;
-import fun.rich.utils.features.aura.point.MultiPoint;
-import fun.rich.utils.features.aura.rotations.constructor.LinearConstructor;
-import fun.rich.utils.features.aura.rotations.constructor.RotateConstructor;
-import fun.rich.utils.features.aura.rotations.impl.*;
-import fun.rich.utils.features.aura.utils.MathAngle;
-import fun.rich.utils.features.aura.warp.TurnsConfig;
-import fun.rich.utils.features.aura.warp.Turns;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-import fun.rich.utils.interactions.simulate.PlayerSimulation;
+import fun.Fear.events.player.MotionEvent;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.events.render.DrawEvent;
+import fun.Fear.events.render.WorldRenderEvent;
+import fun.Fear.features.impl.movement.ElytraTarget;
+import fun.Fear.features.impl.movement.Strafe;
+import fun.Fear.features.impl.movement.TargetStrafe;
+import fun.Fear.utils.client.chat.ChatMessage;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.geometry.Render3D;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.display.shape.implement.Arc;
+import fun.Fear.utils.features.aura.point.MultiPoint;
+import fun.Fear.utils.features.aura.rotations.constructor.LinearConstructor;
+import fun.Fear.utils.features.aura.rotations.constructor.RotateConstructor;
+import fun.Fear.utils.features.aura.rotations.impl.*;
+import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.Fear.utils.features.aura.warp.TurnsConfig;
+import fun.Fear.utils.features.aura.warp.Turns;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.utils.interactions.simulate.PlayerSimulation;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -41,22 +41,22 @@ import net.minecraft.network.packet.s2c.play.PlayerRespawnS2CPacket;
 import net.minecraft.text.Text;
 import net.minecraft.util.Pair;
 import net.minecraft.util.math.*;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.client.managers.event.types.EventType;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.*;
-import fun.rich.utils.client.Instance;
-import fun.rich.utils.math.task.TaskPriority;
-import fun.rich.Rich;
-import fun.rich.events.packet.PacketEvent;
-import fun.rich.events.player.RotationUpdateEvent;
-import fun.rich.display.hud.Notifications;
-import fun.rich.utils.features.aura.striking.StrikeManager;
-import fun.rich.utils.features.aura.striking.StrikerConstructor;
-import fun.rich.utils.features.aura.target.TargetFinder;
-import fun.rich.features.impl.render.Hud;
-import fun.rich.utils.math.calc.Calculate;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.client.managers.event.types.EventType;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.*;
+import fun.Fear.utils.client.Instance;
+import fun.Fear.utils.math.task.TaskPriority;
+import fun.Fear.Fear;
+import fun.Fear.events.packet.PacketEvent;
+import fun.Fear.events.player.RotationUpdateEvent;
+import fun.Fear.display.hud.Notifications;
+import fun.Fear.utils.features.aura.striking.StrikeManager;
+import fun.Fear.utils.features.aura.striking.StrikerConstructor;
+import fun.Fear.utils.features.aura.target.TargetFinder;
+import fun.Fear.features.impl.render.Hud;
+import fun.Fear.utils.math.calc.Calculate;
 import org.lwjgl.glfw.GLFW;
 
 import java.awt.*;
@@ -149,7 +149,7 @@ public class Aura extends Module {
                 smartCrits
         );
         fovCircleRenderer = new FovCircleRenderer();
-        Rich.getInstance().getEventManager().register(fovCircleRenderer);
+        Fear.getInstance().getEventManager().register(fovCircleRenderer);
     }
 
     @Override
@@ -288,8 +288,8 @@ public class Aura extends Module {
     @EventHandler
     public void onRotationUpdate(RotationUpdateEvent e) {
         try {
-            if (aimMode.isSelected("FunTime") && Rich.getInstance().getFtCheckClient() != null) {
-                Rich.getInstance().getFtCheckClient().checkAndWarnFunTime();
+            if (aimMode.isSelected("FunTime") && Fear.getInstance().getFtCheckClient() != null) {
+                Fear.getInstance().getFtCheckClient().checkAndWarnFunTime();
             }
         } catch (Exception ex) {
         }
@@ -304,7 +304,7 @@ public class Aura extends Module {
             }
             case EventType.POST -> {
                 if (target != null) {
-                    Rich.getInstance().getAttackPerpetrator().performAttack(getConfig());
+                    Fear.getInstance().getAttackPerpetrator().performAttack(getConfig());
                 }
             }
         }
@@ -328,7 +328,7 @@ public class Aura extends Module {
 
     @Native(type = Native.Type.VMProtectBeginMutation)
     private void rotateToTarget(StrikerConstructor.AttackPerpetratorConfigurable config) {
-        StrikeManager attackHandler = Rich.getInstance().getAttackPerpetrator().getAttackHandler();
+        StrikeManager attackHandler = Fear.getInstance().getAttackPerpetrator().getAttackHandler();
         TurnsConnection controller = TurnsConnection.INSTANCE;
         Turns.VecRotation rotation = new Turns.VecRotation(config.getAngle(), config.getAngle().toVector());
         TurnsConfig rotationConfig = getRotationConfig();

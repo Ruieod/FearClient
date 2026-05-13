@@ -1,16 +1,16 @@
-package fun.rich.display.screens.mainmenu;
+package fun.Fear.display.screens.mainmenu;
 
 import antidaunleak.api.UserProfile;
-import fun.rich.common.animation.Direction;
-import fun.rich.display.screens.mainmenu.altscreen.AltScreen;
-import fun.rich.utils.client.text.TextAnimation;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.geometry.Render2D;
-import fun.rich.utils.display.gif.GifRender;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.common.animation.implement.Decelerate;
+import fun.Fear.common.animation.Direction;
+import fun.Fear.display.screens.mainmenu.altscreen.AltScreen;
+import fun.Fear.utils.client.text.TextAnimation;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.geometry.Render2D;
+import fun.Fear.utils.display.gif.GifRender;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.common.animation.implement.Decelerate;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.multiplayer.MultiplayerScreen;
@@ -80,9 +80,9 @@ public class MainMenu extends Screen implements QuickImports {
 
             Fonts.getSize(45, Fonts.Type.ICONS).drawCenteredString(context.getMatrices(), "A", width / 2, sy - 70, applyAlpha(new Color(200, 200, 200).getRGB(), mainAlphaInt));
 
-            Fonts.getSize(18, Fonts.Type.DEFAULT).drawCenteredString(context.getMatrices(), "Rich Client, you made the right choice.", width / 2, sy - 40, applyAlpha(new Color(200, 200, 200).getRGB(), mainAlphaInt));
+            Fonts.getSize(18, Fonts.Type.DEFAULT).drawCenteredString(context.getMatrices(), "Fear Client, you made the right choice.", width / 2, sy - 40, applyAlpha(new Color(200, 200, 200).getRGB(), mainAlphaInt));
             Fonts.getSize(12, Fonts.Type.DEFAULT).drawCenteredString(context.getMatrices(), textAnimation.getCurrentText(), width / 2, sy - 25, applyAlpha(new Color(200, 200, 200).getRGB(), mainAlphaInt));
-            Fonts.getSize(12, Fonts.Type.DEFAULT).drawCenteredString(context.getMatrices(), "© 2025 RichClient. All rights reserved.", width / 2 + 2, height - 7, applyAlpha(ColorAssist.getText(0.35f), mainAlphaInt));
+            Fonts.getSize(12, Fonts.Type.DEFAULT).drawCenteredString(context.getMatrices(), "© 2025 FearClient. All rights reserved.", width / 2 + 2, height - 7, applyAlpha(ColorAssist.getText(0.35f), mainAlphaInt));
 
             rectangle.render(ShapeProperties.create(context.getMatrices(), 8, height - 27, 20, 20).thickness(2).round(10)
                     .outlineColor(applyAlpha(new Color(100, 100, 100, 95).getRGB(), mainAlphaInt))

@@ -1,6 +1,6 @@
-package fun.rich.utils.features.autobuy;
+package fun.Fear.utils.features.autobuy;
 
-import fun.rich.utils.math.time.TimerUtil;
+import fun.Fear.utils.math.time.TimerUtil;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.GameOptions;
 

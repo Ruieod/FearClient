@@ -1,7 +1,7 @@
-package fun.rich.mixins.player.camera;
+package fun.Fear.mixins.player.camera;
 
-import fun.rich.utils.features.aura.warp.Turns;
-import fun.rich.utils.interactions.simulate.Simulations;
+import fun.Fear.utils.features.aura.warp.Turns;
+import fun.Fear.utils.interactions.simulate.Simulations;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.render.Camera;
 import net.minecraft.entity.Entity;
@@ -15,11 +15,11 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
-import fun.rich.utils.features.aura.warp.TurnsConstructor;
-import fun.rich.events.render.CameraEvent;
-import fun.rich.events.render.CameraPositionEvent;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.utils.features.aura.warp.TurnsConstructor;
+import fun.Fear.events.render.CameraEvent;
+import fun.Fear.events.render.CameraPositionEvent;
 
 @Mixin(Camera.class)
 public abstract class CameraMixin {

@@ -1,4 +1,4 @@
-package fun.rich.utils.client.text;
+package fun.Fear.utils.client.text;
 
 import java.util.Arrays;
 import java.util.List;

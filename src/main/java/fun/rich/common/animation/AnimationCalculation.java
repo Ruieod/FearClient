@@ -1,4 +1,4 @@
-package fun.rich.common.animation;
+package fun.Fear.common.animation;
 
 public interface AnimationCalculation {
     default double calculation(double value) {

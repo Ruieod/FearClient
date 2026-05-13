@@ -1,11 +1,11 @@
-package fun.rich.utils.features.aura.utils;
+package fun.Fear.utils.features.aura.utils;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.item.ItemStack;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.client.packet.network.Network;
-import fun.rich.Rich;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.client.packet.network.Network;
+import fun.Fear.Fear;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Pressing implements QuickImports {
@@ -36,7 +36,7 @@ public class Pressing implements QuickImports {
     }
 
     int tickCount() {
-        int count = Rich.getInstance().getAttackPerpetrator().getAttackHandler().getCount();
+        int count = Fear.getInstance().getAttackPerpetrator().getAttackHandler().getCount();
         return switch (Network.server) {
 
             default -> defaultTicks[count % defaultTicks.length];

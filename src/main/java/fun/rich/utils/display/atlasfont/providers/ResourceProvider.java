@@ -1,4 +1,4 @@
-package fun.rich.utils.display.atlasfont.providers;
+package fun.Fear.utils.display.atlasfont.providers;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;

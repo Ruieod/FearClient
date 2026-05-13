@@ -1,4 +1,4 @@
-package fun.rich.commands.defaults;
+package fun.Fear.commands.defaults;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
@@ -6,17 +6,17 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
-import fun.rich.utils.client.managers.file.FileRepository;
-import fun.rich.Rich;
-import fun.rich.main.client.ClientInfoProvider;
-import fun.rich.utils.client.managers.api.command.Command;
-import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.rich.utils.client.managers.api.command.datatypes.ConfigFileDataType;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.helpers.Paginator;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.rich.utils.client.managers.file.FileController;
-import fun.rich.utils.client.managers.file.exception.FileProcessingException;
+import fun.Fear.utils.client.managers.file.FileRepository;
+import fun.Fear.Fear;
+import fun.Fear.main.client.ClientInfoProvider;
+import fun.Fear.utils.client.managers.api.command.Command;
+import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.Fear.utils.client.managers.api.command.datatypes.ConfigFileDataType;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.helpers.Paginator;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.utils.client.managers.file.FileController;
+import fun.Fear.utils.client.managers.file.exception.FileProcessingException;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,14 +26,14 @@ import java.util.List;
 import java.util.Locale;
 import java.util.stream.Stream;
 
-import static fun.rich.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
+import static fun.Fear.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class ConfigCommand extends Command {
     FileController fileController;
     ClientInfoProvider clientInfoProvider;
 
-    protected ConfigCommand(Rich main) {
+    protected ConfigCommand(Fear main) {
         super("config", "cfg");
         this.fileController = main.getFileController();
         this.clientInfoProvider = main.getClientInfoProvider();
@@ -49,7 +49,7 @@ public class ConfigCommand extends Command {
             if (new File(customDir, name + ".json").exists()) {
                 try {
                     var fileRepository = new FileRepository();
-                    fileRepository.setup(Rich.getInstance());
+                    fileRepository.setup(Fear.getInstance());
                     var fileController = new FileController(fileRepository.getClientFiles(), clientInfoProvider.filesDir());
                     fileController.loadFile(name + ".json");
                     logDirect(String.format("Конфигурация %s загружена!", name));
@@ -140,7 +140,7 @@ public class ConfigCommand extends Command {
 
     public List<String> getConfigs() {
         List<String> configs = new ArrayList<>();
-        File customDir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
+        File customDir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
         File[] configFiles = customDir.listFiles();
 
         if (configFiles != null) {

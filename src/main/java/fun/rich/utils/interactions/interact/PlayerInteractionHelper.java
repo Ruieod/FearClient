@@ -1,6 +1,6 @@
-package fun.rich.utils.interactions.interact;
+package fun.Fear.utils.interactions.interact;
 
-import fun.rich.utils.features.aura.warp.Turns;
+import fun.Fear.utils.features.aura.warp.Turns;
 import lombok.experimental.UtilityClass;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -27,11 +27,11 @@ import net.minecraft.text.MutableText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.*;
 import org.lwjgl.glfw.GLFW;
-import fun.rich.features.module.setting.implement.BindSetting;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.client.packet.network.Network;
-import fun.rich.utils.features.aura.utils.MathAngle;
+import fun.Fear.features.module.setting.implement.BindSetting;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.client.packet.network.Network;
+import fun.Fear.utils.features.aura.utils.MathAngle;
 
 import java.util.*;
 import java.util.function.Predicate;

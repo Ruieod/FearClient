@@ -1,15 +1,15 @@
-package fun.rich.features.impl.combat;
+package fun.Fear.features.impl.combat;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.Box;
-import fun.rich.common.repository.friend.FriendUtils;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.SliderSettings;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.events.player.BoundingBoxControlEvent;
+import fun.Fear.common.repository.friend.FriendUtils;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.SliderSettings;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.events.player.BoundingBoxControlEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class HitBoxModule extends Module {

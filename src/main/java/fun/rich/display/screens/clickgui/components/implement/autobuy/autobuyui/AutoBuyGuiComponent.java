@@ -1,21 +1,21 @@
-package fun.rich.display.screens.clickgui.components.implement.autobuy.autobuyui;
+package fun.Fear.display.screens.clickgui.components.implement.autobuy.autobuyui;
 
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.manager.AutoBuyManager;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.originalitems.ItemRegistry;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.window.AutoBuyItemSettingsWindow;
-import fun.rich.display.screens.clickgui.components.implement.other.StatusRender;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.utils.display.font.FontRenderer;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.display.screens.clickgui.MenuScreen;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.utils.display.geometry.Render2D;
-import fun.rich.Rich;
-import fun.rich.utils.display.scissor.ScissorAssist;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.manager.AutoBuyManager;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.originalitems.ItemRegistry;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.window.AutoBuyItemSettingsWindow;
+import fun.Fear.display.screens.clickgui.components.implement.other.StatusRender;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.utils.display.font.FontRenderer;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.display.screens.clickgui.MenuScreen;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.utils.display.geometry.Render2D;
+import fun.Fear.Fear;
+import fun.Fear.utils.display.scissor.ScissorAssist;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import net.minecraft.client.gui.DrawContext;
@@ -63,7 +63,7 @@ public class AutoBuyGuiComponent extends AbstractComponent {
 
     private void renderAllItems(DrawContext context, MatrixStack matrix, int mouseX, int mouseY, float delta) {
         Matrix4f positionMatrix = matrix.peek().getPositionMatrix();
-        ScissorAssist scissorManager = Rich.getInstance().getScissorManager();
+        ScissorAssist scissorManager = Fear.getInstance().getScissorManager();
         float listX = x + 55f;
         float listY = y + 25f;
         float listWidth = width - 43f - 15f;

@@ -1,4 +1,4 @@
-package fun.rich.utils.math.script;
+package fun.Fear.utils.math.script;
 
 import java.util.Collections;
 import java.util.Map;

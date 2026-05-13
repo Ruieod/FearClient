@@ -1,9 +1,9 @@
-package fun.rich.utils.client.managers.api.draggable;
+package fun.Fear.utils.client.managers.api.draggable;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 
-import fun.rich.display.hud.*;
+import fun.Fear.display.hud.*;
 
 import java.util.ArrayList;
 import java.util.List;

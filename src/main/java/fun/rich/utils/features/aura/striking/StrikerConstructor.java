@@ -1,15 +1,15 @@
-package fun.rich.utils.features.aura.striking;
+package fun.Fear.utils.features.aura.striking;
 
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.Box;
-import fun.rich.features.module.setting.implement.SelectSetting;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.events.item.UsingItemEvent;
-import fun.rich.events.packet.PacketEvent;
-import fun.rich.utils.features.aura.warp.Turns;
+import fun.Fear.features.module.setting.implement.SelectSetting;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.events.item.UsingItemEvent;
+import fun.Fear.events.packet.PacketEvent;
+import fun.Fear.utils.features.aura.warp.Turns;
 
 import java.util.List;
 

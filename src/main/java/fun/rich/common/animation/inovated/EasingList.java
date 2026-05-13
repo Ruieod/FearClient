@@ -1,4 +1,4 @@
-package fun.rich.common.animation.inovated;
+package fun.Fear.common.animation.inovated;
 
 public class EasingList {
 

@@ -1,15 +1,15 @@
-package fun.rich.features.impl.combat;
+package fun.Fear.features.impl.combat;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.events.player.TickEvent;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.BooleanSetting;
-import fun.rich.features.module.setting.implement.SelectSetting;
-import fun.rich.features.module.setting.implement.SliderSettings;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.interactions.inv.InventoryResult;
-import fun.rich.utils.interactions.inv.InventoryToolkit;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.BooleanSetting;
+import fun.Fear.features.module.setting.implement.SelectSetting;
+import fun.Fear.features.module.setting.implement.SliderSettings;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.interactions.inv.InventoryResult;
+import fun.Fear.utils.interactions.inv.InventoryToolkit;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.entity.decoration.EndCrystalEntity;

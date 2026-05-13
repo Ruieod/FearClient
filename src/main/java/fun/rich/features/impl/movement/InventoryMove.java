@@ -1,9 +1,9 @@
-package fun.rich.features.impl.movement;
+package fun.Fear.features.impl.movement;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.utils.client.chat.ChatMessage;
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-import fun.rich.utils.interactions.inv.InventoryFlowManager;
+import fun.Fear.utils.client.chat.ChatMessage;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.utils.interactions.inv.InventoryFlowManager;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
@@ -13,17 +13,17 @@ import net.minecraft.network.packet.c2s.play.*;
 import net.minecraft.network.packet.s2c.play.CloseScreenS2CPacket;
 import net.minecraft.screen.slot.SlotActionType;
 import net.minecraft.client.util.InputUtil;
-import fun.rich.features.module.setting.implement.SelectSetting;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.interactions.simulate.Simulations;
+import fun.Fear.features.module.setting.implement.SelectSetting;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.interactions.simulate.Simulations;
 
-import fun.rich.utils.interactions.inv.InventoryTask;
-import fun.rich.events.container.CloseScreenEvent;
-import fun.rich.events.item.ClickSlotEvent;
-import fun.rich.events.packet.PacketEvent;
-import fun.rich.events.player.TickEvent;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
+import fun.Fear.utils.interactions.inv.InventoryTask;
+import fun.Fear.events.container.CloseScreenEvent;
+import fun.Fear.events.item.ClickSlotEvent;
+import fun.Fear.events.packet.PacketEvent;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
 
 import java.util.*;
 

@@ -1,34 +1,34 @@
-package fun.rich.commands.defaults;
+package fun.Fear.commands.defaults;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
-import fun.rich.Rich;
-import fun.rich.utils.client.managers.api.command.Command;
-import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.rich.utils.client.managers.api.command.datatypes.MacroDataType;
-import fun.rich.utils.client.managers.api.command.datatypes.KeyDataType;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.helpers.Paginator;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.rich.common.repository.macro.MacroRepository;
-import fun.rich.utils.client.chat.StringHelper;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.managers.api.command.Command;
+import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.Fear.utils.client.managers.api.command.datatypes.MacroDataType;
+import fun.Fear.utils.client.managers.api.command.datatypes.KeyDataType;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.helpers.Paginator;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.common.repository.macro.MacroRepository;
+import fun.Fear.utils.client.chat.StringHelper;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Stream;
 
-import static fun.rich.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
+import static fun.Fear.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class MacroCommand extends Command {
 
     final MacroRepository macroRepository;
 
-    public MacroCommand(Rich main) {
+    public MacroCommand(Fear main) {
         super("macro", "macros");
         macroRepository = main.getMacroRepository();
     }

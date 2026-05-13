@@ -1,15 +1,15 @@
-package fun.rich.features.impl.player;
+package fun.Fear.features.impl.player;
 
-import fun.rich.events.player.RotationUpdateEvent;
-import fun.rich.events.player.TickEvent;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.MultiSelectSetting;
-import fun.rich.features.module.setting.implement.SliderSettings;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.utils.math.time.StopWatch;
+import fun.Fear.events.player.RotationUpdateEvent;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.MultiSelectSetting;
+import fun.Fear.features.module.setting.implement.SliderSettings;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.utils.math.time.StopWatch;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;

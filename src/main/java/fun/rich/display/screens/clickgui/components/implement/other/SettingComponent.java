@@ -1,16 +1,16 @@
-package fun.rich.display.screens.clickgui.components.implement.other;
+package fun.Fear.display.screens.clickgui.components.implement.other;
 
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import net.minecraft.client.gui.DrawContext;
 
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
 
 import java.awt.*;
 
-import static fun.rich.utils.display.font.Fonts.Type.GUIICONS;
+import static fun.Fear.utils.display.font.Fonts.Type.GUIICONS;
 
 @Setter
 @Accessors(chain = true)

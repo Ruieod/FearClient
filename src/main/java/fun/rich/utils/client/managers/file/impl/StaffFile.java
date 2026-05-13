@@ -1,13 +1,13 @@
-package fun.rich.utils.client.managers.file.impl;
+package fun.Fear.utils.client.managers.file.impl;
 
 import antidaunleak.api.annotation.Native;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import fun.rich.utils.client.managers.file.ClientFile;
-import fun.rich.utils.client.managers.file.exception.FileLoadException;
-import fun.rich.utils.client.managers.file.exception.FileSaveException;
-import fun.rich.common.repository.staff.StaffRepository;
+import fun.Fear.utils.client.managers.file.ClientFile;
+import fun.Fear.utils.client.managers.file.exception.FileLoadException;
+import fun.Fear.utils.client.managers.file.exception.FileSaveException;
+import fun.Fear.common.repository.staff.StaffRepository;
 
 import java.io.File;
 import java.io.IOException;

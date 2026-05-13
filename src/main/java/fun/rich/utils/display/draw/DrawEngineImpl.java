@@ -1,4 +1,4 @@
-package fun.rich.utils.display.draw;
+package fun.Fear.utils.display.draw;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import lombok.AccessLevel;
@@ -9,7 +9,7 @@ import net.minecraft.client.render.BufferRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import org.joml.Matrix4f;
 import org.joml.Vector4i;
-import fun.rich.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.interfaces.QuickImports;
 
 import static net.minecraft.client.render.VertexFormat.DrawMode.QUADS;
 import static net.minecraft.client.render.VertexFormats.POSITION_TEXTURE_COLOR;

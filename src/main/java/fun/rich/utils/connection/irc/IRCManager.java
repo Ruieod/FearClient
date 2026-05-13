@@ -1,8 +1,8 @@
-package fun.rich.utils.connection.irc;
+package fun.Fear.utils.connection.irc;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.Rich;
-import fun.rich.utils.client.chat.ChatMessage;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.chat.ChatMessage;
 
 import java.net.URI;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -28,7 +28,7 @@ public class IRCManager {
             client = new IRCWebSocketClient(new URI("ws://45.155.205.202:8081"));
             client.connect();
         } catch (Exception e) {
-            if (Rich.getInstance().isShowIrcMessages()) {
+            if (Fear.getInstance().isShowIrcMessages()) {
                 ChatMessage.ircmessageWithRed("Не удалось подключиться к серверу IRC");
             }
             isConnecting.set(false);
@@ -46,7 +46,7 @@ public class IRCManager {
     public void sendMessage(String msg, String prefix) {
         if (client != null && client.isOpen()) {
             client.sendMessage(msg);
-        } else if (Rich.getInstance().isShowIrcMessages()) {
+        } else if (Fear.getInstance().isShowIrcMessages()) {
         }
     }
 }

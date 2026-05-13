@@ -1,8 +1,8 @@
-package fun.rich.utils.client.managers.api.command.datatypes;
+package fun.Fear.utils.client.managers.api.command.datatypes;
 
 import net.minecraft.scoreboard.Team;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
 
 import java.util.Collection;
 import java.util.stream.Stream;

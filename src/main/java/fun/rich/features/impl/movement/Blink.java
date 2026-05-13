@@ -1,11 +1,11 @@
-package fun.rich.features.impl.movement;
+package fun.Fear.features.impl.movement;
 
-import fun.rich.events.player.TickEvent;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-import fun.rich.utils.math.time.StopWatch;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.utils.math.time.StopWatch;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
@@ -14,10 +14,10 @@ import net.minecraft.network.packet.c2s.play.ClientStatusC2SPacket;
 import net.minecraft.network.packet.s2c.play.GameJoinS2CPacket;
 import net.minecraft.network.packet.s2c.play.PlayerRespawnS2CPacket;
 import net.minecraft.util.math.Box;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.display.geometry.Render3D;
-import fun.rich.events.packet.PacketEvent;
-import fun.rich.events.render.WorldRenderEvent;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.display.geometry.Render3D;
+import fun.Fear.events.packet.PacketEvent;
+import fun.Fear.events.render.WorldRenderEvent;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 

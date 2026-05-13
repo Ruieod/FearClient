@@ -1,15 +1,15 @@
-package fun.rich.commands.defaults;
+package fun.Fear.commands.defaults;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import fun.rich.utils.client.managers.api.command.Command;
-import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.chat.ChatMessage;
-import fun.rich.Rich;
-import fun.rich.features.impl.render.BlockESP;
+import fun.Fear.utils.client.managers.api.command.Command;
+import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.chat.ChatMessage;
+import fun.Fear.Fear;
+import fun.Fear.features.impl.render.BlockESP;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
@@ -25,7 +25,7 @@ public class BlockESPCommand extends Command {
             sendUsage();
             return;
         }
-        BlockESP blockESP = (BlockESP) Rich.getInstance().getModuleRepository().modules().stream()
+        BlockESP blockESP = (BlockESP) Fear.getInstance().getModuleRepository().modules().stream()
                 .filter(module -> module instanceof BlockESP)
                 .findFirst()
                 .orElse(null);

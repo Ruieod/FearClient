@@ -1,4 +1,4 @@
-package fun.rich.mixins.player.item;
+package fun.Fear.mixins.player.item;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.utils.display.interfaces.IArmorItem;
+import fun.Fear.utils.display.interfaces.IArmorItem;
 
 @Mixin(ArmorItem.class)
 public abstract class ArmorItemMixin implements IArmorItem {

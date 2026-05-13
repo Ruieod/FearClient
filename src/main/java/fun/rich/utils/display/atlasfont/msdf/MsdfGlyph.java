@@ -1,4 +1,4 @@
-package fun.rich.utils.display.atlasfont.msdf;
+package fun.Fear.utils.display.atlasfont.msdf;
 
 import net.minecraft.client.render.VertexConsumer;
 import org.joml.Matrix4f;

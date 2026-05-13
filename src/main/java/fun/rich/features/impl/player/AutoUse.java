@@ -1,22 +1,22 @@
-package fun.rich.features.impl.player;
+package fun.Fear.features.impl.player;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-import fun.rich.utils.interactions.inv.InventoryFlowManager;
-import fun.rich.utils.interactions.inv.InventoryTask;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.utils.interactions.inv.InventoryFlowManager;
+import fun.Fear.utils.interactions.inv.InventoryTask;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.Hand;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.MultiSelectSetting;
-import fun.rich.utils.interactions.item.ItemToolkit;
-import fun.rich.utils.math.script.Script;
-import fun.rich.events.player.TickEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.MultiSelectSetting;
+import fun.Fear.utils.interactions.item.ItemToolkit;
+import fun.Fear.utils.math.script.Script;
+import fun.Fear.events.player.TickEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class AutoUse extends Module {

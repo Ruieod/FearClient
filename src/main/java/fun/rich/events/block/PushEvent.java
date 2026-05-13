@@ -1,8 +1,8 @@
-package fun.rich.events.block;
+package fun.Fear.events.block;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
+import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
 
 @Getter
 @AllArgsConstructor

@@ -1,4 +1,4 @@
-package fun.rich.mixins.client.screen;
+package fun.Fear.mixins.client.screen;
 
 import net.minecraft.client.gui.Drawable;
 import net.minecraft.client.gui.Element;

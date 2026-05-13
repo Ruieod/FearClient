@@ -1,7 +1,7 @@
-package fun.rich.mixins.client.screen.ingame;
+package fun.Fear.mixins.client.screen.ingame;
 
-import fun.rich.features.impl.misc.SelfDestruct;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.features.impl.misc.SelfDestruct;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.hud.DebugHud;

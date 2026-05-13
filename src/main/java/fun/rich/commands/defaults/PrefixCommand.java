@@ -1,15 +1,15 @@
-package fun.rich.commands.defaults;
+package fun.Fear.commands.defaults;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.util.Formatting;
 
-import fun.rich.utils.client.managers.api.command.Command;
-import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.commands.CommandDispatcher;
+import fun.Fear.utils.client.managers.api.command.Command;
+import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.commands.CommandDispatcher;
 
 import java.util.Arrays;
 import java.util.List;

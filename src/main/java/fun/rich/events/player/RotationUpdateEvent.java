@@ -1,8 +1,8 @@
-package fun.rich.events.player;
+package fun.Fear.events.player;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import fun.rich.utils.client.managers.event.events.Event;
+import fun.Fear.utils.client.managers.event.events.Event;
 
 @Getter
 @AllArgsConstructor

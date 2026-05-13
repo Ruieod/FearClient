@@ -1,11 +1,11 @@
-package fun.rich.events.player;
+package fun.Fear.events.player;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.util.math.Vec3d;
-import fun.rich.utils.client.managers.event.events.Event;
+import fun.Fear.utils.client.managers.event.events.Event;
 
 @Data
 @AllArgsConstructor

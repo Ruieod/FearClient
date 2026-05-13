@@ -1,8 +1,8 @@
-package fun.rich.utils.display.gif;
+package fun.Fear.utils.display.gif;
 
-import fun.rich.utils.display.shape.implement.Image;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.math.frame.FrameRateCounter;
+import fun.Fear.utils.display.shape.implement.Image;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.math.frame.FrameRateCounter;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.math.MatrixStack;
 

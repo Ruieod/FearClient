@@ -1,8 +1,8 @@
-package fun.rich.utils.features.aura.point;
+package fun.Fear.utils.features.aura.point;
 
-import fun.rich.utils.features.aura.utils.MathAngle;
-import fun.rich.utils.features.aura.warp.Turns;
-import fun.rich.utils.features.aura.utils.RaycastAngle;
+import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.Fear.utils.features.aura.warp.Turns;
+import fun.Fear.utils.features.aura.utils.RaycastAngle;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
@@ -12,7 +12,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
-import fun.rich.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.interfaces.QuickImports;
 
 import java.security.SecureRandom;
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package fun.rich.utils.client.managers.file.exception;
+package fun.Fear.utils.client.managers.file.exception;
 
 public class FileSaveException extends FileProcessingException {
     public FileSaveException(String message) {

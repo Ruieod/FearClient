@@ -1,4 +1,4 @@
-package fun.rich.common.repository.way;
+package fun.Fear.common.repository.way;
 
 import net.minecraft.util.math.BlockPos;
 

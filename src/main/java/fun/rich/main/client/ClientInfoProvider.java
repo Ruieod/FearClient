@@ -1,4 +1,4 @@
-package fun.rich.main.client;
+package fun.Fear.main.client;
 
 import java.io.File;
 

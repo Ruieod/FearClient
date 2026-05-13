@@ -1,9 +1,9 @@
-package fun.rich.events.render;
+package fun.Fear.events.render;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.client.util.math.MatrixStack;
-import fun.rich.utils.client.managers.event.events.Event;
+import fun.Fear.utils.client.managers.event.events.Event;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor

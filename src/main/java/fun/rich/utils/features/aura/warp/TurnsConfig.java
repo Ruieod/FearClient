@@ -1,12 +1,12 @@
-package fun.rich.utils.features.aura.warp;
+package fun.Fear.utils.features.aura.warp;
 
-import fun.rich.features.impl.movement.Strafe;
+import fun.Fear.features.impl.movement.Strafe;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.Vec3d;
-import fun.rich.utils.features.aura.rotations.constructor.RotateConstructor;
-import fun.rich.utils.features.aura.rotations.constructor.LinearConstructor;
+import fun.Fear.utils.features.aura.rotations.constructor.RotateConstructor;
+import fun.Fear.utils.features.aura.rotations.constructor.LinearConstructor;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class TurnsConfig {

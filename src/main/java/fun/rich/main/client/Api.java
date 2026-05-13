@@ -1,4 +1,4 @@
-package fun.rich.main.client;
+package fun.Fear.main.client;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.network.packet.Packet;

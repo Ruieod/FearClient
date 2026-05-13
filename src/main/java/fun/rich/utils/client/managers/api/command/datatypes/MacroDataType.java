@@ -1,9 +1,9 @@
-package fun.rich.utils.client.managers.api.command.datatypes;
+package fun.Fear.utils.client.managers.api.command.datatypes;
 
-import fun.rich.Rich;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.rich.common.repository.macro.Macro;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.common.repository.macro.Macro;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -41,6 +41,6 @@ public enum MacroDataType implements IDatatypeFor<Macro> {
     }
 
     private List<? extends Macro> getMacro() {
-        return Rich.getInstance().getMacroRepository().macroList;
+        return Fear.getInstance().getMacroRepository().macroList;
     }
 }

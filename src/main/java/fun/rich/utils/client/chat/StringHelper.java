@@ -1,10 +1,10 @@
-package fun.rich.utils.client.chat;
+package fun.Fear.utils.client.chat;
 
-import fun.rich.utils.display.font.FontRenderer;
+import fun.Fear.utils.display.font.FontRenderer;
 import
 lombok.experimental.UtilityClass;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
 
 import java.util.Random;
 import java.util.stream.Collectors;

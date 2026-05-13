@@ -1,4 +1,4 @@
-package fun.rich.mixins.game.tracker;
+package fun.Fear.mixins.game.tracker;
 
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;

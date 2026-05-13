@@ -1,4 +1,4 @@
-package fun.rich.utils.features.aura.rotations.constructor;
+package fun.Fear.utils.features.aura.rotations.constructor;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -6,8 +6,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.Vec3d;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.features.aura.warp.Turns;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.features.aura.warp.Turns;
 
 @Getter
 @RequiredArgsConstructor

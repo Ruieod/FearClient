@@ -1,6 +1,6 @@
-package fun.rich.events.chat;
+package fun.Fear.events.chat;
 
-import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
+import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
 
 public class TabCompleteEvent extends EventCancellable {
     public final String prefix;

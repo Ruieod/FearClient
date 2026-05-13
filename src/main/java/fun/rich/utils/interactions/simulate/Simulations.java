@@ -1,14 +1,14 @@
-package fun.rich.utils.interactions.simulate;
+package fun.Fear.utils.interactions.simulate;
 
-import fun.rich.features.impl.combat.Aura;
-import fun.rich.features.impl.misc.SelfDestruct;
+import fun.Fear.features.impl.combat.Aura;
+import fun.Fear.features.impl.misc.SelfDestruct;
 import lombok.experimental.UtilityClass;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.PlayerInput;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
 
 import java.util.Objects;
 

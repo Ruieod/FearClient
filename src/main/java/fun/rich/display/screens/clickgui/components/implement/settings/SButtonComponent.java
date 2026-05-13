@@ -1,12 +1,12 @@
-package fun.rich.display.screens.clickgui.components.implement.settings;
+package fun.Fear.display.screens.clickgui.components.implement.settings;
 
-import fun.rich.display.screens.clickgui.components.implement.other.ButtonComponent;
+import fun.Fear.display.screens.clickgui.components.implement.other.ButtonComponent;
 import net.minecraft.client.gui.DrawContext;
 
-import fun.rich.features.module.setting.implement.ButtonSetting;
-import fun.rich.utils.display.font.Fonts;
+import fun.Fear.features.module.setting.implement.ButtonSetting;
+import fun.Fear.utils.display.font.Fonts;
 
-import static fun.rich.utils.display.font.Fonts.Type.BOLD;
+import static fun.Fear.utils.display.font.Fonts.Type.BOLD;
 
 public class SButtonComponent extends AbstractSettingComponent {
     private final ButtonComponent buttonComponent = new ButtonComponent();

@@ -1,4 +1,4 @@
-package fun.rich.utils.math;
+package fun.Fear.utils.math;
 
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package fun.rich.display.screens.clickgui.components.implement.settings;
+package fun.Fear.display.screens.clickgui.components.implement.settings;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
@@ -7,15 +7,15 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.math.MatrixStack;
 import org.lwjgl.glfw.GLFW;
 
-import fun.rich.features.module.setting.implement.TextSetting;
-import fun.rich.utils.display.font.FontRenderer;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.utils.client.chat.StringHelper;
-import fun.rich.utils.display.scissor.ScissorAssist;
-import fun.rich.Rich;
+import fun.Fear.features.module.setting.implement.TextSetting;
+import fun.Fear.utils.display.font.FontRenderer;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.utils.client.chat.StringHelper;
+import fun.Fear.utils.display.scissor.ScissorAssist;
+import fun.Fear.Fear;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TextComponent extends AbstractSettingComponent {
@@ -56,7 +56,7 @@ public class TextComponent extends AbstractSettingComponent {
 
         updateXOffset(font, cursorPosition);
 
-        ScissorAssist scissor = Rich.getInstance().getScissorManager();
+        ScissorAssist scissor = Fear.getInstance().getScissorManager();
         scissor.push(matrix.peek().getPositionMatrix(), rectX + 1, (float) window.getScaledHeight() / 2 - 96, rectWidth - 3, 220);
 
         if (typing && selectionStart != -1 && selectionEnd != -1 && selectionStart != selectionEnd) {

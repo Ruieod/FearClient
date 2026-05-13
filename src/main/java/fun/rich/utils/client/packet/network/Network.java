@@ -1,4 +1,4 @@
-package fun.rich.utils.client.packet.network;
+package fun.Fear.utils.client.packet.network;
 
 import lombok.Getter;
 import lombok.experimental.UtilityClass;
@@ -6,10 +6,10 @@ import net.minecraft.network.packet.s2c.play.WorldTimeUpdateS2CPacket;
 import net.minecraft.scoreboard.*;
 import net.minecraft.util.math.MathHelper;
 import org.apache.commons.lang3.StringUtils;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-import fun.rich.utils.math.time.StopWatch;
-import fun.rich.events.packet.PacketEvent;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.utils.math.time.StopWatch;
+import fun.Fear.events.packet.PacketEvent;
 
 @Getter
 @UtilityClass

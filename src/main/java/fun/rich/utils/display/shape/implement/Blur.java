@@ -1,4 +1,4 @@
-package fun.rich.utils.display.shape.implement;
+package fun.Fear.utils.display.shape.implement;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -13,10 +13,10 @@ import org.joml.Vector2f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 import org.lwjgl.opengl.GL13;
-import fun.rich.utils.display.shape.Shape;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.display.color.ColorAssist;
+import fun.Fear.utils.display.shape.Shape;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.color.ColorAssist;
 
 public class Blur implements Shape, QuickImports {
     private final ShaderProgramKey SHADER_KEY = new ShaderProgramKey(Identifier.of("minecraft", "core/blur"), VertexFormats.POSITION, Defines.EMPTY);

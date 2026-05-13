@@ -1,10 +1,10 @@
-package fun.rich.utils.client.managers.api.command.datatypes;
+package fun.Fear.utils.client.managers.api.command.datatypes;
 
-import fun.rich.Rich;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.rich.utils.client.managers.file.ClientFile;
-import fun.rich.utils.client.managers.file.impl.ModuleFile;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.utils.client.managers.file.ClientFile;
+import fun.Fear.utils.client.managers.file.impl.ModuleFile;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -40,7 +40,7 @@ public enum ConfigDataType implements IDatatypeFor<ClientFile> {
     }
 
     public List<? extends ModuleFile> getList() {
-        return Rich.getInstance().getFileRepository().getClientFiles()
+        return Fear.getInstance().getFileRepository().getClientFiles()
                 .stream()
                 .filter(clientFile -> clientFile instanceof ModuleFile)
                 .map(clientFile -> (ModuleFile) clientFile)

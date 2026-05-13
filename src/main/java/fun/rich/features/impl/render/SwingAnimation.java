@@ -1,7 +1,7 @@
-package fun.rich.features.impl.render;
+package fun.Fear.features.impl.render;
 
-import fun.rich.features.module.setting.implement.BooleanSetting;
-import fun.rich.features.impl.combat.Aura;
+import fun.Fear.features.module.setting.implement.BooleanSetting;
+import fun.Fear.features.impl.combat.Aura;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
@@ -10,13 +10,13 @@ import net.minecraft.util.Arm;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.SelectSetting;
-import fun.rich.features.module.setting.implement.SliderSettings;
-import fun.rich.events.item.HandAnimationEvent;
-import fun.rich.events.item.SwingDurationEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.SelectSetting;
+import fun.Fear.features.module.setting.implement.SliderSettings;
+import fun.Fear.events.item.HandAnimationEvent;
+import fun.Fear.events.item.SwingDurationEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class SwingAnimation extends Module {

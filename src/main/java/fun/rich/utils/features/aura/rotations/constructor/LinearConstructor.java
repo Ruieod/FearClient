@@ -1,10 +1,10 @@
-package fun.rich.utils.features.aura.rotations.constructor;
+package fun.Fear.utils.features.aura.rotations.constructor;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.Vec3d;
 
-import fun.rich.utils.features.aura.warp.Turns;
-import fun.rich.utils.features.aura.utils.MathAngle;
+import fun.Fear.utils.features.aura.warp.Turns;
+import fun.Fear.utils.features.aura.utils.MathAngle;
 
 public class LinearConstructor extends RotateConstructor {
     public LinearConstructor() {

@@ -1,32 +1,32 @@
-package fun.rich.display.screens.clickgui;
+package fun.Fear.display.screens.clickgui;
 
-import fun.rich.display.screens.clickgui.components.implement.autobuy.autobuyui.AutoBuyGuiComponent;
-import fun.rich.features.impl.misc.SelfDestruct;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.autobuyui.AutoBuyGuiComponent;
+import fun.Fear.features.impl.misc.SelfDestruct;
 import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.common.animation.Easy.Direction;
-import fun.rich.common.animation.Easy.EaseBackIn;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.client.sound.SoundManager;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
-import fun.rich.display.screens.clickgui.components.implement.other.BackgroundComponent;
-import fun.rich.display.screens.clickgui.components.implement.other.CategoryContainerComponent;
-import fun.rich.display.screens.clickgui.components.implement.other.SearchComponent;
-import fun.rich.display.screens.clickgui.components.implement.other.UserComponent;
-import fun.rich.display.screens.clickgui.components.implement.settings.TextComponent;
-import fun.rich.utils.math.calc.Calculate;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.common.animation.Easy.Direction;
+import fun.Fear.common.animation.Easy.EaseBackIn;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.client.sound.SoundManager;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.display.screens.clickgui.components.implement.other.BackgroundComponent;
+import fun.Fear.display.screens.clickgui.components.implement.other.CategoryContainerComponent;
+import fun.Fear.display.screens.clickgui.components.implement.other.SearchComponent;
+import fun.Fear.display.screens.clickgui.components.implement.other.UserComponent;
+import fun.Fear.display.screens.clickgui.components.implement.settings.TextComponent;
+import fun.Fear.utils.math.calc.Calculate;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static fun.rich.common.animation.Easy.Direction.BACKWARDS;
-import static fun.rich.common.animation.Easy.Direction.FORWARDS;
+import static fun.Fear.common.animation.Easy.Direction.BACKWARDS;
+import static fun.Fear.common.animation.Easy.Direction.FORWARDS;
 
 @Setter
 @Getter

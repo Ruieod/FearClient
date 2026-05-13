@@ -1,29 +1,29 @@
-package fun.rich.display.screens.clickgui.components.implement.module;
+package fun.Fear.display.screens.clickgui.components.implement.module;
 
 import lombok.Getter;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.util.math.ColorHelper;
 import org.lwjgl.glfw.GLFW;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.setting.SettingComponentAdder;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.display.shape.implement.Rectangle;
-import fun.rich.display.screens.clickgui.MenuScreen;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
-import fun.rich.display.screens.clickgui.components.implement.other.StatusRender;
-import fun.rich.display.screens.clickgui.components.implement.settings.AbstractSettingComponent;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.utils.client.chat.StringHelper;
-import fun.rich.common.animation.Animation;
-import fun.rich.common.animation.implement.Decelerate;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.setting.SettingComponentAdder;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.display.shape.implement.Rectangle;
+import fun.Fear.display.screens.clickgui.MenuScreen;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.display.screens.clickgui.components.implement.other.StatusRender;
+import fun.Fear.display.screens.clickgui.components.implement.settings.AbstractSettingComponent;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.utils.client.chat.StringHelper;
+import fun.Fear.common.animation.Animation;
+import fun.Fear.common.animation.implement.Decelerate;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import static fun.rich.utils.display.font.Fonts.Type.*;
-import static fun.rich.common.animation.Direction.*;
+import static fun.Fear.utils.display.font.Fonts.Type.*;
+import static fun.Fear.common.animation.Direction.*;
 
 @Getter
 public class ModuleComponent extends AbstractComponent {

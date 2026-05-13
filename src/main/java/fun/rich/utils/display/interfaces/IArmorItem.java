@@ -1,4 +1,4 @@
-package fun.rich.utils.display.interfaces;
+package fun.Fear.utils.display.interfaces;
 
 import net.minecraft.item.equipment.ArmorMaterial;
 import net.minecraft.item.equipment.EquipmentType;

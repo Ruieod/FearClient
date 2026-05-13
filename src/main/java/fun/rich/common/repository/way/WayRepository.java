@@ -1,20 +1,20 @@
-package fun.rich.common.repository.way;
+package fun.Fear.common.repository.way;
 
 import antidaunleak.api.annotation.Native;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.utils.display.font.FontRenderer;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.display.interfaces.QuickLogger;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.utils.math.projection.Projection;
-import fun.rich.events.render.DrawEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.utils.display.font.FontRenderer;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.interfaces.QuickLogger;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.utils.math.projection.Projection;
+import fun.Fear.events.render.DrawEvent;
 
 import java.awt.*;
 import java.util.ArrayList;

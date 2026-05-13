@@ -1,4 +1,4 @@
-package fun.rich.mixins.network.server;
+package fun.Fear.mixins.network.server;
 
 import io.netty.channel.ChannelPipeline;
 import io.netty.handler.proxy.Socks5ProxyHandler;
@@ -11,10 +11,10 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.common.proxy.Proxy;
-import fun.rich.common.proxy.ProxyServer;
-import fun.rich.events.packet.PacketEvent;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.common.proxy.Proxy;
+import fun.Fear.common.proxy.ProxyServer;
+import fun.Fear.events.packet.PacketEvent;
 
 import java.net.InetSocketAddress;
 

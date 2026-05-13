@@ -1,4 +1,4 @@
-package fun.rich.utils.display.font;
+package fun.Fear.utils.display.font;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
@@ -19,15 +19,15 @@ import org.apache.commons.lang3.mutable.MutableInt;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Matrix4f;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.utils.display.font.entry.DrawEntry;
-import fun.rich.utils.display.font.glyph.Glyph;
-import fun.rich.utils.display.font.glyph.GlyphMap;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.utils.client.chat.StringHelper;
-import fun.rich.events.render.TextFactoryEvent;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.utils.display.font.entry.DrawEntry;
+import fun.Fear.utils.display.font.glyph.Glyph;
+import fun.Fear.utils.display.font.glyph.GlyphMap;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.utils.client.chat.StringHelper;
+import fun.Fear.events.render.TextFactoryEvent;
 
 import java.awt.*;
 
@@ -389,7 +389,7 @@ public class FontRenderer implements QuickImports {
 
     @Contract(value = "-> new", pure = true)
     public static @NotNull Identifier randomIdentifier() {
-        return Identifier.of("rich", "temp/" + StringHelper.randomString(32));
+        return Identifier.of("Fear", "temp/" + StringHelper.randomString(32));
     }
 
     @Contract(value = "_ -> new", pure = true)

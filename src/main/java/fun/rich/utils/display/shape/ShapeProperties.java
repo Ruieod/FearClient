@@ -1,4 +1,4 @@
-package fun.rich.utils.display.shape;
+package fun.Fear.utils.display.shape;
 
 import lombok.Builder;
 import lombok.Getter;

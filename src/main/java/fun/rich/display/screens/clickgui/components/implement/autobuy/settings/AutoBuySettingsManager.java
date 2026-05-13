@@ -1,4 +1,4 @@
-package fun.rich.display.screens.clickgui.components.implement.autobuy.settings;
+package fun.Fear.display.screens.clickgui.components.implement.autobuy.settings;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

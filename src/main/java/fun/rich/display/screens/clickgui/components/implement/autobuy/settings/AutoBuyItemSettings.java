@@ -1,4 +1,4 @@
-package fun.rich.display.screens.clickgui.components.implement.autobuy.settings;
+package fun.Fear.display.screens.clickgui.components.implement.autobuy.settings;
 
 import lombok.Getter;
 import lombok.Setter;

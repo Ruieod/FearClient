@@ -1,7 +1,7 @@
-package fun.rich.mixins.client.screen.mainmenu;
+package fun.Fear.mixins.client.screen.mainmenu;
 
-import fun.rich.features.impl.misc.SelfDestruct;
-import fun.rich.mixins.client.screen.IScreen;
+import fun.Fear.features.impl.misc.SelfDestruct;
+import fun.Fear.mixins.client.screen.IScreen;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.multiplayer.MultiplayerScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -10,10 +10,10 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.common.proxy.Config;
-import fun.rich.common.proxy.GuiProxy;
-import fun.rich.common.proxy.Proxy;
-import fun.rich.common.proxy.ProxyServer;
+import fun.Fear.common.proxy.Config;
+import fun.Fear.common.proxy.GuiProxy;
+import fun.Fear.common.proxy.Proxy;
+import fun.Fear.common.proxy.ProxyServer;
 
 @Mixin(MultiplayerScreen.class)
 public class MultiplayerScreenOpenMixin {

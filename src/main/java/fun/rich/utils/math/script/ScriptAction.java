@@ -1,4 +1,4 @@
-package fun.rich.utils.math.script;
+package fun.Fear.utils.math.script;
 
 /**
  * Functional interface representing an action to be performed by a script.

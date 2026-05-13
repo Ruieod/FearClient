@@ -1,6 +1,6 @@
-package fun.rich.utils.client.managers.api.command.datatypes;
+package fun.Fear.utils.client.managers.api.command.datatypes;
 
-import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
 
 public interface IDatatypeContext {
     IArgConsumer getConsumer();

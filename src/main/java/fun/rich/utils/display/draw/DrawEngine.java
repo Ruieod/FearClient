@@ -1,4 +1,4 @@
-package fun.rich.utils.display.draw;
+package fun.Fear.utils.display.draw;
 
 import net.minecraft.client.render.BufferBuilder;
 import net.minecraft.client.util.math.MatrixStack;

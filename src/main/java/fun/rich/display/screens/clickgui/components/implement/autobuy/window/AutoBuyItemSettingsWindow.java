@@ -1,17 +1,17 @@
-package fun.rich.display.screens.clickgui.components.implement.autobuy.window;
+package fun.Fear.display.screens.clickgui.components.implement.autobuy.window;
 
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.settings.AutoBuyItemSettings;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsComponent;
-import fun.rich.display.screens.clickgui.components.implement.window.AbstractWindow;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.geometry.Render2D;
-import fun.rich.utils.display.scissor.ScissorAssist;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.Rich;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.settings.AutoBuyItemSettings;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsComponent;
+import fun.Fear.display.screens.clickgui.components.implement.window.AbstractWindow;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.geometry.Render2D;
+import fun.Fear.utils.display.scissor.ScissorAssist;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.Fear;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
@@ -44,7 +44,7 @@ public class AutoBuyItemSettingsWindow extends AbstractWindow {
     @Override
     public void drawWindow(DrawContext context, int mouseX, int mouseY, float delta) {
         MatrixStack matrix = context.getMatrices();
-        ScissorAssist scissorManager = Rich.getInstance().getScissorManager();
+        ScissorAssist scissorManager = Fear.getInstance().getScissorManager();
         height = MathHelper.clamp(getComponentHeight() + 5, 0, 200);
 
         blur.render(ShapeProperties.create(context.getMatrices(), x, y, width, height).round(8).quality(64)

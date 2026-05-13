@@ -1,6 +1,6 @@
-package fun.rich.mixins.client;
+package fun.Fear.mixins.client;
 
-import fun.rich.features.impl.misc.SelfDestruct;
+import fun.Fear.features.impl.misc.SelfDestruct;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
@@ -18,17 +18,17 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.Rich;
-import fun.rich.utils.client.managers.file.exception.FileProcessingException;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.client.logs.Logger;
-import fun.rich.events.container.SetScreenEvent;
-import fun.rich.events.player.HotBarUpdateEvent;
-import fun.rich.features.impl.combat.NoInteract;
-import fun.rich.utils.client.window.WindowStyle;
-import fun.rich.utils.client.window.WindowTitleAnimation;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.managers.file.exception.FileProcessingException;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.client.logs.Logger;
+import fun.Fear.events.container.SetScreenEvent;
+import fun.Fear.events.player.HotBarUpdateEvent;
+import fun.Fear.features.impl.combat.NoInteract;
+import fun.Fear.utils.client.window.WindowStyle;
+import fun.Fear.utils.client.window.WindowTitleAnimation;
 
 @Environment(EnvType.CLIENT)
 @Mixin(MinecraftClient.class)
@@ -50,13 +50,13 @@ public abstract class MinecraftClientMixin implements QuickImports {
     @Inject(at = @At("HEAD"), method = "stop")
     private void stop(CallbackInfo ci) {
         Logger.info("Stopping for MinecraftClient");
-        if (Rich.getInstance().isInitialized()) {
+        if (Fear.getInstance().isInitialized()) {
             try {
-                Rich.getInstance().getFileController().saveFiles();
+                Fear.getInstance().getFileController().saveFiles();
             } catch (FileProcessingException e) {
                 Logger.error("Error occurred while saving files: " + e.getMessage() + " " + e.getCause());
             } finally {
-                Rich.getInstance().getFileController().stopAutoSave();
+                Fear.getInstance().getFileController().stopAutoSave();
             }
         }
     }
@@ -84,7 +84,7 @@ public abstract class MinecraftClientMixin implements QuickImports {
 
         SetScreenEvent event = new SetScreenEvent(screen);
         EventManager.callEvent(event);
-        Rich.getInstance().getDraggableRepository().draggable().forEach(drag -> drag.setScreen(event));
+        Fear.getInstance().getDraggableRepository().draggable().forEach(drag -> drag.setScreen(event));
         Screen eventScreen = event.getScreen();
         if (screen != eventScreen) {
             mc.setScreen(eventScreen);

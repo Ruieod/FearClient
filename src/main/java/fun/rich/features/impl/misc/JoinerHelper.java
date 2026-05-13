@@ -1,7 +1,7 @@
-package fun.rich.features.impl.misc;
+package fun.Fear.features.impl.misc;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.utils.interactions.inv.InventoryTask;
+import fun.Fear.utils.interactions.inv.InventoryTask;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
@@ -11,15 +11,15 @@ import net.minecraft.network.packet.s2c.common.DisconnectS2CPacket;
 import net.minecraft.screen.slot.SlotActionType;
 import net.minecraft.util.Hand;
 import org.lwjgl.glfw.GLFW;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.SelectSetting;
-import fun.rich.features.module.setting.implement.SliderSettings;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.events.packet.PacketEvent;
-import fun.rich.events.player.TickEvent;
-import fun.rich.utils.client.Instance;
-import fun.rich.utils.client.packet.network.Network;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.SelectSetting;
+import fun.Fear.features.module.setting.implement.SliderSettings;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.events.packet.PacketEvent;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.utils.client.Instance;
+import fun.Fear.utils.client.packet.network.Network;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class JoinerHelper extends Module {

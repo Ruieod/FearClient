@@ -1,4 +1,4 @@
-package fun.rich.utils.client.logs;
+package fun.Fear.utils.client.logs;
 
 import lombok.extern.log4j.Log4j2;
 

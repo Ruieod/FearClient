@@ -1,7 +1,7 @@
-package fun.rich.utils.client.window;
+package fun.Fear.utils.client.window;
 
 import antidaunleak.api.UserProfile;
-import fun.rich.features.impl.misc.SelfDestruct;
+import fun.Fear.features.impl.misc.SelfDestruct;
 
 public class WindowTitleAnimation {
     private static final WindowTitleAnimation INSTANCE = new WindowTitleAnimation();
@@ -51,6 +51,6 @@ public class WindowTitleAnimation {
     }
 
     public String getCurrentTitle() {
-        return "Rich 1.21.4 " + currentTitle;
+        return "Fear 1.21.4 " + currentTitle;
     }
 }

@@ -1,8 +1,8 @@
-package fun.rich.utils.client.managers.api.draggable;
+package fun.Fear.utils.client.managers.api.draggable;
 
 import net.minecraft.client.gui.DrawContext;
-import fun.rich.events.container.SetScreenEvent;
-import fun.rich.events.packet.PacketEvent;
+import fun.Fear.events.container.SetScreenEvent;
+import fun.Fear.events.packet.PacketEvent;
 
 public interface Draggable {
     boolean visible();

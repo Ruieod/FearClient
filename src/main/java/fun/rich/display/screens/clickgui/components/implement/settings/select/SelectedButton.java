@@ -1,23 +1,23 @@
-package fun.rich.display.screens.clickgui.components.implement.settings.select;
+package fun.Fear.display.screens.clickgui.components.implement.settings.select;
 
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import org.joml.Vector4f;
-import fun.rich.features.module.setting.implement.SelectSetting;
-import fun.rich.common.animation.Animation;
-import fun.rich.common.animation.Direction;
-import fun.rich.common.animation.implement.Decelerate;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
-import fun.rich.utils.math.calc.Calculate;
+import fun.Fear.features.module.setting.implement.SelectSetting;
+import fun.Fear.common.animation.Animation;
+import fun.Fear.common.animation.Direction;
+import fun.Fear.common.animation.implement.Decelerate;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.utils.math.calc.Calculate;
 import java.awt.*;
 import java.util.List;
-import static fun.rich.utils.display.font.Fonts.Type.BOLD;
-import static fun.rich.utils.math.calc.Calculate.*;
+import static fun.Fear.utils.display.font.Fonts.Type.BOLD;
+import static fun.Fear.utils.math.calc.Calculate.*;
 
 public class SelectedButton extends AbstractComponent {
     private final SelectSetting setting;

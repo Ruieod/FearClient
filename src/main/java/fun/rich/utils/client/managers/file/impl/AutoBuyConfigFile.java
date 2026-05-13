@@ -1,15 +1,15 @@
-package fun.rich.utils.client.managers.file.impl;
+package fun.Fear.utils.client.managers.file.impl;
 
 import antidaunleak.api.annotation.Native;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.originalitems.ItemRegistry;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsManager;
-import fun.rich.utils.client.managers.file.ClientFile;
-import fun.rich.utils.client.managers.file.exception.FileLoadException;
-import fun.rich.utils.client.managers.file.exception.FileSaveException;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.originalitems.ItemRegistry;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsManager;
+import fun.Fear.utils.client.managers.file.ClientFile;
+import fun.Fear.utils.client.managers.file.exception.FileLoadException;
+import fun.Fear.utils.client.managers.file.exception.FileSaveException;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;

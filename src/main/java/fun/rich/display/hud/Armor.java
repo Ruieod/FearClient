@@ -1,4 +1,4 @@
-//package fun.rich.common.managers.draggables;
+//package fun.Fear.common.managers.draggables;
 //
 //import com.google.common.collect.Lists;
 //import net.minecraft.client.gui.DrawContext;
@@ -6,7 +6,7 @@
 //import net.minecraft.item.ItemStack;
 //import net.minecraft.util.Identifier;
 //import net.minecraft.util.math.MathHelper;
-//import fun.rich.common.managers.api.draggable.AbstractDraggable;
+//import fun.Fear.common.managers.api.draggable.AbstractDraggable;
 //
 //import java.util.List;
 

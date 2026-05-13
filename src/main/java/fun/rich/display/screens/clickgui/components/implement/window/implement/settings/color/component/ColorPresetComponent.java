@@ -1,12 +1,12 @@
-package fun.rich.display.screens.clickgui.components.implement.window.implement.settings.color.component;
+package fun.Fear.display.screens.clickgui.components.implement.window.implement.settings.color.component;
 
 import lombok.Getter;
 import net.minecraft.client.gui.DrawContext;
 
-import fun.rich.features.module.setting.implement.ColorSetting;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
-import fun.rich.display.screens.clickgui.components.implement.window.implement.settings.color.ColorPresetButton;
+import fun.Fear.features.module.setting.implement.ColorSetting;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.display.screens.clickgui.components.implement.window.implement.settings.color.ColorPresetButton;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package fun.rich.mixins.game.world;
+package fun.Fear.mixins.game.world;
 
 import net.minecraft.client.world.ClientWorld;
 import org.spongepowered.asm.mixin.Mixin;
@@ -6,8 +6,8 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.features.impl.render.WorldTweaks;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.features.impl.render.WorldTweaks;
 
 @Mixin(ClientWorld.Properties.class)
 public class ClientWorldPropertiesMixin implements QuickImports {

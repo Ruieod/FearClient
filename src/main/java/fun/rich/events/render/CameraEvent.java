@@ -1,12 +1,12 @@
-package fun.rich.events.render;
+package fun.Fear.events.render;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
-import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
-import fun.rich.utils.features.aura.warp.Turns;
+import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
+import fun.Fear.utils.features.aura.warp.Turns;
 
 @Getter
 @Setter

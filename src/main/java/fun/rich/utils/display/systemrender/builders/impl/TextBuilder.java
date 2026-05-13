@@ -1,8 +1,8 @@
-package fun.rich.utils.display.systemrender.builders.impl;
+package fun.Fear.utils.display.systemrender.builders.impl;
 
-import fun.rich.utils.display.atlasfont.msdf.MsdfFont;
-import fun.rich.utils.display.systemrender.renderers.impl.BuiltText;
-import fun.rich.utils.display.systemrender.builders.AbstractBuilder;
+import fun.Fear.utils.display.atlasfont.msdf.MsdfFont;
+import fun.Fear.utils.display.systemrender.renderers.impl.BuiltText;
+import fun.Fear.utils.display.systemrender.builders.AbstractBuilder;
 import java.awt.*;
 
 public final class TextBuilder extends AbstractBuilder<BuiltText> {

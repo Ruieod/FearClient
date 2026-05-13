@@ -1,10 +1,10 @@
-package fun.rich.events.player;
+package fun.Fear.events.player;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.util.math.Vec3d;
-import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
+import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
 
 @Setter
 @Getter

@@ -1,8 +1,8 @@
-package fun.rich.display.screens.clickgui.components.implement.autobuy.items.list;
+package fun.Fear.display.screens.clickgui.components.implement.autobuy.items.list;
 
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.customitem.CustomItem;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.defaultsetpricec.Defaultpricec;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.customitem.CustomItem;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.defaultsetpricec.Defaultpricec;
 import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 import java.util.ArrayList;
@@ -68,10 +68,10 @@ public class DonatorProvider {
                 Text.literal("Уровень лута: Обычный")
         );
         donator.add(new CustomItem("Сигнальный огонь [Обычный]", null, Items.CAMPFIRE, Defaultpricec.getPrice("Сигнальный огонь [Обычный]"), null, signalOrdinaryLore));
-        List<Text> signalRichLore = List.of(
+        List<Text> signalFearLore = List.of(
                 Text.literal("Уровень лута: Богатый")
         );
-        donator.add(new CustomItem("Сигнальный огонь [Богатый]", null, Items.CAMPFIRE, Defaultpricec.getPrice("Сигнальный огонь [Богатый]"), null, signalRichLore));
+        donator.add(new CustomItem("Сигнальный огонь [Богатый]", null, Items.CAMPFIRE, Defaultpricec.getPrice("Сигнальный огонь [Богатый]"), null, signalFearLore));
         List<Text> signalLegendaryLore = List.of(
                 Text.literal("Уровень лута: Легендарный")
         );

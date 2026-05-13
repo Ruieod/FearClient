@@ -1,4 +1,4 @@
-package fun.rich.mixins.player.entity;
+package fun.Fear.mixins.player.entity;
 
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.features.impl.render.Esp;
+import fun.Fear.features.impl.render.Esp;
 
 @Mixin(EntityRenderer.class)
 public abstract class EntityRendererMixin<S extends EntityRenderState> {

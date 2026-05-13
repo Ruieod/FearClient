@@ -1,24 +1,24 @@
 {
   "accessWidener": "accesswidener",
   "schemaVersion": 1,
-  "id": "rich",
+  "id": "Fear",
   "version": "1.0",
   "icon": "assets/minecraft/icon.png",
-  "name": "rich",
-  "description": "Rich Client",
+  "name": "Fear",
+  "description": "Fear Client",
   "authors": [
     "HZeed",
     "Bafyy"
   ],
   "contact": {
-    "website": "https://rich.fun",
+    "website": "https://Fear.fun",
     "repo": "none"
   },
   "license": "All-Rights-Reserved",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "fun.rich.Rich"
+      "fun.Fear.Fear"
     ]
   },
   "mixins": [

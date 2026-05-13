@@ -1,7 +1,7 @@
-package fun.rich.mixins.client.screen.mainmenu;
+package fun.Fear.mixins.client.screen.mainmenu;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import fun.rich.features.impl.misc.SelfDestruct;
+import fun.Fear.features.impl.misc.SelfDestruct;
 import net.minecraft.client.network.ServerInfo;
 import net.minecraft.client.option.ServerList;
 import net.minecraft.nbt.NbtElement;

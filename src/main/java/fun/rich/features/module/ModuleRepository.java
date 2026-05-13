@@ -1,10 +1,10 @@
-package fun.rich.features.module;
+package fun.Fear.features.module;
 
-import fun.rich.features.impl.combat.*;
-import fun.rich.features.impl.misc.*;
-import fun.rich.features.impl.movement.*;
-import fun.rich.features.impl.player.*;
-import fun.rich.features.impl.render.*;
+import fun.Fear.features.impl.combat.*;
+import fun.Fear.features.impl.misc.*;
+import fun.Fear.features.impl.movement.*;
+import fun.Fear.features.impl.player.*;
+import fun.Fear.features.impl.render.*;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 

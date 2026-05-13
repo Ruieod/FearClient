@@ -1,11 +1,11 @@
-package fun.rich.main.listener;
+package fun.Fear.main.listener;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
-import fun.rich.Rich;
-import fun.rich.main.listener.impl.EventListener;
+import fun.Fear.Fear;
+import fun.Fear.main.listener.impl.EventListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,6 +23,6 @@ public class ListenerRepository {
 
     public void registerListeners(Listener... listeners) {
         this.listeners.addAll(List.of(listeners));
-        Arrays.stream(listeners).forEach(listener -> Rich.getInstance().getEventManager().register(listener));
+        Arrays.stream(listeners).forEach(listener -> Fear.getInstance().getEventManager().register(listener));
     }
 }

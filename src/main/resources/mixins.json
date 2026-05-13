@@ -1,8 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "fun.rich.mixins",
-  "refmap": "rich-refmap.json",
+  "package": "fun.Fear.mixins",
+  "refmap": "Fear-refmap.json",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "client.display.scoreboard.ScoreboardMixin",

@@ -1,8 +1,8 @@
-package fun.rich.mixins.player.entity;
+package fun.Fear.mixins.player.entity;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
-import fun.rich.features.impl.combat.Aura;
+import fun.Fear.features.impl.combat.Aura;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
@@ -17,10 +17,10 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.events.render.EntityColorEvent;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.events.render.EntityColorEvent;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
 
 @Mixin(LivingEntityRenderer.class)
 public abstract class LivingEntityRendererMixin implements QuickImports {

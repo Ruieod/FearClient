@@ -1,10 +1,10 @@
-package fun.rich.utils.display.systemrender.builders.impl;
+package fun.Fear.utils.display.systemrender.builders.impl;
 
-import fun.rich.utils.display.systemrender.renderers.impl.BuiltBorder;
-import fun.rich.utils.display.systemrender.builders.AbstractBuilder;
-import fun.rich.utils.display.systemrender.builders.states.QuadColorState;
-import fun.rich.utils.display.systemrender.builders.states.QuadRadiusState;
-import fun.rich.utils.display.systemrender.builders.states.SizeState;
+import fun.Fear.utils.display.systemrender.renderers.impl.BuiltBorder;
+import fun.Fear.utils.display.systemrender.builders.AbstractBuilder;
+import fun.Fear.utils.display.systemrender.builders.states.QuadColorState;
+import fun.Fear.utils.display.systemrender.builders.states.QuadRadiusState;
+import fun.Fear.utils.display.systemrender.builders.states.SizeState;
 
 
 public final class BorderBuilder extends AbstractBuilder<BuiltBorder> {

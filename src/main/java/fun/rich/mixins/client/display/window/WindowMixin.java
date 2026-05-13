@@ -1,4 +1,4 @@
-package fun.rich.mixins.client.display.window;
+package fun.Fear.mixins.client.display.window;
 
 import net.minecraft.client.util.Window;
 import org.spongepowered.asm.mixin.Mixin;

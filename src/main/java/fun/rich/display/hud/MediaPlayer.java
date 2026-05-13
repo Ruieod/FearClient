@@ -1,23 +1,23 @@
-//package fun.rich.display.hud;
+//package fun.Fear.display.hud;
 //
 //import dev.redstones.mediaplayerinfo.IMediaSession;
 //import dev.redstones.mediaplayerinfo.MediaInfo;
 //import dev.redstones.mediaplayerinfo.MediaPlayerInfo;
-//import fun.rich.Rich;
-//import fun.rich.features.impl.render.Hud;
-//import fun.rich.utils.client.Instance;
-//import fun.rich.utils.client.chat.StringHelper;
-//import fun.rich.utils.client.discord.Buffer;
-//import fun.rich.utils.client.managers.api.draggable.AbstractDraggable;
-//import fun.rich.utils.display.color.ColorAssist;
-//import fun.rich.utils.display.font.FontRenderer;
-//import fun.rich.utils.display.font.Fonts;
-//import fun.rich.utils.display.geometry.Render2D;
-//import fun.rich.utils.display.scissor.ScissorAssist;
-//import fun.rich.utils.display.shape.ShapeProperties;
-//import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-//import fun.rich.utils.math.calc.Calculate;
-//import fun.rich.utils.math.time.StopWatch;
+//import fun.Fear.Fear;
+//import fun.Fear.features.impl.render.Hud;
+//import fun.Fear.utils.client.Instance;
+//import fun.Fear.utils.client.chat.StringHelper;
+//import fun.Fear.utils.client.discord.Buffer;
+//import fun.Fear.utils.client.managers.api.draggable.AbstractDraggable;
+//import fun.Fear.utils.display.color.ColorAssist;
+//import fun.Fear.utils.display.font.FontRenderer;
+//import fun.Fear.utils.display.font.Fonts;
+//import fun.Fear.utils.display.geometry.Render2D;
+//import fun.Fear.utils.display.scissor.ScissorAssist;
+//import fun.Fear.utils.display.shape.ShapeProperties;
+//import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+//import fun.Fear.utils.math.calc.Calculate;
+//import fun.Fear.utils.math.time.StopWatch;
 //import net.minecraft.client.gui.DrawContext;
 //import net.minecraft.client.util.math.MatrixStack;
 //import net.minecraft.util.Identifier;
@@ -110,7 +110,7 @@
 //    @Override
 //    public void drawDraggable(DrawContext context) {
 //        MatrixStack matrix = context.getMatrices();
-//        ScissorAssist scissor = Rich.getInstance().getScissorManager();
+//        ScissorAssist scissor = Fear.getInstance().getScissorManager();
 //        FontRenderer big = Fonts.getSize(14, Fonts.Type.DEFAULT);
 //        FontRenderer mini = Fonts.getSize(11, Fonts.Type.DEFAULT);
 //        FontRenderer icon = Fonts.getSize(17, Fonts.Type.ICONS);

@@ -1,4 +1,4 @@
-package fun.rich.common.proxy;
+package fun.Fear.common.proxy;
 
 import com.google.gson.annotations.SerializedName;
 

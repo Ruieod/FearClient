@@ -1,5 +1,5 @@
-package fun.rich.main.listener;
+package fun.Fear.main.listener;
 
-import fun.rich.utils.display.interfaces.QuickLogger;
+import fun.Fear.utils.display.interfaces.QuickLogger;
 
 public interface Listener extends QuickLogger {}

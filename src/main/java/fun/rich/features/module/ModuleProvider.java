@@ -1,4 +1,4 @@
-package fun.rich.features.module;
+package fun.Fear.features.module;
 
 import lombok.AccessLevel;
 import lombok.Getter;

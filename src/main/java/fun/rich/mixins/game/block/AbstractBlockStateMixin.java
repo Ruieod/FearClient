@@ -1,4 +1,4 @@
-package fun.rich.mixins.game.block;
+package fun.Fear.mixins.game.block;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -10,9 +10,9 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.events.player.PlayerCollisionEvent;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.events.player.PlayerCollisionEvent;
 
 @Mixin(AbstractBlock.AbstractBlockState.class)
 public abstract class AbstractBlockStateMixin implements QuickImports {

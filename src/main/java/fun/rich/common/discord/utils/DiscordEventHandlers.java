@@ -1,7 +1,7 @@
-package fun.rich.common.discord.utils;
+package fun.Fear.common.discord.utils;
 
 import com.sun.jna.Structure;
-import fun.rich.common.discord.callbacks.*;
+import fun.Fear.common.discord.callbacks.*;
 
 import java.util.Arrays;
 import java.util.List;

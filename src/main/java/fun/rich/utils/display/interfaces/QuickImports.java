@@ -1,14 +1,14 @@
-package fun.rich.utils.display.interfaces;
+package fun.Fear.utils.display.interfaces;
 
 import com.google.gson.Gson;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.client.render.Tessellator;
 import net.minecraft.client.util.Window;
-import fun.rich.utils.display.draw.DrawEngine;
-import fun.rich.utils.display.draw.DrawEngineImpl;
-import fun.rich.utils.display.shape.implement.*;
-import fun.rich.display.screens.clickgui.components.implement.window.WindowManager;
+import fun.Fear.utils.display.draw.DrawEngine;
+import fun.Fear.utils.display.draw.DrawEngineImpl;
+import fun.Fear.utils.display.shape.implement.*;
+import fun.Fear.display.screens.clickgui.components.implement.window.WindowManager;
 
 public interface QuickImports extends QuickLogger {
     MinecraftClient mc = MinecraftClient.getInstance();

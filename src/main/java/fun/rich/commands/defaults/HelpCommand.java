@@ -1,4 +1,4 @@
-package fun.rich.commands.defaults;
+package fun.Fear.commands.defaults;
 
 import net.minecraft.text.ClickEvent;
 import net.minecraft.text.HoverEvent;
@@ -6,27 +6,27 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
-import fun.rich.Rich;
-import fun.rich.utils.client.managers.api.command.Command;
-import fun.rich.utils.client.managers.api.command.ICommand;
-import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.exception.CommandNotFoundException;
-import fun.rich.utils.client.managers.api.command.helpers.Paginator;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.rich.commands.manager.CommandRepository;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.managers.api.command.Command;
+import fun.Fear.utils.client.managers.api.command.ICommand;
+import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.exception.CommandNotFoundException;
+import fun.Fear.utils.client.managers.api.command.helpers.Paginator;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.commands.manager.CommandRepository;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static fun.rich.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
+import static fun.Fear.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
 
 public class HelpCommand extends Command {
-    Rich main;
+    Fear main;
 
-    protected HelpCommand(Rich main) {
+    protected HelpCommand(Fear main) {
         super("help");
         this.main = main;
     }
@@ -90,7 +90,7 @@ public class HelpCommand extends Command {
     public Stream<String> tabComplete(String label, IArgConsumer args) throws CommandException {
         if (args.hasExactlyOne()) {
             return new TabCompleteHelper()
-                    .addCommands(Rich.getInstance().getCommandRepository())
+                    .addCommands(Fear.getInstance().getCommandRepository())
                     .filterPrefix(args.getString())
                     .stream();
         }

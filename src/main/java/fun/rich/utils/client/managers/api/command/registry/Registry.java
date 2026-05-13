@@ -1,4 +1,4 @@
-package fun.rich.utils.client.managers.api.command.registry;
+package fun.Fear.utils.client.managers.api.command.registry;
 
 import java.util.*;
 import java.util.stream.Stream;

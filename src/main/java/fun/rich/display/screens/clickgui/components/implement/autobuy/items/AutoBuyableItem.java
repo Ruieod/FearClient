@@ -1,6 +1,6 @@
-package fun.rich.display.screens.clickgui.components.implement.autobuy.items;
+package fun.Fear.display.screens.clickgui.components.implement.autobuy.items;
 
-import fun.rich.display.screens.clickgui.components.implement.autobuy.settings.AutoBuyItemSettings;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.settings.AutoBuyItemSettings;
 import net.minecraft.item.ItemStack;
 
 public interface AutoBuyableItem {

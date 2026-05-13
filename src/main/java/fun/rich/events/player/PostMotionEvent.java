@@ -1,6 +1,6 @@
-package fun.rich.events.player;
+package fun.Fear.events.player;
 
-import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
+import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
 
 public class PostMotionEvent extends EventCancellable {
 }

@@ -1,6 +1,6 @@
-package fun.rich.events.block;
+package fun.Fear.events.block;
 
 import net.minecraft.util.math.BlockPos;
-import fun.rich.utils.client.managers.event.events.Event;
+import fun.Fear.utils.client.managers.event.events.Event;
 
 public record BreakBlockEvent(BlockPos blockPos) implements Event {}

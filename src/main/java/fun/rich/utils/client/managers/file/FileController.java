@@ -1,11 +1,11 @@
-package fun.rich.utils.client.managers.file;
+package fun.Fear.utils.client.managers.file;
 
-import fun.rich.utils.client.logs.Logger;
+import fun.Fear.utils.client.logs.Logger;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import fun.rich.utils.client.managers.file.exception.FileLoadException;
-import fun.rich.utils.client.managers.file.exception.FileSaveException;
-import fun.rich.utils.client.managers.file.impl.ModuleFile;
+import fun.Fear.utils.client.managers.file.exception.FileLoadException;
+import fun.Fear.utils.client.managers.file.exception.FileSaveException;
+import fun.Fear.utils.client.managers.file.impl.ModuleFile;
 
 import java.io.File;
 import java.util.List;

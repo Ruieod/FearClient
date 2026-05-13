@@ -1,18 +1,18 @@
-package fun.rich.utils.client.managers.api.command.helpers;
+package fun.Fear.utils.client.managers.api.command.helpers;
 
 import net.minecraft.text.ClickEvent;
 import net.minecraft.text.HoverEvent;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
-import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.exception.CommandInvalidTypeException;
+import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.exception.CommandInvalidTypeException;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
-import fun.rich.utils.display.interfaces.QuickLogger;
+import fun.Fear.utils.display.interfaces.QuickLogger;
 
 public class Paginator<E> implements QuickLogger {
     public final List<E> entries;

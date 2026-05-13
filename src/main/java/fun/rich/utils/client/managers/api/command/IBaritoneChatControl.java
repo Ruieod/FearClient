@@ -1,4 +1,4 @@
-package fun.rich.utils.client.managers.api.command;
+package fun.Fear.utils.client.managers.api.command;
 
 import java.util.UUID;
 

@@ -1,8 +1,8 @@
-package fun.rich.utils.display.systemrender.renderers.impl;
+package fun.Fear.utils.display.systemrender.renderers.impl;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import fun.rich.utils.display.atlasfont.providers.ResourceProvider;
-import fun.rich.utils.display.systemrender.renderers.IRenderer;
+import fun.Fear.utils.display.atlasfont.providers.ResourceProvider;
+import fun.Fear.utils.display.systemrender.renderers.IRenderer;
 import net.minecraft.client.gl.Defines;
 import net.minecraft.client.gl.ShaderProgram;
 import net.minecraft.client.gl.ShaderProgramKey;
@@ -13,9 +13,9 @@ import net.minecraft.client.render.VertexFormat.DrawMode;
 import net.minecraft.client.render.VertexFormats;
 import org.joml.Matrix4f;
 
-import fun.rich.utils.display.systemrender.builders.states.QuadColorState;
-import fun.rich.utils.display.systemrender.builders.states.QuadRadiusState;
-import fun.rich.utils.display.systemrender.builders.states.SizeState;
+import fun.Fear.utils.display.systemrender.builders.states.QuadColorState;
+import fun.Fear.utils.display.systemrender.builders.states.QuadRadiusState;
+import fun.Fear.utils.display.systemrender.builders.states.SizeState;
 
 public record BuiltBorder(
         SizeState size,

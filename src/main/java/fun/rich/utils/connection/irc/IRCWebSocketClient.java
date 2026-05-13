@@ -1,16 +1,16 @@
-package fun.rich.utils.connection.irc;
+package fun.Fear.utils.connection.irc;
 
 import antidaunleak.api.UserProfile;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import fun.rich.utils.client.text.TextHelper;
+import fun.Fear.utils.client.text.TextHelper;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 import net.minecraft.text.Style;
 import net.minecraft.util.Formatting;
-import fun.rich.utils.client.chat.ChatMessage;
-import fun.rich.commands.defaults.IRCCommand;
-import fun.rich.Rich;
+import fun.Fear.utils.client.chat.ChatMessage;
+import fun.Fear.commands.defaults.IRCCommand;
+import fun.Fear.Fear;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
 
@@ -36,7 +36,7 @@ public class IRCWebSocketClient extends WebSocketClient {
     @Override
     public void onOpen(ServerHandshake handshakedata) {
         sendGetPrefix();
-        Rich.getInstance().getIrcManager().isConnecting.set(false);
+        Fear.getInstance().getIrcManager().isConnecting.set(false);
     }
 
     @Override
@@ -58,12 +58,12 @@ public class IRCWebSocketClient extends WebSocketClient {
                 String content = json.get("message").getAsString();
                 String prefix = json.get("prefix").getAsString();
                 String formattedMessage = author + " -> " + content;
-                if (Rich.getInstance().isShowIrcMessages()) {
+                if (Fear.getInstance().isShowIrcMessages()) {
                     displayMessage(prefix, formattedMessage, author, content);
                 }
             } else if (type.equals("mute") || type.equals("mute_attempt")) {
                 isMuted = true;
-                if (Rich.getInstance().isShowIrcMessages() && json.has("reason") && json.has("duration_minutes")) {
+                if (Fear.getInstance().isShowIrcMessages() && json.has("reason") && json.has("duration_minutes")) {
                     String reason = json.get("reason").getAsString();
                     int duration = json.get("duration_minutes").getAsInt();
                     String reasonTranslated = reason.equals("Спам") ? "спам" : reason.equals("Мат") ? "мат" : reason.equals("Капс") ? "злоупотребление капсом или символами" : "отправку ссылок";
@@ -71,7 +71,7 @@ public class IRCWebSocketClient extends WebSocketClient {
                 }
             } else if (type.equals("unmute")) {
                 isMuted = false;
-                if (Rich.getInstance().isShowIrcMessages()) {
+                if (Fear.getInstance().isShowIrcMessages()) {
                     ChatMessage.ircmessageWithGreen("Вы размучены!");
                 }
             } else if (type.equals("prefix_info")) {
@@ -83,7 +83,7 @@ public class IRCWebSocketClient extends WebSocketClient {
             } else if (type.equals("system")) {
                 if (!json.has("message")) return;
                 String systemMessage = json.get("message").getAsString();
-                if (Rich.getInstance().isShowIrcMessages()) {
+                if (Fear.getInstance().isShowIrcMessages()) {
                     ChatMessage.ircmessage(systemMessage);
                 }
             }
@@ -91,7 +91,7 @@ public class IRCWebSocketClient extends WebSocketClient {
     }
 
     void displayMessage(String prefix, String message, String author, String content) {
-        if (MinecraftClient.getInstance().player == null || !Rich.getInstance().isShowIrcMessages()) return;
+        if (MinecraftClient.getInstance().player == null || !Fear.getInstance().isShowIrcMessages()) return;
         Text prefixText;
         if (author.equals("HZeed") && author.equals("Silv4ik") && author.equals("Raze")) {
             prefixText = ChatMessage.ircprefixDeveloper("");
@@ -109,8 +109,8 @@ public class IRCWebSocketClient extends WebSocketClient {
                 case "boost":
                     prefixText = ChatMessage.ircprefixBoost("");
                     break;
-                case "rich":
-                    prefixText = ChatMessage.ircprefixRich("");
+                case "Fear":
+                    prefixText = ChatMessage.ircprefixFear("");
                     break;
                 case "panda":
                     prefixText = ChatMessage.ircprefixPanda("");
@@ -142,15 +142,15 @@ public class IRCWebSocketClient extends WebSocketClient {
 
     @Override
     public void onClose(int code, String reason, boolean remote) {
-        Rich.getInstance().getIrcManager().isConnecting.set(false);
+        Fear.getInstance().getIrcManager().isConnecting.set(false);
     }
 
     @Override
     public void onError(Exception ex) {
-        if (Rich.getInstance().isShowIrcMessages()) {
+        if (Fear.getInstance().isShowIrcMessages()) {
             ChatMessage.ircmessageWithRed("Ошибка подключения к IRC");
         }
-        Rich.getInstance().getIrcManager().isConnecting.set(false);
+        Fear.getInstance().getIrcManager().isConnecting.set(false);
     }
 
     public void sendMessage(String message) {
@@ -158,7 +158,7 @@ public class IRCWebSocketClient extends WebSocketClient {
             return;
         }
         if (isMuted) {
-            if (Rich.getInstance().isShowIrcMessages()) {
+            if (Fear.getInstance().isShowIrcMessages()) {
                 ChatMessage.ircmessageWithRed("Вы замучены и не можете отправлять сообщения");
             }
             return;

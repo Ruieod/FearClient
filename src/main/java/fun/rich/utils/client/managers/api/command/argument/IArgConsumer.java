@@ -1,12 +1,12 @@
-package fun.rich.utils.client.managers.api.command.argument;
+package fun.Fear.utils.client.managers.api.command.argument;
 
-import fun.rich.utils.client.managers.api.command.datatypes.IDatatype;
-import fun.rich.utils.client.managers.api.command.datatypes.IDatatypeFor;
-import fun.rich.utils.client.managers.api.command.datatypes.IDatatypePost;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.exception.CommandInvalidTypeException;
-import fun.rich.utils.client.managers.api.command.exception.CommandNotEnoughArgumentsException;
-import fun.rich.utils.client.managers.api.command.exception.CommandTooManyArgumentsException;
+import fun.Fear.utils.client.managers.api.command.datatypes.IDatatype;
+import fun.Fear.utils.client.managers.api.command.datatypes.IDatatypeFor;
+import fun.Fear.utils.client.managers.api.command.datatypes.IDatatypePost;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.exception.CommandInvalidTypeException;
+import fun.Fear.utils.client.managers.api.command.exception.CommandNotEnoughArgumentsException;
+import fun.Fear.utils.client.managers.api.command.exception.CommandTooManyArgumentsException;
 
 import java.util.Deque;
 import java.util.LinkedList;

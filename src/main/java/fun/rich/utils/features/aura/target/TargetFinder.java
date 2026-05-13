@@ -1,9 +1,9 @@
-package fun.rich.utils.features.aura.target;
+package fun.Fear.utils.features.aura.target;
 
-import fun.rich.utils.features.aura.point.MultiPoint;
-import fun.rich.utils.features.aura.utils.MathAngle;
-import fun.rich.utils.features.aura.utils.RaycastAngle;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.utils.features.aura.point.MultiPoint;
+import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.Fear.utils.features.aura.utils.RaycastAngle;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -15,10 +15,10 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.Vec3d;
-import fun.rich.common.repository.friend.FriendUtils;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.features.impl.combat.AntiBot;
-import fun.rich.utils.features.aura.rotations.constructor.LinearConstructor;
+import fun.Fear.common.repository.friend.FriendUtils;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.features.impl.combat.AntiBot;
+import fun.Fear.utils.features.aura.rotations.constructor.LinearConstructor;
 
 import java.util.Comparator;
 import java.util.List;

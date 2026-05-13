@@ -1,9 +1,9 @@
-package fun.rich.features.impl.misc;
+package fun.Fear.features.impl.misc;
 
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.Rich;
-import fun.rich.utils.client.chat.ChatMessage;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.chat.ChatMessage;
 
 public class IRC extends Module {
     public IRC() {
@@ -22,14 +22,14 @@ public class IRC extends Module {
 
     @Override
     public void activate() {
-        Rich.getInstance().setShowIrcMessages(true);
-        Rich.getInstance().getIrcManager().connect();
+        Fear.getInstance().setShowIrcMessages(true);
+        Fear.getInstance().getIrcManager().connect();
     }
 
     @Override
     public void deactivate() {
-        Rich.getInstance().setShowIrcMessages(false);
-        Rich.getInstance().getIrcManager().disconnect();
+        Fear.getInstance().setShowIrcMessages(false);
+        Fear.getInstance().getIrcManager().disconnect();
     }
 
     public void sendMessage(String message) {
@@ -37,8 +37,8 @@ public class IRC extends Module {
             ChatMessage.ircmessageWithRed("Модуль IRC выключен");
             return;
         }
-        if (Rich.getInstance().getIrcManager().getClient() != null && Rich.getInstance().getIrcManager().getClient().isOpen()) {
-            Rich.getInstance().getIrcManager().getClient().sendMessage(message);
+        if (Fear.getInstance().getIrcManager().getClient() != null && Fear.getInstance().getIrcManager().getClient().isOpen()) {
+            Fear.getInstance().getIrcManager().getClient().sendMessage(message);
         }
     }
 }

@@ -1,4 +1,4 @@
-package fun.rich.common.proxy;
+package fun.Fear.common.proxy;
 
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 
 public class Config {
-    private static final File CONFIG_DIR = new File(MinecraftClient.getInstance().runDirectory, "Rich/Proxy");
+    private static final File CONFIG_DIR = new File(MinecraftClient.getInstance().runDirectory, "Fear/Proxy");
     private static final File CONFIG_FILE = new File(CONFIG_DIR, "Proxyconfig.json");
 
     public static HashMap<String, Proxy> accounts = new HashMap<>();

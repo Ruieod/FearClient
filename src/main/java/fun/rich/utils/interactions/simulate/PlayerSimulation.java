@@ -1,5 +1,5 @@
-package fun.rich.utils.interactions.simulate;
-import fun.rich.utils.interactions.simulate.interfaces.Simulation;
+package fun.Fear.utils.interactions.simulate;
+import fun.Fear.utils.interactions.simulate.interfaces.Simulation;
 import it.unimi.dsi.fastutil.objects.Object2DoubleArrayMap;
 import it.unimi.dsi.fastutil.objects.Object2DoubleMap;
 
@@ -35,8 +35,8 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.features.impl.player.NoDelay;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.features.impl.player.NoDelay;
 
 
 public class PlayerSimulation implements Simulation, QuickImports {

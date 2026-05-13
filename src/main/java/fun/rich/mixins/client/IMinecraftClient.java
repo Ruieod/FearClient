@@ -1,4 +1,4 @@
-package fun.rich.mixins.client;
+package fun.Fear.mixins.client;
 
 import com.mojang.authlib.minecraft.UserApiService;
 import net.minecraft.client.MinecraftClient;

@@ -1,7 +1,7 @@
-package fun.rich.utils.interactions.inv;
+package fun.Fear.utils.interactions.inv;
 
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-import fun.rich.utils.interactions.simulate.Simulations;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.utils.interactions.simulate.Simulations;
 import lombok.experimental.UtilityClass;
 import net.minecraft.client.gui.screen.ingame.AbstractCommandBlockScreen;
 import net.minecraft.client.gui.screen.ingame.AnvilScreen;
@@ -9,17 +9,17 @@ import net.minecraft.client.gui.screen.ingame.SignEditScreen;
 import net.minecraft.client.gui.screen.ingame.StructureBlockScreen;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.math.task.TaskPriority;
-import fun.rich.utils.math.script.Script;
-import fun.rich.utils.client.packet.network.Network;
-import fun.rich.events.player.InputEvent;
-import fun.rich.utils.features.aura.utils.MathAngle;
-import fun.rich.utils.features.aura.warp.TurnsConfig;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
-import fun.rich.display.screens.clickgui.MenuScreen;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.math.task.TaskPriority;
+import fun.Fear.utils.math.script.Script;
+import fun.Fear.utils.client.packet.network.Network;
+import fun.Fear.events.player.InputEvent;
+import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.Fear.utils.features.aura.warp.TurnsConfig;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.display.screens.clickgui.MenuScreen;
 
 import java.util.List;
 

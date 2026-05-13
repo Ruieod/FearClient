@@ -1,4 +1,4 @@
-package fun.rich.utils.math.task;
+package fun.Fear.utils.math.task;
 
 import lombok.AccessLevel;
 import lombok.Getter;

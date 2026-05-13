@@ -1,4 +1,4 @@
-package fun.rich.common.discord.utils;
+package fun.Fear.common.discord.utils;
 
 import com.sun.jna.Structure;
 

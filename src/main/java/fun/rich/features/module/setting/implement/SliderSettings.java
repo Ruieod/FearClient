@@ -1,9 +1,9 @@
-package fun.rich.features.module.setting.implement;
+package fun.Fear.features.module.setting.implement;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
-import fun.rich.features.module.setting.Setting;
+import fun.Fear.features.module.setting.Setting;
 
 import java.util.function.Supplier;
 

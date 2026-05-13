@@ -1,4 +1,4 @@
-package fun.rich.utils.features.autobuy;
+package fun.Fear.utils.features.autobuy;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;

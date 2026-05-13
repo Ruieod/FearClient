@@ -1,12 +1,12 @@
-package fun.rich.features.impl.render;
+package fun.Fear.features.impl.render;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.SliderSettings;
-import fun.rich.events.render.AspectRatioEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.SliderSettings;
+import fun.Fear.events.render.AspectRatioEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class AspectRatio extends Module {

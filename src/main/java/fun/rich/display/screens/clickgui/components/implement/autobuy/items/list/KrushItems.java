@@ -1,4 +1,4 @@
-package fun.rich.display.screens.clickgui.components.implement.autobuy.items.list;
+package fun.Fear.display.screens.clickgui.components.implement.autobuy.items.list;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.component.DataComponentTypes;

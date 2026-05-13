@@ -1,15 +1,15 @@
-package fun.rich.display.screens.clickgui.components.implement.settings;
+package fun.Fear.display.screens.clickgui.components.implement.settings;
 
 import net.minecraft.client.gui.DrawContext;
 
-import fun.rich.features.module.setting.implement.BooleanSetting;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.display.screens.clickgui.components.implement.other.CheckComponent;
+import fun.Fear.features.module.setting.implement.BooleanSetting;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.display.screens.clickgui.components.implement.other.CheckComponent;
 
 import java.awt.*;
 
-import static fun.rich.utils.display.font.Fonts.Type.*;
-import static fun.rich.utils.display.font.Fonts.Type.DEFAULT;
+import static fun.Fear.utils.display.font.Fonts.Type.*;
+import static fun.Fear.utils.display.font.Fonts.Type.DEFAULT;
 
 public class CheckboxComponent extends AbstractSettingComponent {
     private final CheckComponent checkComponent = new CheckComponent();

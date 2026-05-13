@@ -1,9 +1,9 @@
-package fun.rich.display.screens.clickgui.components.implement.settings;
+package fun.Fear.display.screens.clickgui.components.implement.settings;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import fun.rich.features.module.setting.Setting;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.features.module.setting.Setting;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
 
 @Getter
 @RequiredArgsConstructor

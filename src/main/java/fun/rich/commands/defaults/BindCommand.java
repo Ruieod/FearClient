@@ -1,38 +1,38 @@
-package fun.rich.commands.defaults;
+package fun.Fear.commands.defaults;
 
-import fun.rich.utils.client.managers.api.command.exception.CommandNotEnoughArgumentsException;
+import fun.Fear.utils.client.managers.api.command.exception.CommandNotEnoughArgumentsException;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import org.lwjgl.glfw.GLFW;
 
-import fun.rich.Rich;
-import fun.rich.utils.client.managers.api.command.Command;
-import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.rich.utils.client.managers.api.command.datatypes.KeyDataType;
-import fun.rich.utils.client.managers.api.command.datatypes.ModuleDataType;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.helpers.Paginator;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleProvider;
-import fun.rich.features.module.ModuleRepository;
-import fun.rich.utils.client.chat.StringHelper;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.managers.api.command.Command;
+import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.Fear.utils.client.managers.api.command.datatypes.KeyDataType;
+import fun.Fear.utils.client.managers.api.command.datatypes.ModuleDataType;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.helpers.Paginator;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleProvider;
+import fun.Fear.features.module.ModuleRepository;
+import fun.Fear.utils.client.chat.StringHelper;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Stream;
 
-import static fun.rich.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
+import static fun.Fear.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class BindCommand extends Command {
     ModuleProvider moduleProvider;
     ModuleRepository moduleRepository;
 
-    public BindCommand(Rich main) {
+    public BindCommand(Fear main) {
         super("bind");
         moduleRepository = main.getModuleRepository();
         moduleProvider = main.getModuleProvider();

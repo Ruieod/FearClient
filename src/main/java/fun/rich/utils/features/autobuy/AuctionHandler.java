@@ -1,8 +1,8 @@
-package fun.rich.utils.features.autobuy;
+package fun.Fear.utils.features.autobuy;
 
-import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.manager.AutoBuyManager;
-import fun.rich.display.screens.clickgui.components.implement.autobuy.util.AuctionUtils;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.manager.AutoBuyManager;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.util.AuctionUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;

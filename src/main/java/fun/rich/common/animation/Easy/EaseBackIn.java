@@ -1,4 +1,4 @@
-package fun.rich.common.animation.Easy;
+package fun.Fear.common.animation.Easy;
 
 public class EaseBackIn extends EasyAnimService {
     private final float easeAmount;

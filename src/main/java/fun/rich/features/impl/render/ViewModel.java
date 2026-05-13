@@ -1,15 +1,15 @@
-package fun.rich.features.impl.render;
+package fun.Fear.features.impl.render;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.CrossbowItem;
 import net.minecraft.util.Hand;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.SliderSettings;
-import fun.rich.events.item.HandOffsetEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.SliderSettings;
+import fun.Fear.events.item.HandOffsetEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class ViewModel extends Module {

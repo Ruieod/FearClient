@@ -1,10 +1,10 @@
-    package fun.rich.utils.features.aura.warp;
+    package fun.Fear.utils.features.aura.warp;
 
     import lombok.*;
     import lombok.experimental.FieldDefaults;
     import net.minecraft.util.math.MathHelper;
     import net.minecraft.util.math.Vec3d;
-    import fun.rich.utils.math.calc.Calculate;
+    import fun.Fear.utils.math.calc.Calculate;
 
     import static net.minecraft.util.math.MathHelper.wrapDegrees;
 

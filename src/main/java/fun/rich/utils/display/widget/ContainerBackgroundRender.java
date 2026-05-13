@@ -1,7 +1,7 @@
-package fun.rich.utils.display.widget;
+package fun.Fear.utils.display.widget;
 
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.shape.ShapeProperties;
 import net.minecraft.client.gui.DrawContext;
 
 import java.awt.Color;

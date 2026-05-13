@@ -1,17 +1,17 @@
-package fun.rich.features.impl.render;
+package fun.Fear.features.impl.render;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.client.Instance;
-import fun.rich.utils.display.geometry.Render3D;
-import fun.rich.events.render.WorldRenderEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.client.Instance;
+import fun.Fear.utils.display.geometry.Render3D;
+import fun.Fear.events.render.WorldRenderEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class BlockOverlay extends Module {

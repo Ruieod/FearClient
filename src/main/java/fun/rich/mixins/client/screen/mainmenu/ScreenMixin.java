@@ -1,4 +1,4 @@
-package fun.rich.mixins.client.screen.mainmenu;
+package fun.Fear.mixins.client.screen.mainmenu;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
@@ -12,10 +12,10 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.events.chat.ChatEvent;
-import fun.rich.display.screens.clickgui.MenuScreen;
-import fun.rich.display.screens.mainmenu.MainMenu;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.events.chat.ChatEvent;
+import fun.Fear.display.screens.clickgui.MenuScreen;
+import fun.Fear.display.screens.mainmenu.MainMenu;
 
 @Mixin(Screen.class)
 public class ScreenMixin {

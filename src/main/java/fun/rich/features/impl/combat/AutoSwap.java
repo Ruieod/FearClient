@@ -1,8 +1,8 @@
-package fun.rich.features.impl.combat;
+package fun.Fear.features.impl.combat;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.events.player.TickEvent;
-import fun.rich.features.impl.movement.AutoSprint;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.features.impl.movement.AutoSprint;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
@@ -11,13 +11,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.Hand;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.BindSetting;
-import fun.rich.features.module.setting.implement.SelectSetting;
-import fun.rich.utils.interactions.inv.InventoryTask;
-import fun.rich.events.keyboard.KeyEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.BindSetting;
+import fun.Fear.features.module.setting.implement.SelectSetting;
+import fun.Fear.utils.interactions.inv.InventoryTask;
+import fun.Fear.events.keyboard.KeyEvent;
 
 import java.util.Comparator;
 import java.util.function.Predicate;

@@ -1,4 +1,4 @@
-package fun.rich.utils.features.autobuy;
+package fun.Fear.utils.features.autobuy;
 
 public class BuyRequest {
     public String itemName;

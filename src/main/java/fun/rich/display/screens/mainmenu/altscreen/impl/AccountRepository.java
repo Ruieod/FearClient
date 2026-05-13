@@ -1,4 +1,4 @@
-package fun.rich.display.screens.mainmenu.altscreen.impl;
+package fun.Fear.display.screens.mainmenu.altscreen.impl;
 
 import java.util.ArrayList;
 import java.util.List;

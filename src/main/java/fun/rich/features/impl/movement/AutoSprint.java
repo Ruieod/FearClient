@@ -1,18 +1,18 @@
-package fun.rich.features.impl.movement;
+package fun.Fear.features.impl.movement;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.main.listener.impl.EventListener;
-import fun.rich.utils.client.chat.ChatMessage;
-import fun.rich.utils.math.time.TimerUtil;
+import fun.Fear.main.listener.impl.EventListener;
+import fun.Fear.utils.client.chat.ChatMessage;
+import fun.Fear.utils.math.time.TimerUtil;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.effect.StatusEffects;
-import fun.rich.features.module.setting.implement.MultiSelectSetting;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.client.Instance;
-import fun.rich.events.player.TickEvent;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.MultiSelectSetting;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.client.Instance;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
 import net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket;
 import net.minecraft.text.Text;
 

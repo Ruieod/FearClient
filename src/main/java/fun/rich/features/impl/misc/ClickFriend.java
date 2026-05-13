@@ -1,16 +1,16 @@
-package fun.rich.features.impl.misc;
+package fun.Fear.features.impl.misc;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.hit.EntityHitResult;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.BindSetting;
-import fun.rich.common.repository.friend.FriendUtils;
-import fun.rich.events.keyboard.KeyEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.BindSetting;
+import fun.Fear.common.repository.friend.FriendUtils;
+import fun.Fear.events.keyboard.KeyEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class ClickFriend extends Module {

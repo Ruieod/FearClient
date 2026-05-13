@@ -1,14 +1,14 @@
-package fun.rich.display.screens.clickgui.components.implement.window.implement.settings.color;
+package fun.Fear.display.screens.clickgui.components.implement.window.implement.settings.color;
 
 import net.minecraft.client.gui.DrawContext;
 
-import fun.rich.features.module.setting.implement.ColorSetting;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.display.screens.clickgui.components.implement.window.AbstractWindow;
-import fun.rich.display.screens.clickgui.components.implement.window.implement.settings.color.component.*;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.features.module.setting.implement.ColorSetting;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.display.screens.clickgui.components.implement.window.AbstractWindow;
+import fun.Fear.display.screens.clickgui.components.implement.window.implement.settings.color.component.*;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
 
 import java.util.ArrayList;
 import java.util.Arrays;

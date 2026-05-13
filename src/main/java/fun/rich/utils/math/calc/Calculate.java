@@ -1,4 +1,4 @@
-package fun.rich.utils.math.calc;
+package fun.Fear.utils.math.calc;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import lombok.experimental.UtilityClass;
@@ -6,7 +6,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.*;
 import org.joml.Vector3d;
-import fun.rich.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.interfaces.QuickImports;
 
 import java.util.concurrent.ThreadLocalRandom;
 

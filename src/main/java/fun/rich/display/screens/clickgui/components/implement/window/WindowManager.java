@@ -1,9 +1,9 @@
-package fun.rich.display.screens.clickgui.components.implement.window;
+package fun.Fear.display.screens.clickgui.components.implement.window;
 
 import lombok.Getter;
 import net.minecraft.client.gui.DrawContext;
 
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
 
 import java.util.ArrayList;
 import java.util.List;

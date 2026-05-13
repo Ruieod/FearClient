@@ -1,23 +1,23 @@
-package fun.rich.features.impl.movement;
+package fun.Fear.features.impl.movement;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.events.player.TickEvent;
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-import fun.rich.utils.interactions.inv.InventoryTask;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.utils.interactions.inv.InventoryTask;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.item.consume.UseAction;
 import net.minecraft.util.Hand;
 
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.client.managers.event.types.EventType;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.SelectSetting;
-import fun.rich.utils.client.Instance;
-import fun.rich.utils.math.time.StopWatch;
-import fun.rich.utils.math.script.Script;
-import fun.rich.events.item.UsingItemEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.client.managers.event.types.EventType;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.SelectSetting;
+import fun.Fear.utils.client.Instance;
+import fun.Fear.utils.math.time.StopWatch;
+import fun.Fear.utils.math.script.Script;
+import fun.Fear.events.item.UsingItemEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class NoSlow extends Module {

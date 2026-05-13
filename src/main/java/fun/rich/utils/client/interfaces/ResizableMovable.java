@@ -1,4 +1,4 @@
-package fun.rich.utils.client.interfaces;
+package fun.Fear.utils.client.interfaces;
 
 public interface ResizableMovable {
     ResizableMovable position(float x, float y);

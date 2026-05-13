@@ -1,9 +1,9 @@
-package fun.rich.utils.interactions.inv;
+package fun.Fear.utils.interactions.inv;
 
 import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-import static fun.rich.utils.display.interfaces.QuickImports.mc;
+import static fun.Fear.utils.display.interfaces.QuickImports.mc;
 
 public record InventoryResult(int slot, boolean found, ItemStack stack) {
     private static final InventoryResult NOT_FOUND_RESULT = new InventoryResult(-1, false, null);

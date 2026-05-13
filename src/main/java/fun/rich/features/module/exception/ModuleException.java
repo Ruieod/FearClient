@@ -1,4 +1,4 @@
-package fun.rich.features.module.exception;
+package fun.Fear.features.module.exception;
 
 import lombok.EqualsAndHashCode;
 import lombok.Value;

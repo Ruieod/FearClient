@@ -1,5 +1,5 @@
-package fun.rich.utils.client.window;
-import fun.rich.features.impl.misc.SelfDestruct;
+package fun.Fear.utils.client.window;
+import fun.Fear.features.impl.misc.SelfDestruct;
 import org.lwjgl.glfw.GLFWNativeWin32;
 import com.sun.jna.*;
 import com.sun.jna.platform.win32.WinDef.*;

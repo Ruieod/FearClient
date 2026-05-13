@@ -1,18 +1,18 @@
-package fun.rich.mixins.player.input;
+package fun.Fear.mixins.player.input;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import fun.rich.utils.features.aura.warp.Turns;
+import fun.Fear.utils.features.aura.warp.Turns;
 import net.minecraft.client.input.KeyboardInput;
 import net.minecraft.util.PlayerInput;
 import net.minecraft.util.math.MathHelper;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.utils.interactions.inv.InventoryFlowManager;
-import fun.rich.events.player.InputEvent;
-import fun.rich.utils.features.aura.warp.TurnsConstructor;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.utils.interactions.inv.InventoryFlowManager;
+import fun.Fear.events.player.InputEvent;
+import fun.Fear.utils.features.aura.warp.TurnsConstructor;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
 
 @Mixin(KeyboardInput.class)
 public class KeyboardInputMixin extends InputMixin {

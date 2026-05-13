@@ -1,4 +1,4 @@
-package fun.rich.common.discord.utils;
+package fun.Fear.common.discord.utils;
 
 import com.sun.jna.Structure;
 
@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class DiscordRichPresence extends Structure {
+public class DiscordFearPresence extends Structure {
     public String largeImageKey;
     public String largeImageText;
     public String smallImageText;
@@ -29,7 +29,7 @@ public class DiscordRichPresence extends Structure {
     public String button_url_2;
     public String button_label_2;
 
-    public DiscordRichPresence() {
+    public DiscordFearPresence() {
         this.setStringEncoding("UTF-8");
     }
 
@@ -38,7 +38,7 @@ public class DiscordRichPresence extends Structure {
     }
 
     public static class Builder {
-        private final DiscordRichPresence richPresence = new DiscordRichPresence();
+        private final DiscordFearPresence FearPresence = new DiscordFearPresence();
 
         public Builder setSmallImage(String var1) {
             return this.setSmallImage(var1, "");
@@ -46,29 +46,29 @@ public class DiscordRichPresence extends Structure {
 
         public Builder setDetails(String var1) {
             if (var1 != null && !var1.isEmpty()) {
-                this.richPresence.details = var1.substring(0, Math.min(var1.length(), 128));
+                this.FearPresence.details = var1.substring(0, Math.min(var1.length(), 128));
             }
 
             return this;
         }
 
         public Builder setLargeImage(String var1, String var2) {
-            this.richPresence.largeImageKey = var1;
-            this.richPresence.largeImageText = var2;
+            this.FearPresence.largeImageKey = var1;
+            this.FearPresence.largeImageText = var2;
             return this;
         }
 
         public Builder setState(String var1) {
             if (var1 != null && !var1.isEmpty()) {
-                this.richPresence.state = var1.substring(0, Math.min(var1.length(), 128));
+                this.FearPresence.state = var1.substring(0, Math.min(var1.length(), 128));
             }
 
             return this;
         }
 
         public Builder setInstance(boolean var1) {
-            if ((this.richPresence.button_label_1 == null || !this.richPresence.button_label_1.isEmpty()) && (this.richPresence.button_label_2 == null || !this.richPresence.button_label_2.isEmpty())) {
-                this.richPresence.instance = var1 ? 1 : 0;
+            if ((this.FearPresence.button_label_1 == null || !this.FearPresence.button_label_1.isEmpty()) && (this.FearPresence.button_label_2 == null || !this.FearPresence.button_label_2.isEmpty())) {
+                this.FearPresence.instance = var1 ? 1 : 0;
             }
             return this;
         }
@@ -78,8 +78,8 @@ public class DiscordRichPresence extends Structure {
         }
 
         public Builder setSmallImage(String var1, String var2) {
-            this.richPresence.smallImageKey = var1;
-            this.richPresence.smallImageText = var2;
+            this.FearPresence.smallImageKey = var1;
+            this.FearPresence.smallImageText = var2;
             return this;
         }
 
@@ -87,11 +87,11 @@ public class DiscordRichPresence extends Structure {
         public Builder setButtons(List<RPCButton> buttons) {
             if (buttons != null && !buttons.isEmpty()) {
                 int var2 = Math.min(buttons.size(), 2);
-                this.richPresence.button_label_1 = buttons.get(0).getLabel();
-                this.richPresence.button_url_1 = buttons.get(0).getUrl();
+                this.FearPresence.button_label_1 = buttons.get(0).getLabel();
+                this.FearPresence.button_url_1 = buttons.get(0).getUrl();
                 if (var2 == 2) {
-                    this.richPresence.button_label_2 = buttons.get(1).getLabel();
-                    this.richPresence.button_url_2 = buttons.get(1).getUrl();
+                    this.FearPresence.button_label_2 = buttons.get(1).getLabel();
+                    this.FearPresence.button_url_2 = buttons.get(1).getUrl();
                 }
             }
 
@@ -99,15 +99,15 @@ public class DiscordRichPresence extends Structure {
         }
 
         public Builder setStartTimestamp(OffsetDateTime var1) {
-            this.richPresence.startTimestamp = var1.toEpochSecond();
+            this.FearPresence.startTimestamp = var1.toEpochSecond();
             return this;
         }
 
         public Builder setSecrets(String var1, String var2, String var3) {
-            if ((this.richPresence.button_label_1 == null || !this.richPresence.button_label_1.isEmpty()) && (this.richPresence.button_label_2 == null || !this.richPresence.button_label_2.isEmpty())) {
-                this.richPresence.matchSecret = var1;
-                this.richPresence.joinSecret = var2;
-                this.richPresence.spectateSecret = var3;
+            if ((this.FearPresence.button_label_1 == null || !this.FearPresence.button_label_1.isEmpty()) && (this.FearPresence.button_label_2 == null || !this.FearPresence.button_label_2.isEmpty())) {
+                this.FearPresence.matchSecret = var1;
+                this.FearPresence.joinSecret = var2;
+                this.FearPresence.spectateSecret = var3;
             }
             return this;
         }
@@ -118,25 +118,25 @@ public class DiscordRichPresence extends Structure {
         }
 
         public Builder setStartTimestamp(long var1) {
-            this.richPresence.startTimestamp = var1;
+            this.FearPresence.startTimestamp = var1;
             return this;
         }
 
         public Builder setSecrets(String var1, String var2) {
-            if ((this.richPresence.button_label_1 == null || !this.richPresence.button_label_1.isEmpty()) && (this.richPresence.button_label_2 == null || !this.richPresence.button_label_2.isEmpty())) {
-                this.richPresence.joinSecret = var1;
-                this.richPresence.spectateSecret = var2;
+            if ((this.FearPresence.button_label_1 == null || !this.FearPresence.button_label_1.isEmpty()) && (this.FearPresence.button_label_2 == null || !this.FearPresence.button_label_2.isEmpty())) {
+                this.FearPresence.joinSecret = var1;
+                this.FearPresence.spectateSecret = var2;
             }
             return this;
         }
 
         public Builder setEndTimestamp(long var1) {
-            this.richPresence.endTimestamp = var1;
+            this.FearPresence.endTimestamp = var1;
             return this;
         }
 
         public Builder setEndTimestamp(OffsetDateTime var1) {
-            this.richPresence.endTimestamp = var1.toEpochSecond();
+            this.FearPresence.endTimestamp = var1.toEpochSecond();
             return this;
         }
 
@@ -144,8 +144,8 @@ public class DiscordRichPresence extends Structure {
             return this.setLargeImage(var1, "");
         }
 
-        public DiscordRichPresence build() {
-            return this.richPresence;
+        public DiscordFearPresence build() {
+            return this.FearPresence;
         }
     }
 }

@@ -1,4 +1,4 @@
-package fun.rich.utils.math.time;
+package fun.Fear.utils.math.time;
 
 import lombok.Getter;
 

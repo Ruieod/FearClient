@@ -1,4 +1,4 @@
-package fun.rich.utils.client.managers.event.types;
+package fun.Fear.utils.client.managers.event.types;
 
 public final class Priority {
 

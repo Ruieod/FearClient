@@ -1,6 +1,6 @@
-package fun.rich.utils.client.managers.api.command.exception;
+package fun.Fear.utils.client.managers.api.command.exception;
 
-import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
 
 public class CommandInvalidTypeException extends CommandInvalidArgumentException {
 

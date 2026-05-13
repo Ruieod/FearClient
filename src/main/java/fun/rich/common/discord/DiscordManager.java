@@ -1,12 +1,12 @@
-package fun.rich.common.discord;
+package fun.Fear.common.discord;
 import antidaunleak.api.UserProfile;
 import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.util.Identifier;
-import fun.rich.common.discord.utils.*;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.client.discord.Buffer;
-import fun.rich.Rich;
+import fun.Fear.common.discord.utils.*;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.client.discord.Buffer;
+import fun.Fear.Fear;
 import java.io.IOException;
 
 @Setter
@@ -25,20 +25,20 @@ public class DiscordManager implements QuickImports {
 
         DiscordEventHandlers handlers = new DiscordEventHandlers.Builder()
                 .ready((user) -> {
-                    Rich.getInstance().getDiscordManager().setInfo(
+                    Fear.getInstance().getDiscordManager().setInfo(
                             new DiscordInfo(user.username,
                                     "https://cdn.discordapp.com/avatars/" + user.userId + "/" + user.avatar + ".png",
                                     user.userId));
-                    DiscordRichPresence richPresence = new DiscordRichPresence.Builder()
+                    DiscordFearPresence FearPresence = new DiscordFearPresence.Builder()
                             .setStartTimestamp(System.currentTimeMillis() / 1000)
                             .setDetails("User: " + UserProfile.getInstance().profile("username"))
                             .setState("Uid: " + UserProfile.getInstance().profile("uid"))
-                            .setLargeImage("https://i.postimg.cc/nznMWbhM/0001-0250.gif", "https://richclient.fun/")
-                            .setSmallImage(Rich.getInstance().getDiscordManager().getInfo().avatarUrl, "https://richclient.fun/")
-                            .setButtons(RPCButton.create("Телеграм", "https://t.me/richclientnew"),
+                            .setLargeImage("https://i.postimg.cc/nznMWbhM/0001-0250.gif", "https://Fearclient.fun/")
+                            .setSmallImage(Fear.getInstance().getDiscordManager().getInfo().avatarUrl, "https://Fearclient.fun/")
+                            .setButtons(RPCButton.create("Телеграм", "https://t.me/Fearclientnew"),
                                     RPCButton.create("Дискорд", "https://discord.gg/zYctK4mjZZ"))
                             .build();
-                    DiscordRPC.INSTANCE.Discord_UpdatePresence(richPresence);
+                    DiscordRPC.INSTANCE.Discord_UpdatePresence(FearPresence);
                 }).build();
         DiscordRPC.INSTANCE.Discord_Initialize("1419653405265105021", handlers, true, "");
         discordDaemonThread.start();
@@ -64,7 +64,7 @@ public class DiscordManager implements QuickImports {
         public void run() {
             this.setName("Discord-RPC");
             try {
-                while (Rich.getInstance().getDiscordManager().isRunning()) {
+                while (Fear.getInstance().getDiscordManager().isRunning()) {
                     DiscordRPC.INSTANCE.Discord_RunCallbacks();
                     load();
                     Thread.sleep(15000);

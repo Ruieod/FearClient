@@ -15,11 +15,11 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package fun.rich.utils.client.managers.api.command.argparser;
+package fun.Fear.utils.client.managers.api.command.argparser;
 
-import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
-import fun.rich.utils.client.managers.api.command.exception.CommandInvalidTypeException;
-import fun.rich.utils.client.managers.api.command.registry.Registry;
+import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.Fear.utils.client.managers.api.command.exception.CommandInvalidTypeException;
+import fun.Fear.utils.client.managers.api.command.registry.Registry;
 
 /**
  * Used to retrieve {@link IArgParser} instances from the registry, by their target class.

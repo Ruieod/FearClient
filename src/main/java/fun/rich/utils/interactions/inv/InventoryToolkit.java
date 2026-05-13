@@ -1,4 +1,4 @@
-package fun.rich.utils.interactions.inv;
+package fun.Fear.utils.interactions.inv;
 
 import net.minecraft.client.network.SequencedPacketCreator;
 import net.minecraft.item.AxeItem;
@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.c2s.play.UpdateSelectedSlotC2SPacket;
 import net.minecraft.screen.slot.SlotActionType;
-import fun.rich.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.interfaces.QuickImports;
 
 import java.util.Arrays;
 import java.util.List;

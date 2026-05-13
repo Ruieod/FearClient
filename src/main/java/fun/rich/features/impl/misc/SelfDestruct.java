@@ -1,18 +1,18 @@
-package fun.rich.features.impl.misc;
+package fun.Fear.features.impl.misc;
 
 import antidaunleak.api.UserProfile;
-import fun.rich.Rich;
-import fun.rich.common.discord.DiscordManager;
-import fun.rich.events.chat.ChatEvent;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.utils.client.chat.ChatMessage;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.client.managers.file.FileRepository;
-import fun.rich.utils.client.managers.file.exception.FileLoadException;
-import fun.rich.utils.client.managers.file.impl.PrefixFile;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.utils.math.time.StopWatch;
+import fun.Fear.Fear;
+import fun.Fear.common.discord.DiscordManager;
+import fun.Fear.events.chat.ChatEvent;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.utils.client.chat.ChatMessage;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.client.managers.file.FileRepository;
+import fun.Fear.utils.client.managers.file.exception.FileLoadException;
+import fun.Fear.utils.client.managers.file.impl.PrefixFile;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.utils.math.time.StopWatch;
 import lombok.experimental.NonFinal;
 import org.apache.logging.log4j.core.appender.rolling.action.IfAll;
 import org.lwjgl.glfw.GLFW;
@@ -31,9 +31,9 @@ public class SelfDestruct extends Module {
     public void activate() {
         unhooked = true;
 
-        Rich.getInstance().getDiscordManager().stopRPC();
+        Fear.getInstance().getDiscordManager().stopRPC();
 
-        for (Module module : Rich.getInstance().getModuleProvider().getModules()) {
+        for (Module module : Fear.getInstance().getModuleProvider().getModules()) {
             if (module != this && module.isState()) {
                 module.setState(false);
             }
@@ -45,11 +45,11 @@ public class SelfDestruct extends Module {
             mc.inGameHud.getChatHud().clear(true);
         }
 
-        for (Module module : Rich.getInstance().getModuleProvider().getModules()) {
+        for (Module module : Fear.getInstance().getModuleProvider().getModules()) {
             module.setKey(GLFW.GLFW_KEY_UNKNOWN);
         }
 
-        Rich.getInstance().getCommandDispatcher().prefix = "" + Calculate.getRandom(0, 9999999);
+        Fear.getInstance().getCommandDispatcher().prefix = "" + Calculate.getRandom(0, 9999999);
 
         super.activate();
     }
@@ -59,9 +59,9 @@ public class SelfDestruct extends Module {
         String msg = event.getMessage().trim();
         if (msg.equalsIgnoreCase(UserProfile.getInstance().profile("username"))) {
             unhooked = false;
-            Rich.getInstance().getDiscordManager().setRunning(true);
+            Fear.getInstance().getDiscordManager().setRunning(true);
             state = false;
-            Rich.getInstance().getCommandDispatcher().prefix = ".";
+            Fear.getInstance().getCommandDispatcher().prefix = ".";
             ChatMessage.brandmessage("Unhook reset to FALSE");
             event.setCancelled(true);
         }

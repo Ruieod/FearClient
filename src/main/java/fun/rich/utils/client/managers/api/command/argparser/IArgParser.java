@@ -1,6 +1,6 @@
-package fun.rich.utils.client.managers.api.command.argparser;
+package fun.Fear.utils.client.managers.api.command.argparser;
 
-import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
 
 public interface IArgParser<T> {
     Class<T> getTarget();

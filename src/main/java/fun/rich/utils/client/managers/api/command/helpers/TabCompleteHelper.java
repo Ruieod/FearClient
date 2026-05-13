@@ -15,12 +15,12 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package fun.rich.utils.client.managers.api.command.helpers;
+package fun.Fear.utils.client.managers.api.command.helpers;
 
 
 import net.minecraft.util.Identifier;
-import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.rich.utils.client.managers.api.command.manager.ICommandManager;
+import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.Fear.utils.client.managers.api.command.manager.ICommandManager;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;

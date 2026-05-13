@@ -1,6 +1,6 @@
-package fun.rich.mixins.player.input;
+package fun.Fear.mixins.player.input;
 
-import fun.rich.commands.defaults.BindCommand;
+import fun.Fear.commands.defaults.BindCommand;
 import net.minecraft.client.Keyboard;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.InputUtil;
@@ -11,9 +11,9 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.events.keyboard.KeyEvent;
-import fun.rich.display.screens.clickgui.MenuScreen;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.events.keyboard.KeyEvent;
+import fun.Fear.display.screens.clickgui.MenuScreen;
 
 @Mixin(Keyboard.class)
 public class KeyboardMixin {

@@ -1,18 +1,18 @@
-package fun.rich.display.screens.clickgui.components.implement.settings;
+package fun.Fear.display.screens.clickgui.components.implement.settings;
 
-import fun.rich.display.screens.clickgui.components.implement.other.SettingComponent;
+import fun.Fear.display.screens.clickgui.components.implement.other.SettingComponent;
 import net.minecraft.client.gui.DrawContext;
 
-import fun.rich.features.module.setting.implement.GroupSetting;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.display.screens.clickgui.components.implement.window.AbstractWindow;
-import fun.rich.display.screens.clickgui.components.implement.window.implement.settings.group.GroupWindow;
-import fun.rich.display.screens.clickgui.components.implement.other.CheckComponent;
+import fun.Fear.features.module.setting.implement.GroupSetting;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.display.screens.clickgui.components.implement.window.AbstractWindow;
+import fun.Fear.display.screens.clickgui.components.implement.window.implement.settings.group.GroupWindow;
+import fun.Fear.display.screens.clickgui.components.implement.other.CheckComponent;
 
 import java.awt.*;
 
-import static fun.rich.utils.display.font.Fonts.Type.*;
-import static fun.rich.utils.display.font.Fonts.Type.DEFAULT;
+import static fun.Fear.utils.display.font.Fonts.Type.*;
+import static fun.Fear.utils.display.font.Fonts.Type.DEFAULT;
 
 public class GroupComponent extends AbstractSettingComponent {
     private final CheckComponent checkComponent = new CheckComponent();

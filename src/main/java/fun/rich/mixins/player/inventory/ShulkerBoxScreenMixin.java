@@ -1,8 +1,8 @@
-package fun.rich.mixins.player.inventory;
+package fun.Fear.mixins.player.inventory;
 
-import fun.rich.display.screens.clickgui.components.implement.autobuy.manager.AutoBuyManager;
-import fun.rich.features.impl.misc.SelfDestruct;
-import fun.rich.utils.display.widget.ContainerBackgroundRender;
+import fun.Fear.display.screens.clickgui.components.implement.autobuy.manager.AutoBuyManager;
+import fun.Fear.features.impl.misc.SelfDestruct;
+import fun.Fear.utils.display.widget.ContainerBackgroundRender;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.ShulkerBoxScreen;

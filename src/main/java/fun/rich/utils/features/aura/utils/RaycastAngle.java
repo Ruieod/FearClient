@@ -1,7 +1,7 @@
-package fun.rich.utils.features.aura.utils;
+package fun.Fear.utils.features.aura.utils;
 
-import fun.rich.utils.features.aura.warp.Turns;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.utils.features.aura.warp.Turns;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
 import lombok.experimental.UtilityClass;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.projectile.ProjectileUtil;
@@ -11,8 +11,8 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.utils.features.aura.striking.StrikerConstructor;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.features.aura.striking.StrikerConstructor;
 
 import java.util.Objects;
 import java.util.function.Predicate;

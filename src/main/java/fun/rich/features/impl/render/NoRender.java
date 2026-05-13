@@ -1,11 +1,11 @@
-package fun.rich.features.impl.render;
+package fun.Fear.features.impl.render;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.MultiSelectSetting;
-import fun.rich.utils.client.Instance;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.MultiSelectSetting;
+import fun.Fear.utils.client.Instance;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class NoRender extends Module {

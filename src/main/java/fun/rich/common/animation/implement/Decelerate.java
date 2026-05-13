@@ -1,6 +1,6 @@
-package fun.rich.common.animation.implement;
+package fun.Fear.common.animation.implement;
 
-import fun.rich.common.animation.Animation;
+import fun.Fear.common.animation.Animation;
 
 public class Decelerate extends Animation {
 

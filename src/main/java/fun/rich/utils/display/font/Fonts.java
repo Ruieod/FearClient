@@ -1,9 +1,9 @@
-package fun.rich.utils.display.font;
+package fun.Fear.utils.display.font;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import fun.rich.Rich;
+import fun.Fear.Fear;
 
 import java.awt.*;
 import java.io.InputStream;
@@ -17,7 +17,7 @@ public class Fonts {
     public static FontRenderer create(float size, String name) {
         String path = "assets/minecraft/fonts/" + name + ".ttf";
 
-        try (InputStream inputStream = Objects.requireNonNull(Rich.class.getClassLoader().getResourceAsStream(path))) {
+        try (InputStream inputStream = Objects.requireNonNull(Fear.class.getClassLoader().getResourceAsStream(path))) {
             Font font = Font.createFont(Font.TRUETYPE_FONT, inputStream).deriveFont(size / 2f);
 
             return new FontRenderer(font, size / 2f);
@@ -54,8 +54,8 @@ public class Fonts {
         BOLDED("bold"),
         MANROPEEXTRABOLD("manropeextrabold"),
         MANROPEBOLD("manropebold"),
-        RICHREGULAR("rich_regular"),
-        ICONRICHREG("iconrichreg"),
+        FearREGULAR("Fear_regular"),
+        ICONFearREG("iconFearreg"),
         INST("suisseintl"),
         ICONS("icons"),
         ICONSTYPENEW("icon2"),

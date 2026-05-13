@@ -1,12 +1,12 @@
-package fun.rich.events.render;
+package fun.Fear.events.render;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.client.gui.DrawContext;
-import fun.rich.utils.client.managers.event.events.Event;
-import fun.rich.utils.display.draw.DrawEngine;
+import fun.Fear.utils.client.managers.event.events.Event;
+import fun.Fear.utils.display.draw.DrawEngine;
 
 @Getter
 @AllArgsConstructor

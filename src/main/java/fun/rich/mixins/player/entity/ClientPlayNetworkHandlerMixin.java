@@ -1,4 +1,4 @@
-package fun.rich.mixins.player.entity;
+package fun.Fear.mixins.player.entity;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -14,10 +14,10 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.events.block.BlockUpdateEvent;
-import fun.rich.events.chat.ChatEvent;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.events.block.BlockUpdateEvent;
+import fun.Fear.events.chat.ChatEvent;
 
 import java.util.ArrayList;
 import java.util.List;

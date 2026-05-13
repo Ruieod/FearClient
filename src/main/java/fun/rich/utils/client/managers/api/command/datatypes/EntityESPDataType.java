@@ -1,9 +1,9 @@
-package fun.rich.utils.client.managers.api.command.datatypes;
+package fun.Fear.utils.client.managers.api.command.datatypes;
 
 import net.minecraft.entity.EntityType;
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.rich.Rich;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.Fear;
 
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -28,6 +28,6 @@ public enum EntityESPDataType implements IDatatypeFor<EntityType<?>> {
     }
 
     private Stream<EntityType<?>> getEntities() {
-        return Rich.getInstance().getBoxESPRepository().entities.keySet().stream();
+        return Fear.getInstance().getBoxESPRepository().entities.keySet().stream();
     }
 }

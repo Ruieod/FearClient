@@ -1,9 +1,9 @@
-package fun.rich.utils.client.managers.api.command.datatypes;
+package fun.Fear.utils.client.managers.api.command.datatypes;
 
-import fun.rich.utils.client.managers.api.command.exception.CommandException;
-import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.rich.common.repository.way.Way;
-import fun.rich.Rich;
+import fun.Fear.utils.client.managers.api.command.exception.CommandException;
+import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.Fear.common.repository.way.Way;
+import fun.Fear.Fear;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -25,6 +25,6 @@ public enum WayDataType implements IDatatypeFor<Way> {
     }
 
     private List<? extends Way> getWay() {
-        return Rich.getInstance().getWayRepository().wayList;
+        return Fear.getInstance().getWayRepository().wayList;
     }
 }

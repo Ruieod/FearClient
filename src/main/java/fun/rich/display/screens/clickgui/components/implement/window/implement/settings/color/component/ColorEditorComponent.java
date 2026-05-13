@@ -1,13 +1,13 @@
-package fun.rich.display.screens.clickgui.components.implement.window.implement.settings.color.component;
+package fun.Fear.display.screens.clickgui.components.implement.window.implement.settings.color.component;
 
 import lombok.RequiredArgsConstructor;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 
-import fun.rich.features.module.setting.implement.ColorSetting;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.features.module.setting.implement.ColorSetting;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
 
 @RequiredArgsConstructor
 public class ColorEditorComponent extends AbstractComponent {

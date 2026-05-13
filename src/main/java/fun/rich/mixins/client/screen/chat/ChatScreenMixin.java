@@ -1,4 +1,4 @@
-package fun.rich.mixins.client.screen.chat;
+package fun.Fear.mixins.client.screen.chat;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ChatScreen;
@@ -10,17 +10,17 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import fun.rich.Rich;
-import fun.rich.utils.client.managers.api.draggable.AbstractDraggable;
-import fun.rich.utils.display.interfaces.QuickImports;
-import fun.rich.features.impl.render.Hud;
+import fun.Fear.Fear;
+import fun.Fear.utils.client.managers.api.draggable.AbstractDraggable;
+import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.Fear.features.impl.render.Hud;
 
 import java.util.List;
 
 @Mixin(ChatScreen.class)
 public class ChatScreenMixin extends Screen implements QuickImports {
     @Unique
-    List<AbstractDraggable> draggables = Rich.getInstance().getDraggableRepository().draggable();
+    List<AbstractDraggable> draggables = Fear.getInstance().getDraggableRepository().draggable();
 
     protected ChatScreenMixin() {
         super(Text.empty());

@@ -1,25 +1,25 @@
-package fun.rich.display.screens.clickgui.components.implement.settings.multiselect;
+package fun.Fear.display.screens.clickgui.components.implement.settings.multiselect;
 
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
-import fun.rich.features.module.setting.implement.MultiSelectSetting;
-import fun.rich.common.animation.Animation;
-import fun.rich.common.animation.Direction;
-import fun.rich.common.animation.implement.Decelerate;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.display.screens.clickgui.components.implement.settings.select.SelectedButton;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.features.module.setting.implement.MultiSelectSetting;
+import fun.Fear.common.animation.Animation;
+import fun.Fear.common.animation.Direction;
+import fun.Fear.common.animation.implement.Decelerate;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.display.screens.clickgui.components.implement.settings.select.SelectedButton;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import static fun.rich.utils.display.font.Fonts.Type.BOLD;
+import static fun.Fear.utils.display.font.Fonts.Type.BOLD;
 
 public class MultiSelectedButton extends AbstractComponent {
     private final MultiSelectSetting setting;

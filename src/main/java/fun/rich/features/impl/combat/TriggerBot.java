@@ -1,26 +1,26 @@
-package fun.rich.features.impl.combat;
+package fun.Fear.features.impl.combat;
 
 import antidaunleak.api.annotation.Native;
-import fun.rich.events.player.RotationUpdateEvent;
-import fun.rich.events.player.TickEvent;
-import fun.rich.events.packet.PacketEvent;
-import fun.rich.events.render.WorldRenderEvent;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.*;
-import fun.rich.utils.client.Instance;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.utils.client.managers.event.types.EventType;
-import fun.rich.utils.features.aura.striking.StrikeManager;
-import fun.rich.utils.features.aura.striking.StrikerConstructor;
-import fun.rich.utils.features.aura.target.TargetFinder;
-import fun.rich.utils.features.aura.warp.TurnsConnection;
-import fun.rich.utils.features.aura.point.MultiPoint;
-import fun.rich.utils.features.aura.rotations.constructor.RotateConstructor;
-import fun.rich.utils.features.aura.rotations.constructor.LinearConstructor;
-import fun.rich.utils.features.aura.utils.MathAngle;
-import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
-import fun.rich.Rich;
+import fun.Fear.events.player.RotationUpdateEvent;
+import fun.Fear.events.player.TickEvent;
+import fun.Fear.events.packet.PacketEvent;
+import fun.Fear.events.render.WorldRenderEvent;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.*;
+import fun.Fear.utils.client.Instance;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.utils.client.managers.event.types.EventType;
+import fun.Fear.utils.features.aura.striking.StrikeManager;
+import fun.Fear.utils.features.aura.striking.StrikerConstructor;
+import fun.Fear.utils.features.aura.target.TargetFinder;
+import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.Fear.utils.features.aura.point.MultiPoint;
+import fun.Fear.utils.features.aura.rotations.constructor.RotateConstructor;
+import fun.Fear.utils.features.aura.rotations.constructor.LinearConstructor;
+import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.Fear.Fear;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Pair;
 import net.minecraft.util.math.Box;
@@ -78,7 +78,7 @@ public class TriggerBot extends Module {
             case EventType.PRE -> target = updateTarget();
             case EventType.POST -> {
                 if (target != null) {
-                    Rich.getInstance().getAttackPerpetrator().performAttack(getConfig());
+                    Fear.getInstance().getAttackPerpetrator().performAttack(getConfig());
                 }
             }
         }

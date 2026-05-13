@@ -1,14 +1,14 @@
-package fun.rich.display.hud;
+package fun.Fear.display.hud;
 
 import antidaunleak.api.UserProfile;
 import com.google.common.base.Suppliers;
-import fun.rich.utils.client.managers.api.draggable.AbstractDraggable;
-import fun.rich.utils.display.atlasfont.msdf.MsdfFont;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.utils.display.systemrender.builders.Builder;
-import fun.rich.Rich;
-import fun.rich.utils.display.color.ColorAssist;
+import fun.Fear.utils.client.managers.api.draggable.AbstractDraggable;
+import fun.Fear.utils.display.atlasfont.msdf.MsdfFont;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.utils.display.systemrender.builders.Builder;
+import fun.Fear.Fear;
+import fun.Fear.utils.display.color.ColorAssist;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import org.joml.Matrix4f;
@@ -36,7 +36,7 @@ public class Watermark extends AbstractDraggable {
         MatrixStack matrix = e.getMatrices();
         Matrix4f matrix4f = matrix.peek().getPositionMatrix();
         String offset = "";
-        String name = Rich.getInstance().getClientInfoProvider().clientName() + offset;
+        String name = Fear.getInstance().getClientInfoProvider().clientName() + offset;
         String icon = "A ";
         String point = " • ";
         String username = UserProfile.getInstance().profile("username");

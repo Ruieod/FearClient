@@ -1,4 +1,4 @@
-package fun.rich.utils.interactions.simulate;
+package fun.Fear.utils.interactions.simulate;
 
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.projectile.ArrowEntity;
@@ -10,7 +10,7 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
-import fun.rich.utils.display.interfaces.QuickImports;
+import fun.Fear.utils.display.interfaces.QuickImports;
 
 public class ArrowSimulation implements QuickImports {
     public final ClientWorld world;

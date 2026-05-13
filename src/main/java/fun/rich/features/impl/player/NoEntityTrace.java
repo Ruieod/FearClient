@@ -1,9 +1,9 @@
-package fun.rich.features.impl.player;
+package fun.Fear.features.impl.player;
 
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.BooleanSetting;
-import fun.rich.utils.client.Instance;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.BooleanSetting;
+import fun.Fear.utils.client.Instance;
 
 public class NoEntityTrace extends Module {
 

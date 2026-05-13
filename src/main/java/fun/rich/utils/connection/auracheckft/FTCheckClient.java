@@ -1,6 +1,6 @@
-package fun.rich.utils.connection.auracheckft;
+package fun.Fear.utils.connection.auracheckft;
 
-import fun.rich.utils.client.chat.ChatMessage;
+import fun.Fear.utils.client.chat.ChatMessage;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 import org.java_websocket.client.WebSocketClient;

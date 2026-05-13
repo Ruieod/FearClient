@@ -1,4 +1,4 @@
-package fun.rich.features.impl.misc;
+package fun.Fear.features.impl.misc;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
@@ -7,19 +7,19 @@ import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
 import net.minecraft.network.packet.s2c.play.GameJoinS2CPacket;
 import net.minecraft.network.packet.s2c.play.PlayerRespawnS2CPacket;
 import net.minecraft.util.math.Vec3d;
-import fun.rich.utils.client.managers.event.EventHandler;
-import fun.rich.features.module.Module;
-import fun.rich.features.module.ModuleCategory;
-import fun.rich.features.module.setting.implement.BooleanSetting;
-import fun.rich.features.module.setting.implement.SliderSettings;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.utils.interactions.simulate.Simulations;
-import fun.rich.utils.client.Instance;
-import fun.rich.utils.display.geometry.Render3D;
-import fun.rich.events.packet.PacketEvent;
-import fun.rich.events.player.*;
-import fun.rich.events.render.CameraPositionEvent;
-import fun.rich.events.render.WorldRenderEvent;
+import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.Fear.features.module.Module;
+import fun.Fear.features.module.ModuleCategory;
+import fun.Fear.features.module.setting.implement.BooleanSetting;
+import fun.Fear.features.module.setting.implement.SliderSettings;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.utils.interactions.simulate.Simulations;
+import fun.Fear.utils.client.Instance;
+import fun.Fear.utils.display.geometry.Render3D;
+import fun.Fear.events.packet.PacketEvent;
+import fun.Fear.events.player.*;
+import fun.Fear.events.render.CameraPositionEvent;
+import fun.Fear.events.render.WorldRenderEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class FreeCam extends Module {

@@ -1,7 +1,7 @@
-package fun.rich.mixins.client.display.title;
+package fun.Fear.mixins.client.display.title;
 
-import fun.rich.display.screens.mainmenu.MainMenu;
-import fun.rich.features.impl.misc.SelfDestruct;
+import fun.Fear.display.screens.mainmenu.MainMenu;
+import fun.Fear.features.impl.misc.SelfDestruct;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;

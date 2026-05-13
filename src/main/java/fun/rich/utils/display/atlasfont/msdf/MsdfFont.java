@@ -1,14 +1,14 @@
-package fun.rich.utils.display.atlasfont.msdf;
+package fun.Fear.utils.display.atlasfont.msdf;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import fun.rich.utils.display.atlasfont.providers.ResourceProvider;
+import fun.Fear.utils.display.atlasfont.providers.ResourceProvider;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.texture.AbstractTexture;
 import net.minecraft.util.Identifier;
 import org.joml.Matrix4f;
-import fun.rich.utils.display.atlasfont.msdf.FontData.AtlasData;
-import fun.rich.utils.display.atlasfont.msdf.FontData.MetricsData;
+import fun.Fear.utils.display.atlasfont.msdf.FontData.AtlasData;
+import fun.Fear.utils.display.atlasfont.msdf.FontData.MetricsData;
 
 import java.util.HashMap;
 import java.util.Map;

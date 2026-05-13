@@ -1,11 +1,11 @@
-package fun.rich.mixins.client.display.text;
+package fun.Fear.mixins.client.display.text;
 
 import net.minecraft.text.TextVisitFactory;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
-import fun.rich.utils.client.managers.event.EventManager;
-import fun.rich.events.render.TextFactoryEvent;
+import fun.Fear.utils.client.managers.event.EventManager;
+import fun.Fear.events.render.TextFactoryEvent;
 
 @Mixin(value = {TextVisitFactory.class})
     public class TextVisitFactoryMixin {

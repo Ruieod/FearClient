@@ -1,13 +1,13 @@
-package fun.rich.utils.client.managers.event;
+package fun.Fear.utils.client.managers.event;
 
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
-import fun.rich.utils.client.managers.event.events.Event;
-import fun.rich.utils.client.managers.event.events.EventStoppable;
-import fun.rich.utils.client.managers.event.types.Priority;
-import fun.rich.common.logger.implement.ConsoleLogger;
-import fun.rich.common.logger.implement.MinecraftLogger;
-import fun.rich.features.module.exception.ModuleException;
+import fun.Fear.utils.client.managers.event.events.Event;
+import fun.Fear.utils.client.managers.event.events.EventStoppable;
+import fun.Fear.utils.client.managers.event.types.Priority;
+import fun.Fear.common.logger.implement.ConsoleLogger;
+import fun.Fear.common.logger.implement.MinecraftLogger;
+import fun.Fear.features.module.exception.ModuleException;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

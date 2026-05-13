@@ -1,19 +1,19 @@
-package fun.rich.display.screens.clickgui.components.implement.window.implement.settings.group;
+package fun.Fear.display.screens.clickgui.components.implement.window.implement.settings.group;
 import lombok.Getter;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
-import fun.rich.features.module.setting.SettingComponentAdder;
-import fun.rich.features.module.setting.implement.GroupSetting;
-import fun.rich.utils.display.font.Fonts;
-import fun.rich.utils.display.shape.ShapeProperties;
-import fun.rich.display.screens.clickgui.components.implement.settings.AbstractSettingComponent;
-import fun.rich.display.screens.clickgui.components.implement.window.AbstractWindow;
-import fun.rich.utils.display.color.ColorAssist;
-import fun.rich.utils.math.calc.Calculate;
-import fun.rich.utils.display.scissor.ScissorAssist;
-import fun.rich.Rich;
-import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.Fear.features.module.setting.SettingComponentAdder;
+import fun.Fear.features.module.setting.implement.GroupSetting;
+import fun.Fear.utils.display.font.Fonts;
+import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.Fear.display.screens.clickgui.components.implement.settings.AbstractSettingComponent;
+import fun.Fear.display.screens.clickgui.components.implement.window.AbstractWindow;
+import fun.Fear.utils.display.color.ColorAssist;
+import fun.Fear.utils.math.calc.Calculate;
+import fun.Fear.utils.display.scissor.ScissorAssist;
+import fun.Fear.Fear;
+import fun.Fear.display.screens.clickgui.components.AbstractComponent;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +32,7 @@ public class GroupWindow extends AbstractWindow {
     @Override
     public void drawWindow(DrawContext context, int mouseX, int mouseY, float delta) {
         MatrixStack matrix = context.getMatrices();
-        ScissorAssist scissorManager = Rich.getInstance().getScissorManager();
+        ScissorAssist scissorManager = Fear.getInstance().getScissorManager();
         height = MathHelper.clamp(getComponentHeight(), 0, 200);
 
         rectangle.render(ShapeProperties.create(matrix, x, y, width  + 30, height).round(4).softness(2).thickness(1).outlineColor(new Color(75, 75, 75, 255).getRGB()).color(

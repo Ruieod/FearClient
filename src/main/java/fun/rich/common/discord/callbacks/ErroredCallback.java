@@ -1,4 +1,4 @@
-package fun.rich.common.discord.callbacks;
+package fun.Fear.common.discord.callbacks;
 
 import com.sun.jna.Callback;
 

@@ -1,4 +1,4 @@
-package fun.rich.display.screens.clickgui.components.implement.autobuy.items.defaultsetpricec;
+package fun.Fear.display.screens.clickgui.components.implement.autobuy.items.defaultsetpricec;
 
 import java.util.HashMap;
 import java.util.Map;
