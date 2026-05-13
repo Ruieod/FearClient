@@ -1,19 +1,19 @@
-package fun.Fear.utils.features.aura.rotations.impl;
+package fun.rich.utils.features.aura.rotations.impl;
 
-import fun.Fear.utils.features.aura.point.Vector;
-import fun.Fear.utils.features.aura.rotations.constructor.RotateConstructor;
-import fun.Fear.utils.features.aura.warp.Turns;
-import fun.Fear.utils.math.calc.Calculate;
+import fun.rich.utils.features.aura.point.Vector;
+import fun.rich.utils.features.aura.rotations.constructor.RotateConstructor;
+import fun.rich.utils.features.aura.warp.Turns;
+import fun.rich.utils.math.calc.Calculate;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
-import fun.Fear.features.impl.combat.Aura;
-import fun.Fear.Fear;
-import fun.Fear.utils.features.aura.striking.StrikeManager;
-import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.rich.features.impl.combat.Aura;
+import fun.rich.Rich;
+import fun.rich.utils.features.aura.striking.StrikeManager;
+import fun.rich.utils.features.aura.utils.MathAngle;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.LivingEntity;
-import fun.Fear.utils.math.time.StopWatch;
+import fun.rich.utils.math.time.StopWatch;
 
 import java.security.SecureRandom;
 
@@ -32,7 +32,7 @@ public class SPAngle extends RotateConstructor {
 
     @Override
     public Turns limitAngleChange(Turns currentAngle, Turns targetAngle, Vec3d vec3d, Entity entity) {
-        StrikeManager attackHandler = Fear.getInstance().getAttackPerpetrator().getAttackHandler();
+        StrikeManager attackHandler = Rich.getInstance().getAttackPerpetrator().getAttackHandler();
         Aura aura = Aura.getInstance();
 
         Turns delta = MathAngle.calculateDelta(currentAngle, targetAngle);

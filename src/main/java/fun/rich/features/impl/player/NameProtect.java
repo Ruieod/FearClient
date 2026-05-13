@@ -1,14 +1,14 @@
-package fun.Fear.features.impl.player;
+package fun.rich.features.impl.player;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.BooleanSetting;
-import fun.Fear.features.module.setting.implement.TextSetting;
-import fun.Fear.common.repository.friend.FriendUtils;
-import fun.Fear.events.render.TextFactoryEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.BooleanSetting;
+import fun.rich.features.module.setting.implement.TextSetting;
+import fun.rich.common.repository.friend.FriendUtils;
+import fun.rich.events.render.TextFactoryEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class NameProtect extends Module {

@@ -1,11 +1,11 @@
-package fun.Fear.events.player;
+package fun.rich.events.player;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.player.PlayerEntity;
-import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
+import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
 
 @Getter
 @AllArgsConstructor

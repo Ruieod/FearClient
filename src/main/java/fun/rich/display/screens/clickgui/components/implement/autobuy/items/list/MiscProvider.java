@@ -1,8 +1,8 @@
-package fun.Fear.display.screens.clickgui.components.implement.autobuy.items.list;
+package fun.rich.display.screens.clickgui.components.implement.autobuy.items.list;
 
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.util.krushprovider.KrushItem;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.defaultsetpricec.Defaultpricec;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.util.krushprovider.KrushItem;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.items.defaultsetpricec.Defaultpricec;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import java.util.ArrayList;

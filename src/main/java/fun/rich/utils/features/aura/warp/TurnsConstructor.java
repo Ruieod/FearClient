@@ -1,10 +1,10 @@
-package fun.Fear.utils.features.aura.warp;
+package fun.rich.utils.features.aura.warp;
 
-import fun.Fear.features.impl.combat.Aura;
-import fun.Fear.features.impl.movement.Strafe;
-import fun.Fear.features.impl.movement.TargetStrafe;
-import fun.Fear.features.impl.player.AutoPilot;
-import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.rich.features.impl.combat.Aura;
+import fun.rich.features.impl.movement.Strafe;
+import fun.rich.features.impl.movement.TargetStrafe;
+import fun.rich.features.impl.player.AutoPilot;
+import fun.rich.utils.features.aura.utils.MathAngle;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -12,8 +12,8 @@ import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.Vec3d;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.features.aura.rotations.constructor.RotateConstructor;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.features.aura.rotations.constructor.RotateConstructor;
 
 @Setter
 @Getter

@@ -1,4 +1,4 @@
-package fun.Fear.mixins.game.block;
+package fun.rich.mixins.game.block;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
@@ -7,8 +7,8 @@ import net.minecraft.world.BlockView;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.events.block.BlockCollisionEvent;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.events.block.BlockCollisionEvent;
 
 @Mixin(BlockCollisionSpliterator.class)
 public abstract class BlockCollisionSpliteratorMixin {

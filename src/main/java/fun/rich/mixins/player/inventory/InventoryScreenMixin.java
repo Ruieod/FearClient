@@ -1,6 +1,6 @@
-package fun.Fear.mixins.player.inventory;
+package fun.rich.mixins.player.inventory;
 
-import fun.Fear.features.impl.misc.SelfDestruct;
+import fun.rich.features.impl.misc.SelfDestruct;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;

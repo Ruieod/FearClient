@@ -1,11 +1,11 @@
-package fun.Fear.events.chat;
+package fun.rich.events.chat;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
-import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
+import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
 
 @AllArgsConstructor
 @Getter

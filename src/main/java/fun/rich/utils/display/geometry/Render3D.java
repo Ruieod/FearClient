@@ -1,8 +1,8 @@
-package fun.Fear.utils.display.geometry;
+package fun.rich.utils.display.geometry;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
-import fun.Fear.features.impl.render.TargetESP;
+import fun.rich.features.impl.render.TargetESP;
 import lombok.Setter;
 import lombok.experimental.UtilityClass;
 import net.minecraft.client.gl.ShaderProgramKeys;
@@ -20,11 +20,11 @@ import org.joml.Matrix4f;
 import org.joml.Vector3f;
 import org.joml.Vector4i;
 import org.lwjgl.opengl.GL11;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.math.projection.Projection;
-import fun.Fear.events.render.WorldRenderEvent;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.math.projection.Projection;
+import fun.rich.events.render.WorldRenderEvent;
 import java.util.*;
 import java.util.stream.Collectors;
 

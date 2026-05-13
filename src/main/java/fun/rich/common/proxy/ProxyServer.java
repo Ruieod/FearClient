@@ -1,4 +1,4 @@
-package fun.Fear.common.proxy;
+package fun.rich.common.proxy;
 
 import net.minecraft.client.gui.widget.ButtonWidget;
 

@@ -1,4 +1,4 @@
-package fun.Fear.display.screens.clickgui.components.implement.autobuy.util;
+package fun.rich.display.screens.clickgui.components.implement.autobuy.util;
 
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.ItemEnchantmentsComponent;

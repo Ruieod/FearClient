@@ -1,18 +1,18 @@
-package fun.Fear.utils.client.managers.file.impl;
+package fun.rich.utils.client.managers.file.impl;
 
 import antidaunleak.api.annotation.Native;
 import com.google.gson.*;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import fun.Fear.utils.client.managers.api.draggable.AbstractDraggable;
-import fun.Fear.utils.client.managers.api.draggable.DraggableRepository;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleRepository;
-import fun.Fear.features.module.setting.Setting;
-import fun.Fear.features.module.setting.implement.*;
-import fun.Fear.utils.client.managers.file.ClientFile;
-import fun.Fear.utils.client.managers.file.exception.FileLoadException;
-import fun.Fear.utils.client.managers.file.exception.FileSaveException;
+import fun.rich.utils.client.managers.api.draggable.AbstractDraggable;
+import fun.rich.utils.client.managers.api.draggable.DraggableRepository;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleRepository;
+import fun.rich.features.module.setting.Setting;
+import fun.rich.features.module.setting.implement.*;
+import fun.rich.utils.client.managers.file.ClientFile;
+import fun.rich.utils.client.managers.file.exception.FileLoadException;
+import fun.rich.utils.client.managers.file.exception.FileSaveException;
 
 import java.io.File;
 import java.io.FileReader;

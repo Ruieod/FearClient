@@ -1,8 +1,8 @@
-package fun.Fear.utils.connection.cloud;
+package fun.rich.utils.connection.cloud;
 
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
-import fun.Fear.utils.client.logs.Logger;
+import fun.rich.utils.client.logs.Logger;
 
 import java.net.URI;
 import java.util.concurrent.CountDownLatch;

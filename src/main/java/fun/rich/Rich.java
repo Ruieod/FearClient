@@ -1,35 +1,35 @@
-package fun.Fear;
+package fun.rich;
 
 import antidaunleak.api.annotation.Native;
 import antidaunleak.api.UserProfile;
-import fun.Fear.commands.manager.CommandRepository;
-import fun.Fear.utils.client.managers.file.exception.FileProcessingException;
-import fun.Fear.utils.client.chat.ChatMessage;
-import fun.Fear.utils.client.logs.Logger;
-import fun.Fear.utils.connection.auracheckft.FTCheckClient;
-import fun.Fear.utils.connection.irc.IRCManager;
-import fun.Fear.utils.connection.tps.TPSCalculate;
-import fun.Fear.utils.display.scissor.ScissorAssist;
+import fun.rich.commands.manager.CommandRepository;
+import fun.rich.utils.client.managers.file.exception.FileProcessingException;
+import fun.rich.utils.client.chat.ChatMessage;
+import fun.rich.utils.client.logs.Logger;
+import fun.rich.utils.connection.auracheckft.FTCheckClient;
+import fun.rich.utils.connection.irc.IRCManager;
+import fun.rich.utils.connection.tps.TPSCalculate;
+import fun.rich.utils.display.scissor.ScissorAssist;
 import net.fabricmc.api.ModInitializer;
-import fun.Fear.common.repository.box.BoxESPRepository;
-import fun.Fear.common.repository.rct.RCTRepository;
-import fun.Fear.common.repository.way.WayRepository;
-import fun.Fear.common.discord.DiscordManager;
-import fun.Fear.utils.client.managers.api.draggable.DraggableRepository;
-import fun.Fear.utils.client.managers.file.*;
-import fun.Fear.common.repository.macro.MacroRepository;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.features.module.ModuleProvider;
-import fun.Fear.features.module.ModuleRepository;
-import fun.Fear.features.module.ModuleSwitcher;
-import fun.Fear.utils.client.sound.SoundManager;
-import fun.Fear.display.screens.clickgui.MenuScreen;
-import fun.Fear.utils.connection.cloud.CloudConfigWebSocketClient;
-import fun.Fear.main.client.ClientInfo;
-import fun.Fear.main.client.ClientInfoProvider;
-import fun.Fear.main.listener.ListenerRepository;
-import fun.Fear.commands.CommandDispatcher;
-import fun.Fear.utils.features.aura.striking.StrikerConstructor;
+import fun.rich.common.repository.box.BoxESPRepository;
+import fun.rich.common.repository.rct.RCTRepository;
+import fun.rich.common.repository.way.WayRepository;
+import fun.rich.common.discord.DiscordManager;
+import fun.rich.utils.client.managers.api.draggable.DraggableRepository;
+import fun.rich.utils.client.managers.file.*;
+import fun.rich.common.repository.macro.MacroRepository;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.features.module.ModuleProvider;
+import fun.rich.features.module.ModuleRepository;
+import fun.rich.features.module.ModuleSwitcher;
+import fun.rich.utils.client.sound.SoundManager;
+import fun.rich.display.screens.clickgui.MenuScreen;
+import fun.rich.utils.connection.cloud.CloudConfigWebSocketClient;
+import fun.rich.main.client.ClientInfo;
+import fun.rich.main.client.ClientInfoProvider;
+import fun.rich.main.listener.ListenerRepository;
+import fun.rich.commands.CommandDispatcher;
+import fun.rich.utils.features.aura.striking.StrikerConstructor;
 import com.google.common.eventbus.EventBus;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -41,11 +41,11 @@ import java.net.URI;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import fun.Fear.display.screens.mainmenu.altscreen.impl.AccountRepository;
-import fun.Fear.utils.client.managers.file.impl.AccountFile;
-import fun.Fear.utils.client.managers.file.impl.AutoBuyConfigFile;
-import fun.Fear.display.screens.mainmenu.altscreen.impl.Account;
-import fun.Fear.mixins.client.IMinecraftClient;
+import fun.rich.display.screens.mainmenu.altscreen.impl.AccountRepository;
+import fun.rich.utils.client.managers.file.impl.AccountFile;
+import fun.rich.utils.client.managers.file.impl.AutoBuyConfigFile;
+import fun.rich.display.screens.mainmenu.altscreen.impl.Account;
+import fun.rich.mixins.client.IMinecraftClient;
 import net.minecraft.client.session.Session;
 import net.minecraft.client.network.SocialInteractionsManager;
 import net.minecraft.client.session.ProfileKeys;
@@ -58,9 +58,9 @@ import java.util.UUID;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Fear implements ModInitializer {
+public class Rich implements ModInitializer {
     @Getter
-    static Fear instance;
+    static Rich instance;
     EventManager eventManager = new EventManager();
     EventBus eventBus = new EventBus();
     ModuleRepository moduleRepository;
@@ -193,9 +193,9 @@ public class Fear implements ModInitializer {
     }
 
     private void initClientInfoProvider() {
-        File clientDirectory = new File(MinecraftClient.getInstance().runDirectory, "\\Fear\\");
+        File clientDirectory = new File(MinecraftClient.getInstance().runDirectory, "\\Rich\\");
         File filesDirectory = new File(clientDirectory, "\\Files\\");
-        clientInfoProvider = new ClientInfo("Fear Build 0.3", "Baflllik && HZeed", "Developer", clientDirectory, filesDirectory);
+        clientInfoProvider = new ClientInfo("Rich Build 0.3", "Baflllik && HZeed", "Developer", clientDirectory, filesDirectory);
     }
 
     private void initFileManager() {

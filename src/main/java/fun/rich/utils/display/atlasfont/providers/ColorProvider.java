@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.atlasfont.providers;
+package fun.rich.utils.display.atlasfont.providers;
 
 import java.awt.*;
 

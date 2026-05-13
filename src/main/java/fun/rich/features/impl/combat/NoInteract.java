@@ -1,10 +1,10 @@
-package fun.Fear.features.impl.combat;
+package fun.rich.features.impl.combat;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.utils.client.Instance;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.utils.client.Instance;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class NoInteract extends Module {

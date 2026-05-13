@@ -1,7 +1,7 @@
-package fun.Fear.events.player;
+package fun.rich.events.player;
 
 import net.minecraft.util.math.Vec3d;
-import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
+import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
 
 public class PlayerTravelEvent extends EventCancellable {
     private Vec3d motion;

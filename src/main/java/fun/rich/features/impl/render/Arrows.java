@@ -1,4 +1,4 @@
-package fun.Fear.features.impl.render;
+package fun.rich.features.impl.render;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -13,18 +13,18 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.RotationAxis;
 import org.joml.Matrix4f;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.common.repository.friend.FriendUtils;
-import fun.Fear.common.animation.Animation;
-import fun.Fear.common.animation.Direction;
-import fun.Fear.common.animation.implement.Decelerate;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.events.render.DrawEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.common.repository.friend.FriendUtils;
+import fun.rich.common.animation.Animation;
+import fun.rich.common.animation.Direction;
+import fun.rich.common.animation.implement.Decelerate;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.events.player.TickEvent;
+import fun.rich.events.render.DrawEvent;
 
 import java.util.List;
 

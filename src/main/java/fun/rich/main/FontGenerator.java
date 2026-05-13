@@ -1,4 +1,4 @@
-package fun.Fear.main;
+package fun.rich.main;
 
 import java.io.File;
 import java.io.IOException;

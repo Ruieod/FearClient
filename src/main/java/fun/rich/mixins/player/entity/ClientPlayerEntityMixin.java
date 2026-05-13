@@ -1,8 +1,8 @@
-package fun.Fear.mixins.player.entity;
+package fun.rich.mixins.player.entity;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.mojang.authlib.GameProfile;
-import fun.Fear.utils.interactions.inv.InventoryFlowManager;
+import fun.rich.utils.interactions.inv.InventoryFlowManager;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.input.Input;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
@@ -17,18 +17,18 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.client.managers.event.types.EventType;
-import fun.Fear.utils.interactions.simulate.Simulations;
-import fun.Fear.events.block.PushEvent;
-import fun.Fear.events.container.CloseScreenEvent;
-import fun.Fear.events.item.UsingItemEvent;
-import fun.Fear.events.player.*;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
-import fun.Fear.features.impl.movement.AutoSprint;
-import fun.Fear.features.impl.movement.NoSlow;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.client.managers.event.types.EventType;
+import fun.rich.utils.interactions.simulate.Simulations;
+import fun.rich.events.block.PushEvent;
+import fun.rich.events.container.CloseScreenEvent;
+import fun.rich.events.item.UsingItemEvent;
+import fun.rich.events.player.*;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.rich.features.impl.movement.AutoSprint;
+import fun.rich.features.impl.movement.NoSlow;
 
-import static fun.Fear.utils.display.interfaces.QuickImports.mc;
+import static fun.rich.utils.display.interfaces.QuickImports.mc;
 
 @Mixin(ClientPlayerEntity.class)
 public abstract class ClientPlayerEntityMixin extends AbstractClientPlayerEntity {

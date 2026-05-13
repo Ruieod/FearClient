@@ -1,20 +1,20 @@
-package fun.Fear.utils.client.managers.api.draggable;
+package fun.rich.utils.client.managers.api.draggable;
 
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
 import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.client.gui.DrawContext;
-import fun.Fear.common.animation.Animation;
-import fun.Fear.common.animation.Direction;
-import fun.Fear.common.animation.implement.Decelerate;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.interfaces.QuickLogger;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.display.geometry.Render2D;
-import fun.Fear.Fear;
-import fun.Fear.events.container.SetScreenEvent;
-import fun.Fear.events.packet.PacketEvent;
-import fun.Fear.features.impl.render.Hud;
+import fun.rich.common.animation.Animation;
+import fun.rich.common.animation.Direction;
+import fun.rich.common.animation.implement.Decelerate;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.interfaces.QuickLogger;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.display.geometry.Render2D;
+import fun.rich.Rich;
+import fun.rich.events.container.SetScreenEvent;
+import fun.rich.events.packet.PacketEvent;
+import fun.rich.features.impl.render.Hud;
 
 @Setter
 @Getter
@@ -64,7 +64,7 @@ public abstract class AbstractDraggable implements Draggable, QuickImports, Quic
             this.y = (int) Math.max(0, Math.min(mouseDragY, windowHeight - height));
         }
 
-        for (AbstractDraggable drag : Fear.getInstance().getDraggableRepository().draggable()) {
+        for (AbstractDraggable drag : Rich.getInstance().getDraggableRepository().draggable()) {
             if (!drag.canDraw(hud, drag)) continue;
             if (!drag.canDrag) continue;
             if (drag == this) continue;

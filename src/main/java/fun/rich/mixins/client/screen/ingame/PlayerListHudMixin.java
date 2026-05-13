@@ -1,7 +1,7 @@
-package fun.Fear.mixins.client.screen.ingame;
+package fun.rich.mixins.client.screen.ingame;
 
 import com.mojang.authlib.GameProfile;
-import fun.Fear.features.impl.render.BetterMinecraft;
+import fun.rich.features.impl.render.BetterMinecraft;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.hud.PlayerListHud;
 import net.minecraft.client.network.PlayerListEntry;

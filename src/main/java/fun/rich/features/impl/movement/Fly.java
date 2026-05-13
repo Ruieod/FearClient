@@ -1,4 +1,4 @@
-package fun.Fear.features.impl.movement;
+package fun.rich.features.impl.movement;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -6,14 +6,14 @@ import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.utils.client.Instance;
-import fun.Fear.utils.math.time.StopWatch;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.events.player.TickEvent;
+import fun.rich.utils.client.Instance;
+import fun.rich.utils.math.time.StopWatch;
 
 @Getter
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)

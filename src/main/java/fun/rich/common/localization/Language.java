@@ -1,4 +1,4 @@
-package fun.Fear.common.localization;
+package fun.rich.common.localization;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

@@ -1,17 +1,17 @@
-package fun.Fear.features.impl.movement;
+package fun.rich.features.impl.movement;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.util.math.MathHelper;
 
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.events.player.SwimmingEvent;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.events.player.SwimmingEvent;
+import fun.rich.events.player.TickEvent;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class WaterSpeed extends Module {

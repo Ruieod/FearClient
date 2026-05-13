@@ -1,6 +1,6 @@
-package fun.Fear.utils.client.managers.event;
+package fun.rich.utils.client.managers.event;
 
-import fun.Fear.utils.client.managers.event.types.Priority;
+import fun.rich.utils.client.managers.event.types.Priority;
 
 import java.lang.annotation.*;
 

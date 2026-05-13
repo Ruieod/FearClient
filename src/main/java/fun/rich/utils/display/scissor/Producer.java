@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.scissor;
+package fun.rich.utils.display.scissor;
 
 public interface Producer<T> {
     T create();

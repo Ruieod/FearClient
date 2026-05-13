@@ -1,4 +1,4 @@
-package fun.Fear.features.module.setting;
+package fun.rich.features.module.setting;
 
 import lombok.Getter;
 import lombok.Setter;

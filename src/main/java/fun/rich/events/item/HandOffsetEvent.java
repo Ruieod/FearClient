@@ -1,4 +1,4 @@
-package fun.Fear.events.item;
+package fun.rich.events.item;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.experimental.FieldDefaults;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
-import fun.Fear.utils.client.managers.event.events.Event;
+import fun.rich.utils.client.managers.event.events.Event;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor

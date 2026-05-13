@@ -1,4 +1,4 @@
-package fun.Fear.utils.client.managers.api.command.exception;
+package fun.rich.utils.client.managers.api.command.exception;
 
 public abstract class CommandErrorMessageException extends CommandException {
 

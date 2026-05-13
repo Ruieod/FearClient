@@ -1,10 +1,10 @@
-package fun.Fear.events.block;
+package fun.rich.events.block;
 
 import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
-import fun.Fear.utils.client.managers.event.events.Event;
+import fun.rich.utils.client.managers.event.events.Event;
 
 @Getter
 @Setter

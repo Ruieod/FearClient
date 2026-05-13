@@ -1,7 +1,7 @@
-package fun.Fear.common.repository.box;
+package fun.rich.common.repository.box;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
@@ -9,17 +9,17 @@ import net.minecraft.util.Pair;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.shape.VoxelShape;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.interfaces.QuickLogger;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.math.projection.Projection;
-import fun.Fear.utils.display.geometry.Render3D;
-import fun.Fear.events.block.BlockUpdateEvent;
-import fun.Fear.events.render.WorldLoadEvent;
-import fun.Fear.events.render.WorldRenderEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.interfaces.QuickLogger;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.math.projection.Projection;
+import fun.rich.utils.display.geometry.Render3D;
+import fun.rich.events.block.BlockUpdateEvent;
+import fun.rich.events.render.WorldLoadEvent;
+import fun.rich.events.render.WorldRenderEvent;
 
 import java.util.HashMap;
 import java.util.Map;

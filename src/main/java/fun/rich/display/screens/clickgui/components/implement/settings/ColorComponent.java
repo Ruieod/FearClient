@@ -1,19 +1,19 @@
-package fun.Fear.display.screens.clickgui.components.implement.settings;
+package fun.rich.display.screens.clickgui.components.implement.settings;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 
-import fun.Fear.features.module.setting.implement.ColorSetting;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.display.screens.clickgui.components.implement.window.AbstractWindow;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.display.screens.clickgui.components.implement.window.implement.settings.color.ColorWindow;
+import fun.rich.features.module.setting.implement.ColorSetting;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.display.screens.clickgui.components.implement.window.AbstractWindow;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.display.screens.clickgui.components.implement.window.implement.settings.color.ColorWindow;
 
 import java.awt.*;
 
-import static fun.Fear.utils.display.font.Fonts.Type.*;
+import static fun.rich.utils.display.font.Fonts.Type.*;
 
 public class ColorComponent extends AbstractSettingComponent {
     private final ColorSetting setting;

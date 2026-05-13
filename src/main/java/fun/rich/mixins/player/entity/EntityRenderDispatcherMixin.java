@@ -1,4 +1,4 @@
-package fun.Fear.mixins.player.entity;
+package fun.rich.mixins.player.entity;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
@@ -16,13 +16,13 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.Fear.common.repository.friend.FriendUtils;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.math.projection.Projection;
-import fun.Fear.utils.display.geometry.Render3D;
-import fun.Fear.Fear;
+import fun.rich.common.repository.friend.FriendUtils;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.math.projection.Projection;
+import fun.rich.utils.display.geometry.Render3D;
+import fun.rich.Rich;
 
 @Mixin(EntityRenderDispatcher.class)
 public class EntityRenderDispatcherMixin implements QuickImports {
@@ -34,7 +34,7 @@ public class EntityRenderDispatcherMixin implements QuickImports {
 
     @Inject(method = "renderHitbox", at = @At("HEAD"), cancellable = true)
     private static void renderHitboxHook(MatrixStack matrices, VertexConsumer vertices, Entity entity, float tickDelta, float red, float green, float blue, CallbackInfo ci) {
-        if (!Fear.getInstance().getBoxESPRepository().entities.containsKey(entity.getType())) renderBox(entity);
+        if (!Rich.getInstance().getBoxESPRepository().entities.containsKey(entity.getType())) renderBox(entity);
         ci.cancel();
     }
 

@@ -1,8 +1,8 @@
-package fun.Fear.utils.client.managers.api.command;
+package fun.rich.utils.client.managers.api.command;
 
-import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.display.interfaces.QuickLogger;
+import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.display.interfaces.QuickLogger;
 
 import java.util.List;
 import java.util.stream.Stream;

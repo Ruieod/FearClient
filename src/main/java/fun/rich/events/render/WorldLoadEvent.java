@@ -1,6 +1,6 @@
-package fun.Fear.events.render;
+package fun.rich.events.render;
 
-import fun.Fear.utils.client.managers.event.events.Event;
+import fun.rich.utils.client.managers.event.events.Event;
 
 public class WorldLoadEvent implements Event {
 }

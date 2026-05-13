@@ -1,6 +1,6 @@
-package fun.Fear.utils.features.autobuy;
+package fun.rich.utils.features.autobuy;
 
-import fun.Fear.utils.client.chat.ChatMessage;
+import fun.rich.utils.client.chat.ChatMessage;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

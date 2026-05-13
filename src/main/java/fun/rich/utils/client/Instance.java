@@ -1,9 +1,9 @@
-package fun.Fear.utils.client;
+package fun.rich.utils.client;
 
 import lombok.experimental.UtilityClass;
-import fun.Fear.utils.client.managers.api.draggable.AbstractDraggable;
-import fun.Fear.features.module.Module;
-import fun.Fear.Fear;
+import fun.rich.utils.client.managers.api.draggable.AbstractDraggable;
+import fun.rich.features.module.Module;
+import fun.rich.Rich;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -14,18 +14,18 @@ public class Instance {
     private final ConcurrentMap<Class<? extends AbstractDraggable>, AbstractDraggable> instanceDraggables = new ConcurrentHashMap<>();
 
     public <T extends Module> T get(Class<T> clazz) {
-        return clazz.cast(instanceModules.computeIfAbsent(clazz, instance -> Fear.getInstance().getModuleProvider().get(instance)));
+        return clazz.cast(instanceModules.computeIfAbsent(clazz, instance -> Rich.getInstance().getModuleProvider().get(instance)));
     }
 
     public <T extends Module> T get(String module) {
-        return Fear.getInstance().getModuleProvider().get(module);
+        return Rich.getInstance().getModuleProvider().get(module);
     }
 
     public <T extends AbstractDraggable> T getDraggable(Class<T> clazz) {
-        return clazz.cast(instanceDraggables.computeIfAbsent(clazz, instance -> Fear.getInstance().getDraggableRepository().get(instance)));
+        return clazz.cast(instanceDraggables.computeIfAbsent(clazz, instance -> Rich.getInstance().getDraggableRepository().get(instance)));
     }
 
     public <T extends AbstractDraggable> T getDraggable(String draggable) {
-        return Fear.getInstance().getDraggableRepository().get(draggable);
+        return Rich.getInstance().getDraggableRepository().get(draggable);
     }
 }

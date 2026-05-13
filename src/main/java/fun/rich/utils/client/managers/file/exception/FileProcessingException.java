@@ -1,4 +1,4 @@
-package fun.Fear.utils.client.managers.file.exception;
+package fun.rich.utils.client.managers.file.exception;
 
 public class FileProcessingException extends Exception {
     public FileProcessingException(String message) {

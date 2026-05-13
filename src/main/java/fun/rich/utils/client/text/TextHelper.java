@@ -1,8 +1,8 @@
-package fun.Fear.utils.client.text;
+package fun.rich.utils.client.text;
 
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
-import fun.Fear.utils.display.color.ColorAssist;
+import fun.rich.utils.display.color.ColorAssist;
 
 public class TextHelper {
 

@@ -1,7 +1,7 @@
-package fun.Fear.features.impl.combat;
+package fun.rich.features.impl.combat;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.utils.interactions.inv.InventoryTask;
+import fun.rich.utils.interactions.inv.InventoryTask;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.enchantment.Enchantment;
@@ -17,14 +17,14 @@ import net.minecraft.screen.slot.Slot;
 import net.minecraft.screen.slot.SlotActionType;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.utils.interactions.inv.InventoryFlowManager;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.display.hud.Notifications;
-import fun.Fear.features.impl.render.Hud;
-import fun.Fear.utils.display.interfaces.IArmorItem;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.utils.interactions.inv.InventoryFlowManager;
+import fun.rich.events.player.TickEvent;
+import fun.rich.display.hud.Notifications;
+import fun.rich.features.impl.render.Hud;
+import fun.rich.utils.display.interfaces.IArmorItem;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-//package fun.Fear.common.managers.draggables;
+//package fun.rich.common.managers.draggables;
 //
 //import net.minecraft.client.gui.DrawContext;
 //import net.minecraft.client.util.math.MatrixStack;
@@ -6,13 +6,13 @@
 //import net.minecraft.item.ItemStack;
 //import net.minecraft.text.Text;
 //import net.minecraft.util.Arm;
-//import fun.Fear.common.managers.api.draggable.AbstractDraggable;
-//import fun.Fear.display.api.font.FontRenderer;
-//import fun.Fear.display.api.font.Fonts;
-//import fun.Fear.display.api.shape.ShapeProperties;
-//import fun.Fear.util.math.calc.MathUtil;
-//import fun.Fear.util.display.geometry.Render2DUtil;
-//import fun.Fear.util.display.color.ColorUtil;
+//import fun.rich.common.managers.api.draggable.AbstractDraggable;
+//import fun.rich.display.api.font.FontRenderer;
+//import fun.rich.display.api.font.Fonts;
+//import fun.rich.display.api.shape.ShapeProperties;
+//import fun.rich.util.math.calc.MathUtil;
+//import fun.rich.util.display.geometry.Render2DUtil;
+//import fun.rich.util.display.color.ColorUtil;
 //
 //import java.util.Objects;
 //import java.util.stream.IntStream;

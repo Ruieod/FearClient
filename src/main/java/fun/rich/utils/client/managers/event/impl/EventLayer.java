@@ -1,4 +1,4 @@
-package fun.Fear.utils.client.managers.event.impl;
+package fun.rich.utils.client.managers.event.impl;
 
 import lombok.Getter;
 

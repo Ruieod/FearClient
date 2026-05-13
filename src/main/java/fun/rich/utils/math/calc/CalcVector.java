@@ -1,9 +1,9 @@
-package fun.Fear.utils.math.calc;
+package fun.rich.utils.math.calc;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.Vec3d;
 
-import static fun.Fear.utils.display.interfaces.QuickImports.mc;
+import static fun.rich.utils.display.interfaces.QuickImports.mc;
 
 public class CalcVector {
 

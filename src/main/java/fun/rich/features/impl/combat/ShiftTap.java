@@ -1,11 +1,11 @@
-package fun.Fear.features.impl.combat;
+package fun.rich.features.impl.combat;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.events.player.AttackEvent;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
+import fun.rich.events.player.AttackEvent;
+import fun.rich.events.player.TickEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;

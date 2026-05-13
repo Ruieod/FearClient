@@ -1,8 +1,8 @@
-package fun.Fear.mixins.game.render;
+package fun.rich.mixins.game.render;
 
-import fun.Fear.features.impl.misc.SelfDestruct;
-import fun.Fear.features.impl.render.BetterMinecraft;
-import fun.Fear.utils.display.widget.SliderRender;
+import fun.rich.features.impl.misc.SelfDestruct;
+import fun.rich.features.impl.render.BetterMinecraft;
+import fun.rich.utils.display.widget.SliderRender;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.widget.ClickableWidget;
 import net.minecraft.client.gui.widget.SliderWidget;

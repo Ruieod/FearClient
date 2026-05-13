@@ -1,14 +1,14 @@
-package fun.Fear.features.module.setting.implement;
+package fun.rich.features.module.setting.implement;
 
 import lombok.Getter;
 import lombok.Setter;
-import fun.Fear.features.module.setting.Setting;
-import fun.Fear.utils.math.calc.Calculate;
+import fun.rich.features.module.setting.Setting;
+import fun.rich.utils.math.calc.Calculate;
 
 import java.awt.*;
 import java.util.function.Supplier;
 
-import static fun.Fear.utils.math.calc.Calculate.*;
+import static fun.rich.utils.math.calc.Calculate.*;
 
 @Getter
 @Setter

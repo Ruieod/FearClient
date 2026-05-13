@@ -1,14 +1,14 @@
-package fun.Fear.display.screens.clickgui.components.implement.other;
+package fun.rich.display.screens.clickgui.components.implement.other;
 
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import net.minecraft.client.gui.DrawContext;
 
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.display.screens.clickgui.components.implement.category.CategoryComponent;
-import fun.Fear.display.screens.clickgui.components.implement.settings.TextComponent;
-import fun.Fear.utils.interactions.inv.InventoryFlowManager;
-import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.display.screens.clickgui.components.implement.category.CategoryComponent;
+import fun.rich.display.screens.clickgui.components.implement.settings.TextComponent;
+import fun.rich.utils.interactions.inv.InventoryFlowManager;
+import fun.rich.display.screens.clickgui.components.AbstractComponent;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,9 @@
-package fun.Fear.utils.client.managers.api.command.manager;
+package fun.rich.utils.client.managers.api.command.manager;
 
 import net.minecraft.util.Pair;
-import fun.Fear.utils.client.managers.api.command.ICommand;
-import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
-import fun.Fear.utils.client.managers.api.command.registry.Registry;
+import fun.rich.utils.client.managers.api.command.ICommand;
+import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.rich.utils.client.managers.api.command.registry.Registry;
 
 import java.util.List;
 import java.util.stream.Stream;

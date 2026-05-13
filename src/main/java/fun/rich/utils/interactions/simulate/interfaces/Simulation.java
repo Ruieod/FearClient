@@ -1,4 +1,4 @@
-package fun.Fear.utils.interactions.simulate.interfaces;
+package fun.rich.utils.interactions.simulate.interfaces;
 
 import net.minecraft.util.math.Vec3d;
 

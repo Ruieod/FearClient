@@ -1,8 +1,8 @@
-package fun.Fear.utils.client.managers.api.command.datatypes;
+package fun.rich.utils.client.managers.api.command.datatypes;
 
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.Fear.common.repository.staff.StaffRepository;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.common.repository.staff.StaffRepository;
 
 import java.util.stream.Stream;
 

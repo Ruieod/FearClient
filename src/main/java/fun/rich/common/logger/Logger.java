@@ -1,4 +1,4 @@
-package fun.Fear.common.logger;
+package fun.rich.common.logger;
 
 import net.minecraft.text.Text;
 

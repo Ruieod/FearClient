@@ -1,6 +1,6 @@
-package fun.Fear.utils.features.aura.utils;
+package fun.rich.utils.features.aura.utils;
 
-import fun.Fear.utils.features.aura.warp.Turns;
+import fun.rich.utils.features.aura.warp.Turns;
 import lombok.experimental.UtilityClass;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.projectile.ProjectileUtil;
@@ -12,8 +12,8 @@ import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
 import org.jetbrains.annotations.NotNull;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.features.impl.combat.Aura;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.features.impl.combat.Aura;
 
 import static java.lang.Math.hypot;
 import static java.lang.Math.toDegrees;

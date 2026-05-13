@@ -1,4 +1,4 @@
-package fun.Fear.mixins.game.world;
+package fun.rich.mixins.game.world;
 
 import net.minecraft.client.render.*;
 import net.minecraft.util.profiler.Profiler;
@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import fun.Fear.features.impl.render.BlockOverlay;
+import fun.rich.features.impl.render.BlockOverlay;
 
 @Mixin(WorldRenderer.class)
 public abstract class WorldRendererMixin {

@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.shape.implement;
+package fun.rich.utils.display.shape.implement;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gl.Defines;
@@ -12,10 +12,10 @@ import net.minecraft.util.Identifier;
 import org.joml.Matrix4f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.shape.Shape;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.display.color.ColorAssist;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.shape.Shape;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.display.color.ColorAssist;
 
 public class Rectangle implements Shape, QuickImports {
     private final ShaderProgramKey SHADER_KEY = new ShaderProgramKey(Identifier.of("minecraft", "core/round"), VertexFormats.POSITION, Defines.EMPTY);

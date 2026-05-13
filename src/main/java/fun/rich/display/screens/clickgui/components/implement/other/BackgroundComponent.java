@@ -1,22 +1,22 @@
-package fun.Fear.display.screens.clickgui.components.implement.other;
+package fun.rich.display.screens.clickgui.components.implement.other;
 
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.utils.client.managers.file.exception.FileLoadException;
-import fun.Fear.utils.client.managers.file.exception.FileSaveException;
-import fun.Fear.common.discord.DiscordManager;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.display.screens.clickgui.MenuScreen;
-import fun.Fear.display.screens.clickgui.components.AbstractComponent;
-import fun.Fear.Fear;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.display.geometry.Render2D;
-import fun.Fear.utils.math.calc.Calculate;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.utils.client.managers.file.exception.FileLoadException;
+import fun.rich.utils.client.managers.file.exception.FileSaveException;
+import fun.rich.common.discord.DiscordManager;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.display.screens.clickgui.MenuScreen;
+import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.rich.Rich;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.display.geometry.Render2D;
+import fun.rich.utils.math.calc.Calculate;
 import antidaunleak.api.UserProfile;
 import java.awt.*;
 import java.time.LocalTime;
@@ -37,7 +37,7 @@ import java.util.stream.Collectors;
 import java.io.IOException;
 import java.nio.file.Files;
 import net.minecraft.client.MinecraftClient;
-import fun.Fear.utils.display.scissor.ScissorAssist;
+import fun.rich.utils.display.scissor.ScissorAssist;
 import org.joml.Matrix4f;
 import net.minecraft.util.math.MathHelper;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -69,8 +69,8 @@ public class BackgroundComponent extends AbstractComponent {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         String currentTime = LocalTime.now().format(formatter);
         String point = " • ";
-        DiscordManager discord = Fear.getInstance().getDiscordManager();
-        Fear.getInstance().getScissorManager().push(matrix.peek().getPositionMatrix(), 0, 0, window.getScaledWidth(), window.getScaledHeight());
+        DiscordManager discord = Rich.getInstance().getDiscordManager();
+        Rich.getInstance().getScissorManager().push(matrix.peek().getPositionMatrix(), 0, 0, window.getScaledWidth(), window.getScaledHeight());
 
         blur.render(ShapeProperties.create(matrix, x, y, width, height).round(8).quality(64)
                 .color(new Color(0, 0, 0, 200).getRGB())
@@ -201,7 +201,7 @@ public class BackgroundComponent extends AbstractComponent {
             scroll = MathHelper.clamp(scroll, -maxScrollAmount, 0f);
             smoothedScroll = Calculate.interpolate(smoothedScroll, scroll, 0.2f);
             Matrix4f positionMatrix = matrix.peek().getPositionMatrix();
-            ScissorAssist scissorManager = Fear.getInstance().getScissorManager();
+            ScissorAssist scissorManager = Rich.getInstance().getScissorManager();
             float listX = x + 43f;
             float listY = y + 65f;
             float listWidth = width - 43f - 15f;
@@ -454,7 +454,7 @@ public class BackgroundComponent extends AbstractComponent {
             Fonts.getSize(15, Fonts.Type.DEFAULT).drawString(matrix, point + MenuScreen.INSTANCE.getCategory().getReadableName(), x + 63, y + 13.5f, new Color(245, 245, 255, 255).getRGB());
 
         }
-        Fear.getInstance().getScissorManager().pop();
+        Rich.getInstance().getScissorManager().pop();
     }
 
     @Override
@@ -520,12 +520,12 @@ public class BackgroundComponent extends AbstractComponent {
                 if (Calculate.isHovered(mouseX, mouseY, configX + 162, configY + 35, 14, 15)) {
                     if (isDefaultTab) {
                         try {
-                            File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+                            File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
                             File configFile = new File(dir, config + ".json");
                             String json = new String(Files.readAllBytes(configFile.toPath()));
-                            File tempFile = new File(Fear.getInstance().getClientInfoProvider().configsDir(), "temp.json");
+                            File tempFile = new File(Rich.getInstance().getClientInfoProvider().configsDir(), "temp.json");
                             Files.write(tempFile.toPath(), json.getBytes());
-                            Fear.getInstance().getFileController().loadFile("temp.json");
+                            Rich.getInstance().getFileController().loadFile("temp.json");
                             tempFile.delete();
                         } catch (IOException | FileLoadException e) {
                         }
@@ -539,12 +539,12 @@ public class BackgroundComponent extends AbstractComponent {
                 if (Calculate.isHovered(mouseX, mouseY, configX + 146, configY + 35, 14, 15)) {
                     if (isDefaultTab) {
                         try {
-                            File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+                            File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
                             File configFile = new File(dir, config + ".json");
                             String json = new String(Files.readAllBytes(configFile.toPath()));
-                            File tempFile = new File(Fear.getInstance().getClientInfoProvider().configsDir(), "temp.json");
+                            File tempFile = new File(Rich.getInstance().getClientInfoProvider().configsDir(), "temp.json");
                             Files.write(tempFile.toPath(), json.getBytes());
-                            Fear.getInstance().getFileController().loadFile("temp.json");
+                            Rich.getInstance().getFileController().loadFile("temp.json");
                             tempFile.delete();
                         } catch (IOException | FileLoadException e) {
                         }
@@ -562,7 +562,7 @@ public class BackgroundComponent extends AbstractComponent {
                             updateFromCloud(config, cloudId);
                         } else {
                             try {
-                                File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+                                File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
                                 File configFile = new File(dir, config + ".json");
                                 String json = getCurrentConfigJson();
                                 Files.write(configFile.toPath(), json.getBytes());
@@ -577,7 +577,7 @@ public class BackgroundComponent extends AbstractComponent {
                 }
                 if (Calculate.isHovered(mouseX, mouseY, configX + 114.35, configY + 35, 14, 15)) {
                     if (isDefaultTab) {
-                        File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+                        File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
                         File file = new File(dir, config + ".json");
                         file.delete();
                     } else {
@@ -657,7 +657,7 @@ public class BackgroundComponent extends AbstractComponent {
         } else if (editingConfig != null) {
             if (keyCode == GLFW.GLFW_KEY_ENTER) {
                 if (isDefaultTab) {
-                    File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+                    File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
                     File oldFile = new File(dir, editingConfig + ".json");
                     File newFile = new File(dir, newName + ".json");
                     if (!newName.isEmpty() && newName.length() <= 15 && oldFile.exists() && (!newFile.exists() || newName.equals(editingConfig))) {
@@ -738,7 +738,7 @@ public class BackgroundComponent extends AbstractComponent {
 
     private List<Map<String, Object>> getLocalConfigs() {
         List<Map<String, Object>> localConfigs = new ArrayList<>();
-        File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+        File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
         File[] configFiles = dir.listFiles();
         if (configFiles != null) {
             for (File configFile : configFiles) {
@@ -780,7 +780,7 @@ public class BackgroundComponent extends AbstractComponent {
 
     private List<Map<String, Object>> getCloudConfigs() {
         try {
-            if (!Fear.getInstance().getCloudConfigClient().isConnected()) {
+            if (!Rich.getInstance().getCloudConfigClient().isConnected()) {
                 return new ArrayList<>();
             }
 
@@ -790,7 +790,7 @@ public class BackgroundComponent extends AbstractComponent {
             request.put("username", UserProfile.getInstance().profile("username"));
             request.put("uuid", UserProfile.getInstance().profile("uid"));
             String message = gson.toJson(request);
-            String response = Fear.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
+            String response = Rich.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
             if (response == null) return new ArrayList<>();
             Map<String, Object> respMap = gson.fromJson(response, Map.class);
             if ((Boolean) respMap.get("success")) {
@@ -804,10 +804,10 @@ public class BackgroundComponent extends AbstractComponent {
 
     private void createDefaultConfig() {
         Random random = new Random();
-        File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+        File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
         String name;
         do {
-            name = "FearConfig" + String.format("%03d", random.nextInt(1000));
+            name = "RichConfig" + String.format("%03d", random.nextInt(1000));
         } while (new File(dir, name + ".json").exists());
         try {
             File configFile = new File(dir, name + ".json");
@@ -828,7 +828,7 @@ public class BackgroundComponent extends AbstractComponent {
 
     private void clearAllConfigs() {
         if (isDefaultTab) {
-            File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+            File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
             File[] files = dir.listFiles();
             if (files != null) {
                 for (File f : files) {
@@ -846,10 +846,10 @@ public class BackgroundComponent extends AbstractComponent {
 
     private String getCurrentConfigJson() {
         String json = "";
-        File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+        File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
         File temp = new File(dir, "temp.json");
         try {
-            Fear.getInstance().getFileController().saveFile("temp.json");
+            Rich.getInstance().getFileController().saveFile("temp.json");
             json = new String(Files.readAllBytes(temp.toPath()));
         } catch (FileSaveException | IOException e) {
         } finally {
@@ -860,7 +860,7 @@ public class BackgroundComponent extends AbstractComponent {
 
     private String getCloudConfigJson(String name) {
         try {
-            if (!Fear.getInstance().getCloudConfigClient().isConnected()) {
+            if (!Rich.getInstance().getCloudConfigClient().isConnected()) {
                 return null;
             }
 
@@ -871,7 +871,7 @@ public class BackgroundComponent extends AbstractComponent {
             request.put("uuid", UserProfile.getInstance().profile("uid"));
             request.put("configName", name);
             String message = gson.toJson(request);
-            String response = Fear.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
+            String response = Rich.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
             if (response == null) return null;
             Map<String, Object> respMap = gson.fromJson(response, Map.class);
             if ((Boolean) respMap.get("success")) {
@@ -886,7 +886,7 @@ public class BackgroundComponent extends AbstractComponent {
 
     private Map<String, Object> getCloudMetadata(String name) {
         try {
-            if (!Fear.getInstance().getCloudConfigClient().isConnected()) {
+            if (!Rich.getInstance().getCloudConfigClient().isConnected()) {
                 return null;
             }
 
@@ -897,7 +897,7 @@ public class BackgroundComponent extends AbstractComponent {
             request.put("uuid", UserProfile.getInstance().profile("uid"));
             request.put("configName", name);
             String message = gson.toJson(request);
-            String response = Fear.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
+            String response = Rich.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
             if (response == null) return null;
             Map<String, Object> respMap = gson.fromJson(response, Map.class);
             if ((Boolean) respMap.get("success")) {
@@ -924,7 +924,7 @@ public class BackgroundComponent extends AbstractComponent {
         data.put("owner", UserProfile.getInstance().profile("username"));
         data.put("created", created);
         data.put("updated", now);
-        data.put("avatar_hash", Fear.getInstance().getDiscordManager().getAvatarId().toString());
+        data.put("avatar_hash", Rich.getInstance().getDiscordManager().getAvatarId().toString());
         Map<String, Object> configData = gson.fromJson(json, Map.class);
         data.putAll(configData);
         json = gson.toJson(data);
@@ -934,7 +934,7 @@ public class BackgroundComponent extends AbstractComponent {
     private void saveCloudConfigWithJson(String name, String json) {
         if (json.isEmpty()) return;
         try {
-            if (!Fear.getInstance().getCloudConfigClient().isConnected()) {
+            if (!Rich.getInstance().getCloudConfigClient().isConnected()) {
                 System.err.println("Cannot save: WebSocket not connected");
                 return;
             }
@@ -947,7 +947,7 @@ public class BackgroundComponent extends AbstractComponent {
             request.put("configName", name);
             request.put("configData", gson.fromJson(json, Map.class));
             String message = gson.toJson(request);
-            Fear.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
+            Rich.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
         } catch (Exception e) {
             System.err.println("Failed to save cloud config: " + e.getMessage());
         }
@@ -975,11 +975,11 @@ public class BackgroundComponent extends AbstractComponent {
         data.remove("avatar_hash");
         data.put("cloud_id", name);
         json = gson.toJson(data);
-        File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+        File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
         File temp = new File(dir, "temp.json");
         try {
             Files.write(temp.toPath(), json.getBytes());
-            Fear.getInstance().getFileController().loadFile("temp.json");
+            Rich.getInstance().getFileController().loadFile("temp.json");
         } catch (IOException | FileLoadException e) {
         } finally {
             temp.delete();
@@ -1011,11 +1011,11 @@ public class BackgroundComponent extends AbstractComponent {
         data.remove("avatar_hash");
         data.put("cloud_id", cloudId);
         json = gson.toJson(data);
-        File dir = new File(Fear.getInstance().getClientInfoProvider().clientDir(), "Custom");
+        File dir = new File(Rich.getInstance().getClientInfoProvider().clientDir(), "Custom");
         File temp = new File(dir, "temp.json");
         try {
             Files.write(temp.toPath(), json.getBytes());
-            Fear.getInstance().getFileController().loadFile("temp.json");
+            Rich.getInstance().getFileController().loadFile("temp.json");
             Files.write(new File(dir, localName + ".json").toPath(), json.getBytes());
         } catch (IOException | FileLoadException e) {
         } finally {
@@ -1025,7 +1025,7 @@ public class BackgroundComponent extends AbstractComponent {
 
     private void removeCloudConfig(String name) {
         try {
-            if (!Fear.getInstance().getCloudConfigClient().isConnected()) {
+            if (!Rich.getInstance().getCloudConfigClient().isConnected()) {
                 System.err.println("Cannot remove: WebSocket not connected");
                 return;
             }
@@ -1037,7 +1037,7 @@ public class BackgroundComponent extends AbstractComponent {
             request.put("uuid", UserProfile.getInstance().profile("uid"));
             request.put("configName", name);
             String message = gson.toJson(request);
-            Fear.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
+            Rich.getInstance().getCloudConfigClient().sendAndWaitForResponse(message);
         } catch (Exception e) {
             System.err.println("Failed to remove cloud config: " + e.getMessage());
         }

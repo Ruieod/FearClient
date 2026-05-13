@@ -1,6 +1,6 @@
-package fun.Fear.utils.client.managers.file;
+package fun.rich.utils.client.managers.file;
 
-import fun.Fear.utils.client.logs.Logger;
+import fun.rich.utils.client.logs.Logger;
 
 import java.io.File;
 import java.util.ArrayList;

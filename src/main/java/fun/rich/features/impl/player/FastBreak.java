@@ -1,4 +1,4 @@
-package fun.Fear.features.impl.player;
+package fun.rich.features.impl.player;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
@@ -6,10 +6,10 @@ import lombok.experimental.FieldDefaults;
 import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.events.block.BlockBreakingEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.events.block.BlockBreakingEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class FastBreak extends Module {

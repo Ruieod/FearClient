@@ -1,13 +1,13 @@
-package fun.Fear.commands.defaults;
+package fun.rich.commands.defaults;
 
-import fun.Fear.utils.client.managers.api.command.Command;
-import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.Fear.features.impl.misc.IRC;
-import fun.Fear.Fear;
-import fun.Fear.utils.client.chat.ChatMessage;
-import fun.Fear.utils.client.text.TextHelper;
+import fun.rich.utils.client.managers.api.command.Command;
+import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.features.impl.misc.IRC;
+import fun.rich.Rich;
+import fun.rich.utils.client.chat.ChatMessage;
+import fun.rich.utils.client.text.TextHelper;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -25,7 +25,7 @@ public class IRCCommand extends Command {
 
     @Override
     public void execute(String label, IArgConsumer args) throws CommandException {
-        IRC ircModule = Fear.getInstance().getModuleRepository().modules().stream()
+        IRC ircModule = Rich.getInstance().getModuleRepository().modules().stream()
                 .filter(module -> module instanceof IRC)
                 .map(module -> (IRC) module)
                 .findFirst()
@@ -91,7 +91,7 @@ public class IRCCommand extends Command {
     }
 
     private void handlePrefixSelection(String prefixNumber) {
-        String[] prefixes = {"pikmi", "labuba", "zapen", "boost", "Fear", "panda", "smiley", "bibi", "benena", "blyabuba"};
+        String[] prefixes = {"pikmi", "labuba", "zapen", "boost", "rich", "panda", "smiley", "bibi", "benena", "blyabuba"};
         String[] displayNames = {"Пикми", "Лабуба", "Запен", "Буст", "Рич", "Панда", "(●'◡'●)", "Биби...!", "Бэнена", "Блябуба"};
         try {
             int index = Integer.parseInt(prefixNumber) - 1;
@@ -120,7 +120,7 @@ public class IRCCommand extends Command {
             MinecraftClient.getInstance().player.sendMessage(Text.literal("2. ").append(ChatMessage.ircprefixLabuba("")), false);
             MinecraftClient.getInstance().player.sendMessage(Text.literal("3. ").append(ChatMessage.ircprefixZapen("")), false);
             MinecraftClient.getInstance().player.sendMessage(Text.literal("4. ").append(ChatMessage.ircprefixBoost("")), false);
-            MinecraftClient.getInstance().player.sendMessage(Text.literal("5. ").append(ChatMessage.ircprefixFear("")), false);
+            MinecraftClient.getInstance().player.sendMessage(Text.literal("5. ").append(ChatMessage.ircprefixRich("")), false);
             MinecraftClient.getInstance().player.sendMessage(Text.literal("6. ").append(ChatMessage.ircprefixPanda("")), false);
             MinecraftClient.getInstance().player.sendMessage(Text.literal("7. ").append(ChatMessage.ircprefixSmiley("")), false);
             MinecraftClient.getInstance().player.sendMessage(Text.literal("8. ").append(ChatMessage.ircprefixBibi("")), false);
@@ -148,7 +148,7 @@ public class IRCCommand extends Command {
             case "Буст":
                 return ChatMessage.ircprefixBoost(message);
             case "Рич":
-                return ChatMessage.ircprefixFear(message);
+                return ChatMessage.ircprefixRich(message);
             case "Панда":
                 return ChatMessage.ircprefixPanda(message);
             case "(●'◡'●)":
@@ -165,8 +165,8 @@ public class IRCCommand extends Command {
     }
 
     private void sendSetPrefix(String prefix) {
-        if (Fear.getInstance().getIrcManager().getClient() != null && Fear.getInstance().getIrcManager().getClient().isOpen()) {
-            Fear.getInstance().getIrcManager().getClient().sendSetPrefix(prefix);
+        if (Rich.getInstance().getIrcManager().getClient() != null && Rich.getInstance().getIrcManager().getClient().isOpen()) {
+            Rich.getInstance().getIrcManager().getClient().sendSetPrefix(prefix);
         }
     }
 

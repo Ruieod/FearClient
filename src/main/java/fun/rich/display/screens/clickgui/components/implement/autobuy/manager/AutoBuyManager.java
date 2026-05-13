@@ -1,7 +1,7 @@
-package fun.Fear.display.screens.clickgui.components.implement.autobuy.manager;
+package fun.rich.display.screens.clickgui.components.implement.autobuy.manager;
 
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.originalitems.ItemRegistry;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.originalitems.ItemRegistry;
 import java.util.List;
 
 public class AutoBuyManager {

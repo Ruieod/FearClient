@@ -1,4 +1,4 @@
-package fun.Fear.mixins.player.entity;
+package fun.rich.mixins.player.entity;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import net.minecraft.entity.player.PlayerEntity;
@@ -8,13 +8,13 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.events.block.PushEvent;
-import fun.Fear.events.player.KeepSprintEvent;
-import fun.Fear.events.player.PlayerTravelEvent;
-import fun.Fear.events.player.SwimmingEvent;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.events.block.PushEvent;
+import fun.rich.events.player.KeepSprintEvent;
+import fun.rich.events.player.PlayerTravelEvent;
+import fun.rich.events.player.SwimmingEvent;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin implements QuickImports {

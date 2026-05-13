@@ -1,4 +1,4 @@
-package fun.Fear.common.repository.friend;
+package fun.rich.common.repository.friend;
 
 import lombok.Getter;
 import lombok.experimental.UtilityClass;

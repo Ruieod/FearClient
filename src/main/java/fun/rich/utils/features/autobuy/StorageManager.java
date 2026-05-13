@@ -1,8 +1,8 @@
-package fun.Fear.utils.features.autobuy;
+package fun.rich.utils.features.autobuy;
 
-import fun.Fear.features.module.setting.implement.BooleanSetting;
-import fun.Fear.utils.math.time.TimerUtil;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.util.AuctionUtils;
+import fun.rich.features.module.setting.implement.BooleanSetting;
+import fun.rich.utils.math.time.TimerUtil;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.util.AuctionUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.GenericContainerScreen;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;

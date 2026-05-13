@@ -1,7 +1,7 @@
-package fun.Fear.utils.display.geometry;
+package fun.rich.utils.display.geometry;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import fun.Fear.utils.display.item.ItemRender;
+import fun.rich.utils.display.item.ItemRender;
 import lombok.experimental.UtilityClass;
 import net.minecraft.client.gl.ShaderProgramKeys;
 import net.minecraft.client.gui.DrawContext;
@@ -12,9 +12,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import org.joml.Matrix4f;
 import org.lwjgl.opengl.GL40C;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.color.ColorAssist;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.color.ColorAssist;
 
 import java.awt.*;
 import java.util.ArrayList;

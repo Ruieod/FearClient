@@ -1,11 +1,11 @@
-package fun.Fear.utils.display.widget;
+package fun.rich.utils.display.widget;
 
-import fun.Fear.common.animation.Animation;
-import fun.Fear.common.animation.implement.Decelerate;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.display.systemrender.builders.Builder;
+import fun.rich.common.animation.Animation;
+import fun.rich.common.animation.implement.Decelerate;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.display.systemrender.builders.Builder;
 import net.minecraft.client.gui.DrawContext;
 
 import java.awt.Color;

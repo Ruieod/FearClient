@@ -1,9 +1,9 @@
-package fun.Fear.utils.client.managers.api.command.exception;
+package fun.rich.utils.client.managers.api.command.exception;
 
 import net.minecraft.util.Formatting;
-import fun.Fear.utils.client.managers.api.command.ICommand;
-import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
-import fun.Fear.utils.display.interfaces.QuickLogger;
+import fun.rich.utils.client.managers.api.command.ICommand;
+import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.rich.utils.display.interfaces.QuickLogger;
 
 import java.util.List;
 

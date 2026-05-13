@@ -1,6 +1,6 @@
-package fun.Fear.mixins.player.entity;
+package fun.rich.mixins.player.entity;
 
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
 import net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket;
 import net.minecraft.util.Hand;
 import org.spongepowered.asm.mixin.Final;

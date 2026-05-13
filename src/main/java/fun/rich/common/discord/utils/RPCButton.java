@@ -1,4 +1,4 @@
-package fun.Fear.common.discord.utils;
+package fun.rich.common.discord.utils;
 
 import lombok.Getter;
 

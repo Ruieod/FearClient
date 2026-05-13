@@ -1,4 +1,4 @@
-package fun.Fear.features.impl.movement;
+package fun.rich.features.impl.movement;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
@@ -8,16 +8,16 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.vehicle.BoatEntity;
-import fun.Fear.features.module.setting.implement.BooleanSetting;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.features.impl.combat.Aura;
-import fun.Fear.events.player.PlayerTravelEvent;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.utils.interactions.simulate.Simulations;
+import fun.rich.features.module.setting.implement.BooleanSetting;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.features.impl.combat.Aura;
+import fun.rich.events.player.PlayerTravelEvent;
+import fun.rich.events.player.TickEvent;
+import fun.rich.utils.interactions.simulate.Simulations;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class Speed extends Module {

@@ -1,7 +1,7 @@
-package fun.Fear.features.impl.player;
+package fun.rich.features.impl.player;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.utils.interactions.inv.InventoryTask;
+import fun.rich.utils.interactions.inv.InventoryTask;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.client.gui.screen.ingame.GenericContainerScreen;
@@ -19,15 +19,15 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.BindSetting;
-import fun.Fear.events.container.CloseScreenEvent;
-import fun.Fear.events.container.SetScreenEvent;
-import fun.Fear.events.keyboard.KeyEvent;
-import fun.Fear.events.packet.PacketEvent;
-import fun.Fear.display.hud.Notifications;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.BindSetting;
+import fun.rich.events.container.CloseScreenEvent;
+import fun.rich.events.container.SetScreenEvent;
+import fun.rich.events.keyboard.KeyEvent;
+import fun.rich.events.packet.PacketEvent;
+import fun.rich.display.hud.Notifications;
 
 import java.util.List;
 

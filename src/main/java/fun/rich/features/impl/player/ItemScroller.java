@@ -1,20 +1,20 @@
-package fun.Fear.features.impl.player;
+package fun.rich.features.impl.player;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
-import fun.Fear.utils.interactions.inv.InventoryTask;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.interactions.inv.InventoryTask;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.item.Item;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.screen.slot.SlotActionType;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.utils.math.time.StopWatch;
-import fun.Fear.events.container.HandledScreenEvent;
-import fun.Fear.events.item.ClickSlotEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.utils.math.time.StopWatch;
+import fun.rich.events.container.HandledScreenEvent;
+import fun.rich.events.item.ClickSlotEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class ItemScroller extends Module {

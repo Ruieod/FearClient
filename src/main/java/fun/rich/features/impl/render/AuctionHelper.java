@@ -1,6 +1,6 @@
-package fun.Fear.features.impl.render;
+package fun.rich.features.impl.render;
 
-import fun.Fear.utils.features.price.PriceParser;
+import fun.rich.utils.features.price.PriceParser;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
@@ -9,16 +9,16 @@ import net.minecraft.client.gui.screen.ingame.GenericContainerScreen;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.network.packet.s2c.play.ScreenHandlerSlotUpdateS2CPacket;
 import net.minecraft.screen.slot.Slot;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.ColorSetting;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.script.Script;
-import fun.Fear.events.container.HandledScreenEvent;
-import fun.Fear.events.packet.PacketEvent;
-import fun.Fear.events.player.TickEvent;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.ColorSetting;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.script.Script;
+import fun.rich.events.container.HandledScreenEvent;
+import fun.rich.events.packet.PacketEvent;
+import fun.rich.events.player.TickEvent;
 
 import java.util.Comparator;
 import java.util.List;

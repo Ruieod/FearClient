@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.systemrender.builders.states;
+package fun.rich.utils.display.systemrender.builders.states;
 
 public record QuadRadiusState(float radius1, float radius2, float radius3, float radius4) {
 

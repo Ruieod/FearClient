@@ -1,4 +1,4 @@
-package fun.Fear.mixins.player.entity;
+package fun.rich.mixins.player.entity;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
@@ -9,10 +9,10 @@ import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.events.player.FireworkEvent;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.events.player.FireworkEvent;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
 
 @Mixin(FireworkRocketEntity.class)
 public class FireworkRocketEntityMixin implements QuickImports {

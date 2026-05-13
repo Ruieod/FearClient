@@ -1,7 +1,7 @@
-package fun.Fear.utils.features.autobuy;
+package fun.rich.utils.features.autobuy;
 
-import fun.Fear.features.module.setting.implement.BooleanSetting;
-import fun.Fear.utils.math.time.TimerUtil;
+import fun.rich.features.module.setting.implement.BooleanSetting;
+import fun.rich.utils.math.time.TimerUtil;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.scoreboard.Scoreboard;

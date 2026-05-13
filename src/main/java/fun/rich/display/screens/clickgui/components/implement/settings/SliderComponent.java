@@ -1,21 +1,21 @@
-package fun.Fear.display.screens.clickgui.components.implement.settings;
+package fun.rich.display.screens.clickgui.components.implement.settings;
 
-import fun.Fear.Fear;
-import fun.Fear.utils.display.scissor.ScissorAssist;
+import fun.rich.Rich;
+import fun.rich.utils.display.scissor.ScissorAssist;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.Calculate;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.Calculate;
 
 import java.awt.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import static fun.Fear.utils.display.font.Fonts.Type.*;
+import static fun.rich.utils.display.font.Fonts.Type.*;
 
 public class SliderComponent extends AbstractSettingComponent {
     public static final int SLIDER_WIDTH = 65;
@@ -47,7 +47,7 @@ public class SliderComponent extends AbstractSettingComponent {
 
         float offset = 62;
         if (nameWidth > 62) {
-            ScissorAssist scissor = Fear.getInstance().getScissorManager();
+            ScissorAssist scissor = Rich.getInstance().getScissorManager();
             scissor.push(matrix.peek().getPositionMatrix(), x + 19, y + 12f, 65, 50);
             Fonts.getSize(12, DEFAULT).drawStringWithScroll(matrix, setting.getName(), x + 19, y + 15f, offset, new Color(225, 225, 225, 225).getRGB());
             scissor.pop();

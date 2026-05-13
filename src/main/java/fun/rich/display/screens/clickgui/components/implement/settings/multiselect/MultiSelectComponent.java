@@ -1,23 +1,23 @@
-package fun.Fear.display.screens.clickgui.components.implement.settings.multiselect;
+package fun.rich.display.screens.clickgui.components.implement.settings.multiselect;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
-import fun.Fear.common.animation.Animation;
-import fun.Fear.common.animation.Direction;
-import fun.Fear.common.animation.implement.Decelerate;
-import fun.Fear.utils.display.font.FontRenderer;
-import fun.Fear.display.screens.clickgui.components.implement.settings.AbstractSettingComponent;
-import fun.Fear.utils.display.scissor.ScissorAssist;
-import fun.Fear.features.module.setting.implement.MultiSelectSetting;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.Fear;
+import fun.rich.common.animation.Animation;
+import fun.rich.common.animation.Direction;
+import fun.rich.common.animation.implement.Decelerate;
+import fun.rich.utils.display.font.FontRenderer;
+import fun.rich.display.screens.clickgui.components.implement.settings.AbstractSettingComponent;
+import fun.rich.utils.display.scissor.ScissorAssist;
+import fun.rich.features.module.setting.implement.MultiSelectSetting;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.Rich;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static fun.Fear.utils.display.font.Fonts.Type.*;
+import static fun.rich.utils.display.font.Fonts.Type.*;
 
 public class MultiSelectComponent extends AbstractSettingComponent {
     private final List<MultiSelectedButton> multiSelectedButtons = new ArrayList<>();
@@ -94,7 +94,7 @@ public class MultiSelectComponent extends AbstractSettingComponent {
                 .build());
         String selectedName = String.join(", ", setting.getSelected());
         float offset = 64;
-        ScissorAssist scissor = Fear.getInstance().getScissorManager();
+        ScissorAssist scissor = Rich.getInstance().getScissorManager();
         scissor.push(matrix.peek().getPositionMatrix(), x1 - 2, y + 4, 64, 14);
         font.drawStringWithScroll(matrix, selectedName, x1, y + 13, offset, new Color(225, 225, 225, 225).getRGB());
         scissor.pop();

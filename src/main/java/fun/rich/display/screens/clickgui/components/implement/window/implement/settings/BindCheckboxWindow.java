@@ -1,8 +1,8 @@
-package fun.Fear.display.screens.clickgui.components.implement.window.implement.settings;
+package fun.rich.display.screens.clickgui.components.implement.window.implement.settings;
 
 import lombok.RequiredArgsConstructor;
-import fun.Fear.features.module.setting.implement.BooleanSetting;
-import fun.Fear.display.screens.clickgui.components.implement.window.implement.AbstractBindWindow;
+import fun.rich.features.module.setting.implement.BooleanSetting;
+import fun.rich.display.screens.clickgui.components.implement.window.implement.AbstractBindWindow;
 
 @RequiredArgsConstructor
 public class BindCheckboxWindow extends AbstractBindWindow {

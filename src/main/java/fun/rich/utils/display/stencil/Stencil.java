@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.stencil;
+package fun.rich.utils.display.stencil;
 
 import static org.lwjgl.opengl.EXTFramebufferObject.*;
 import static org.lwjgl.opengl.EXTFramebufferObject.GL_RENDERBUFFER_EXT;
@@ -7,7 +7,7 @@ import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL11.GL_DEPTH_TEST;
 
 import lombok.experimental.UtilityClass;
-import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.interfaces.QuickImports;
 
 import static org.lwjgl.opengl.GL11.GL_STENCIL_TEST;
 

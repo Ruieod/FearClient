@@ -1,4 +1,4 @@
-package fun.Fear.mixins.client.display.background;
+package fun.rich.mixins.client.display.background;
 
 import net.minecraft.client.render.BackgroundRenderer;
 import net.minecraft.client.render.Camera;
@@ -12,10 +12,10 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.events.render.FogEvent;
-import fun.Fear.features.impl.render.NoRender;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.events.render.FogEvent;
+import fun.rich.features.impl.render.NoRender;
 
 @Mixin(BackgroundRenderer.class)
 public class BackGroundRendererMixin {

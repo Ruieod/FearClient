@@ -1,6 +1,6 @@
-package fun.Fear.utils.display.systemrender.builders;
+package fun.rich.utils.display.systemrender.builders;
 
-import fun.Fear.utils.display.systemrender.builders.impl.*;
+import fun.rich.utils.display.systemrender.builders.impl.*;
 
 
 public final class Builder {

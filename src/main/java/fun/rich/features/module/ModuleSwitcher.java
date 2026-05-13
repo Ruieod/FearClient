@@ -1,15 +1,15 @@
-package fun.Fear.features.module;
+package fun.rich.features.module;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.util.Formatting;
-import fun.Fear.features.module.exception.ModuleException;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.events.keyboard.KeyEvent;
-import fun.Fear.common.logger.implement.ConsoleLogger;
-import fun.Fear.utils.display.interfaces.QuickLogger;
+import fun.rich.features.module.exception.ModuleException;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.events.keyboard.KeyEvent;
+import fun.rich.common.logger.implement.ConsoleLogger;
+import fun.rich.utils.display.interfaces.QuickLogger;
 
 import java.util.List;
 

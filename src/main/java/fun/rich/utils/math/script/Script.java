@@ -1,10 +1,10 @@
-package fun.Fear.utils.math.script;
+package fun.rich.utils.math.script;
 
 import com.google.common.collect.Lists;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
-import fun.Fear.utils.math.time.StopWatch;
+import fun.rich.utils.math.time.StopWatch;
 
 import java.util.Collections;
 import java.util.List;

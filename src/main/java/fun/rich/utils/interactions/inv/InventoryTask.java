@@ -1,7 +1,7 @@
-package fun.Fear.utils.interactions.inv;
+package fun.rich.utils.interactions.inv;
 
-import fun.Fear.utils.features.aura.warp.Turns;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.features.aura.warp.Turns;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMaps;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.PotionContentsComponent;
@@ -22,11 +22,11 @@ import net.minecraft.screen.slot.SlotActionType;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.interactions.item.ItemTask;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.display.hud.Notifications;
-import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.interactions.item.ItemTask;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.display.hud.Notifications;
+import fun.rich.utils.features.aura.utils.MathAngle;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;

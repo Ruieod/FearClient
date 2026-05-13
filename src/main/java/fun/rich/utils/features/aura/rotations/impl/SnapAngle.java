@@ -1,15 +1,15 @@
-package fun.Fear.utils.features.aura.rotations.impl;
+package fun.rich.utils.features.aura.rotations.impl;
 
-import fun.Fear.Fear;
-import fun.Fear.features.impl.combat.Aura;
-import fun.Fear.utils.features.aura.point.Vector;
-import fun.Fear.utils.features.aura.rotations.constructor.RotateConstructor;
-import fun.Fear.utils.features.aura.striking.StrikeManager;
-import fun.Fear.utils.features.aura.warp.Turns;
+import fun.rich.Rich;
+import fun.rich.features.impl.combat.Aura;
+import fun.rich.utils.features.aura.point.Vector;
+import fun.rich.utils.features.aura.rotations.constructor.RotateConstructor;
+import fun.rich.utils.features.aura.striking.StrikeManager;
+import fun.rich.utils.features.aura.warp.Turns;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
-import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.rich.utils.features.aura.utils.MathAngle;
 
 import java.security.SecureRandom;
 
@@ -24,7 +24,7 @@ public class SnapAngle extends RotateConstructor {
             Vec3d aimPoint = Vector.hitbox(entity, 1, 1, 1, 2);
             targetAngle = MathAngle.calculateAngle(aimPoint);
         }
-        StrikeManager attackHandler = Fear.getInstance().getAttackPerpetrator().getAttackHandler();
+        StrikeManager attackHandler = Rich.getInstance().getAttackPerpetrator().getAttackHandler();
         Aura aura = Aura.getInstance();
         Turns angleDelta = MathAngle.calculateDelta(currentAngle, targetAngle);
         float yawDelta = angleDelta.getYaw();

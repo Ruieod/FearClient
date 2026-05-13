@@ -1,7 +1,7 @@
-package fun.Fear.common.discord.callbacks;
+package fun.rich.common.discord.callbacks;
 
 import com.sun.jna.Callback;
-import fun.Fear.common.discord.utils.DiscordUser;
+import fun.rich.common.discord.utils.DiscordUser;
 
 public interface ReadyCallback extends Callback {
     void apply(DiscordUser var1);

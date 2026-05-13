@@ -1,4 +1,4 @@
-package fun.Fear.features.impl.player;
+package fun.rich.features.impl.player;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
@@ -11,21 +11,21 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.client.managers.event.types.EventType;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.BooleanSetting;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
-import fun.Fear.utils.display.geometry.Render3D;
-import fun.Fear.utils.math.task.TaskPriority;
-import fun.Fear.events.player.RotationUpdateEvent;
-import fun.Fear.events.render.WorldRenderEvent;
-import fun.Fear.utils.features.aura.utils.MathAngle;
-import fun.Fear.utils.features.aura.warp.TurnsConfig;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.client.managers.event.types.EventType;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.BooleanSetting;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.display.geometry.Render3D;
+import fun.rich.utils.math.task.TaskPriority;
+import fun.rich.events.player.RotationUpdateEvent;
+import fun.rich.events.render.WorldRenderEvent;
+import fun.rich.utils.features.aura.utils.MathAngle;
+import fun.rich.utils.features.aura.warp.TurnsConfig;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
 
 import java.util.Comparator;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package fun.Fear.utils.interactions.item;
+package fun.rich.utils.interactions.item;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -9,10 +9,10 @@ import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
 import net.minecraft.network.packet.s2c.play.GameJoinS2CPacket;
 import net.minecraft.network.packet.s2c.play.PlayerRespawnS2CPacket;
 import net.minecraft.util.Hand;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.Fear;
-import fun.Fear.events.packet.PacketEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.Rich;
+import fun.rich.events.packet.PacketEvent;
 
 @Setter
 @Getter
@@ -22,7 +22,7 @@ public class ItemToolkit implements QuickImports {
     public boolean useItem, releaseItem = true;
 
     public ItemToolkit() {
-        Fear.getInstance().getEventManager().register(this);
+        Rich.getInstance().getEventManager().register(this);
     }
 
     @EventHandler

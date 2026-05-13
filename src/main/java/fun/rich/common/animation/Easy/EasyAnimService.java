@@ -1,6 +1,6 @@
-package fun.Fear.common.animation.Easy;
+package fun.rich.common.animation.Easy;
 
-import fun.Fear.utils.math.time.TimerUtil;
+import fun.rich.utils.math.time.TimerUtil;
 
 public abstract class EasyAnimService {
     public TimerUtil timerUtil = new TimerUtil();

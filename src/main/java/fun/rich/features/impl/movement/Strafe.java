@@ -1,20 +1,20 @@
-package fun.Fear.features.impl.movement;
+package fun.rich.features.impl.movement;
 
 import com.google.common.eventbus.Subscribe;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.features.impl.combat.Aura;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.client.Instance;
-import fun.Fear.utils.features.aura.warp.Turns;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
-import fun.Fear.utils.features.aura.warp.TurnsConfig;
-import fun.Fear.utils.features.aura.warp.TurnsConstructor;
-import fun.Fear.utils.interactions.simulate.Simulations;
-import fun.Fear.utils.math.task.TaskPriority;
+import fun.rich.events.player.TickEvent;
+import fun.rich.features.impl.combat.Aura;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.client.Instance;
+import fun.rich.utils.features.aura.warp.Turns;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.rich.utils.features.aura.warp.TurnsConfig;
+import fun.rich.utils.features.aura.warp.TurnsConstructor;
+import fun.rich.utils.interactions.simulate.Simulations;
+import fun.rich.utils.math.task.TaskPriority;
 import net.minecraft.client.MinecraftClient;
 
 public class Strafe extends Module {

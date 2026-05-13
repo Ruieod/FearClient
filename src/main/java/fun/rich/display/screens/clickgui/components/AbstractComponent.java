@@ -1,7 +1,7 @@
-package fun.Fear.display.screens.clickgui.components;
+package fun.rich.display.screens.clickgui.components;
 
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.client.interfaces.ResizableMovable;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.client.interfaces.ResizableMovable;
 
 public abstract class AbstractComponent implements Component, QuickImports, ResizableMovable {
     public float x, y, width, height;

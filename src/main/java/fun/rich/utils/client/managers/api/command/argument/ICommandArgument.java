@@ -15,10 +15,10 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package fun.Fear.utils.client.managers.api.command.argument;
+package fun.rich.utils.client.managers.api.command.argument;
 
-import fun.Fear.utils.client.managers.api.command.argparser.IArgParser;
-import fun.Fear.utils.client.managers.api.command.exception.CommandInvalidTypeException;
+import fun.rich.utils.client.managers.api.command.argparser.IArgParser;
+import fun.rich.utils.client.managers.api.command.exception.CommandInvalidTypeException;
 
 /**
  * A {@link ICommandArgument} is an immutable object representing one command argument. It contains data on the index of

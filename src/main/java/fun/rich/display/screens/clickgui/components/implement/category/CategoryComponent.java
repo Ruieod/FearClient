@@ -1,24 +1,24 @@
-package fun.Fear.display.screens.clickgui.components.implement.category;
+package fun.rich.display.screens.clickgui.components.implement.category;
 
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 import org.joml.Matrix4f;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.common.animation.Animation;
-import fun.Fear.common.animation.Direction;
-import fun.Fear.common.animation.implement.InOutBack;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.display.screens.clickgui.components.implement.module.ModuleComponent;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.display.scissor.ScissorAssist;
-import fun.Fear.Fear;
-import fun.Fear.display.screens.clickgui.MenuScreen;
-import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.common.animation.Animation;
+import fun.rich.common.animation.Direction;
+import fun.rich.common.animation.implement.InOutBack;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.display.screens.clickgui.components.implement.module.ModuleComponent;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.display.scissor.ScissorAssist;
+import fun.rich.Rich;
+import fun.rich.display.screens.clickgui.MenuScreen;
+import fun.rich.display.screens.clickgui.components.AbstractComponent;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -36,7 +36,7 @@ public class CategoryComponent extends AbstractComponent {
     private float smoothedScroll = 0;
 
     private void initializeModules() {
-        List<Module> modules = Fear.getInstance()
+        List<Module> modules = Rich.getInstance()
                 .getModuleRepository()
                 .modules();
         for (Module module : modules) {
@@ -79,7 +79,7 @@ public class CategoryComponent extends AbstractComponent {
         MenuScreen menuScreen = MenuScreen.INSTANCE;
         globalModuleComponents.clear();
         Matrix4f positionMatrix = context.getMatrices().peek().getPositionMatrix();
-        ScissorAssist scissorManager = Fear.getInstance().getScissorManager();
+        ScissorAssist scissorManager = Rich.getInstance().getScissorManager();
         drawCategoryTab(context, context.getMatrices(), mouseX, mouseY);
         int[] offsets = calculateOffsets();
         int columnWidth = 142;

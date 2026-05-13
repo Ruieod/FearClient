@@ -1,4 +1,4 @@
-package fun.Fear.mixins.player.item;
+package fun.rich.mixins.player.item;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
@@ -13,10 +13,10 @@ import net.minecraft.util.Hand;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.events.item.HandAnimationEvent;
-import fun.Fear.events.item.HandOffsetEvent;
-import fun.Fear.events.render.ItemRendererEvent;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.events.item.HandAnimationEvent;
+import fun.rich.events.item.HandOffsetEvent;
+import fun.rich.events.render.ItemRendererEvent;
 
 @Mixin(HeldItemRenderer.class)
 public abstract class HeldItemRendererMixin {

@@ -1,11 +1,11 @@
-package fun.Fear.utils.display.systemrender.builders.impl;
+package fun.rich.utils.display.systemrender.builders.impl;
 
-import fun.Fear.utils.display.systemrender.renderers.impl.BuiltTexture;
+import fun.rich.utils.display.systemrender.renderers.impl.BuiltTexture;
 import net.minecraft.client.texture.AbstractTexture;
-import fun.Fear.utils.display.systemrender.builders.AbstractBuilder;
-import fun.Fear.utils.display.systemrender.builders.states.QuadColorState;
-import fun.Fear.utils.display.systemrender.builders.states.QuadRadiusState;
-import fun.Fear.utils.display.systemrender.builders.states.SizeState;
+import fun.rich.utils.display.systemrender.builders.AbstractBuilder;
+import fun.rich.utils.display.systemrender.builders.states.QuadColorState;
+import fun.rich.utils.display.systemrender.builders.states.QuadRadiusState;
+import fun.rich.utils.display.systemrender.builders.states.SizeState;
 
 public final class TextureBuilder extends AbstractBuilder<BuiltTexture> {
 

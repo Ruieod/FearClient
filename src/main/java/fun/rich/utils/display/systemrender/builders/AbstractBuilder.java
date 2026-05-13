@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.systemrender.builders;
+package fun.rich.utils.display.systemrender.builders;
 
 public abstract class AbstractBuilder<T> {
 

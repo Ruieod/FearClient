@@ -1,11 +1,11 @@
-package fun.Fear.utils.display.scissor;
+package fun.rich.utils.display.scissor;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import org.joml.Matrix4f;
 import org.joml.Vector3f;
-import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.interfaces.QuickImports;
 
 import java.util.Stack;
 

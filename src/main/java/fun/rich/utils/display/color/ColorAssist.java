@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.color;
+package fun.rich.utils.display.color;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import it.unimi.dsi.fastutil.chars.Char2IntArrayMap;
@@ -10,8 +10,8 @@ import net.minecraft.util.math.ColorHelper;
 import net.minecraft.util.math.MathHelper;
 import org.joml.Vector4i;
 import org.lwjgl.opengl.GL11;
-import fun.Fear.features.impl.render.Hud;
-import fun.Fear.utils.math.calc.Calculate;
+import fun.rich.features.impl.render.Hud;
+import fun.rich.utils.math.calc.Calculate;
 
 import java.awt.*;
 import java.nio.ByteBuffer;

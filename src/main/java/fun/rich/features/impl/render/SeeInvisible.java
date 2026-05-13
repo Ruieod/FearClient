@@ -1,13 +1,13 @@
-package fun.Fear.features.impl.render;
+package fun.rich.features.impl.render;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.events.render.EntityColorEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.events.render.EntityColorEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class SeeInvisible extends Module {

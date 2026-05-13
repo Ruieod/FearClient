@@ -15,10 +15,10 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package fun.Fear.commands.argparser;
+package fun.rich.commands.argparser;
 
-import fun.Fear.utils.client.managers.api.command.argparser.IArgParser;
-import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.rich.utils.client.managers.api.command.argparser.IArgParser;
+import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,9 +1,9 @@
-package fun.Fear.features.module.setting;
+package fun.rich.features.module.setting;
 
 import com.google.common.collect.Lists;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import fun.Fear.utils.client.interfaces.Setupable;
+import fun.rich.utils.client.interfaces.Setupable;
 
 import java.util.Arrays;
 import java.util.List;

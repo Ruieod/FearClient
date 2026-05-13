@@ -1,14 +1,14 @@
-package fun.Fear.display.hud;
+package fun.rich.display.hud;
 
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.util.math.BlockPos;
-import fun.Fear.utils.display.font.FontRenderer;
-import fun.Fear.utils.client.packet.network.Network;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.interactions.simulate.Simulations;
-import fun.Fear.utils.client.managers.api.draggable.AbstractDraggable;
-import fun.Fear.utils.display.font.Fonts;
+import fun.rich.utils.display.font.FontRenderer;
+import fun.rich.utils.client.packet.network.Network;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.interactions.simulate.Simulations;
+import fun.rich.utils.client.managers.api.draggable.AbstractDraggable;
+import fun.rich.utils.display.font.Fonts;
 
 import java.awt.*;
 import java.util.Objects;

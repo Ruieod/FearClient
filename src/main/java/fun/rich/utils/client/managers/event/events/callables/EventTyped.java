@@ -1,7 +1,7 @@
-package fun.Fear.utils.client.managers.event.events.callables;
+package fun.rich.utils.client.managers.event.events.callables;
 
-import fun.Fear.utils.client.managers.event.events.Event;
-import fun.Fear.utils.client.managers.event.events.Typed;
+import fun.rich.utils.client.managers.event.events.Event;
+import fun.rich.utils.client.managers.event.events.Typed;
 
 public abstract class EventTyped implements Event, Typed {
 

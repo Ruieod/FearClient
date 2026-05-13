@@ -1,9 +1,9 @@
-package fun.Fear.events.player;
+package fun.rich.events.player;
 
 import lombok.Getter;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.damage.DamageSource;
-import fun.Fear.utils.client.managers.event.events.Event;
+import fun.rich.utils.client.managers.event.events.Event;
 
 @Getter
 public class EntityDeathEvent implements Event {

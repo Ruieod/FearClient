@@ -1,10 +1,10 @@
-package fun.Fear.utils.client.managers.api.command.datatypes;
+package fun.rich.utils.client.managers.api.command.datatypes;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.util.InputUtil;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.Fear.utils.client.chat.StringHelper;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.utils.client.chat.StringHelper;
 
 import java.util.HashMap;
 import java.util.Map;

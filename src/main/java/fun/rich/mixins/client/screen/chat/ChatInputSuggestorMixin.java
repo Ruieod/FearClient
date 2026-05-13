@@ -1,4 +1,4 @@
-package fun.Fear.mixins.client.screen.chat;
+package fun.rich.mixins.client.screen.chat;
 
 import com.mojang.brigadier.ParseResults;
 import com.mojang.brigadier.context.StringRange;
@@ -13,8 +13,8 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.events.chat.TabCompleteEvent;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.events.chat.TabCompleteEvent;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

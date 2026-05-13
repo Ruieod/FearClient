@@ -1,10 +1,10 @@
-package fun.Fear.utils.client.managers.api.command.datatypes;
+package fun.rich.utils.client.managers.api.command.datatypes;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registries;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
 
 import java.util.List;
 import java.util.Optional;

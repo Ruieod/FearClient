@@ -1,4 +1,4 @@
-package fun.Fear.commands.defaults;
+package fun.rich.commands.defaults;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
@@ -6,28 +6,28 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 
-import fun.Fear.utils.client.managers.api.command.Command;
-import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.Fear.utils.client.managers.api.command.datatypes.*;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.Paginator;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.Fear.common.repository.way.WayRepository;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.Fear;
+import fun.rich.utils.client.managers.api.command.Command;
+import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.rich.utils.client.managers.api.command.datatypes.*;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.helpers.Paginator;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.common.repository.way.WayRepository;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.Rich;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Stream;
 
-import static fun.Fear.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
+import static fun.rich.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class WayCommand extends Command implements QuickImports {
     final WayRepository wayRepository;
 
-    protected WayCommand(Fear main) {
+    protected WayCommand(Rich main) {
         super("way");
         wayRepository = main.getWayRepository();
     }

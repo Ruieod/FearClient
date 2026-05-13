@@ -1,19 +1,19 @@
-package fun.Fear.display.hud;
+package fun.rich.display.hud;
 
-import fun.Fear.common.animation.Direction;
-import fun.Fear.features.impl.render.Hud;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.common.animation.Direction;
+import fun.rich.features.impl.render.Hud;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
-import fun.Fear.utils.client.managers.api.draggable.AbstractDraggable;
-import fun.Fear.features.module.Module;
-import fun.Fear.utils.display.font.FontRenderer;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.client.chat.StringHelper;
-import fun.Fear.Fear;
+import fun.rich.utils.client.managers.api.draggable.AbstractDraggable;
+import fun.rich.features.module.Module;
+import fun.rich.utils.display.font.FontRenderer;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.client.chat.StringHelper;
+import fun.rich.Rich;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -35,7 +35,7 @@ public class HotKeys extends AbstractDraggable {
 
     @Override
     public void tick() {
-        keysList = Fear.getInstance().getModuleProvider().getModules().stream()
+        keysList = Rich.getInstance().getModuleProvider().getModules().stream()
                 .filter(module -> module.getAnimation().getOutput().floatValue() != 0 && module.getKey() != -1)
                 .toList();
         if (keysList.isEmpty() && PlayerInteractionHelper.isChat(mc.currentScreen)) {

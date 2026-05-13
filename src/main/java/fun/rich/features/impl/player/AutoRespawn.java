@@ -1,4 +1,4 @@
-package fun.Fear.features.impl.player;
+package fun.rich.features.impl.player;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
@@ -6,13 +6,13 @@ import lombok.experimental.FieldDefaults;
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
 import net.minecraft.network.packet.s2c.play.DeathMessageS2CPacket;
 
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.client.packet.network.Network;
-import fun.Fear.events.packet.PacketEvent;
-import fun.Fear.events.player.DeathScreenEvent;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.client.packet.network.Network;
+import fun.rich.events.packet.PacketEvent;
+import fun.rich.events.player.DeathScreenEvent;
 
 @SuppressWarnings("all")
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)

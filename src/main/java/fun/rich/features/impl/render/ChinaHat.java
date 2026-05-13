@@ -1,4 +1,4 @@
-package fun.Fear.features.impl.render;
+package fun.rich.features.impl.render;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import lombok.AccessLevel;
@@ -11,13 +11,13 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.math.RotationAxis;
 import net.minecraft.util.math.Vec3d;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.ColorSetting;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.events.render.WorldRenderEvent;
-import fun.Fear.utils.display.color.ColorAssist;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.ColorSetting;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.events.render.WorldRenderEvent;
+import fun.rich.utils.display.color.ColorAssist;
 import com.mojang.blaze3d.platform.GlStateManager;
 import org.lwjgl.opengl.GL11;
 

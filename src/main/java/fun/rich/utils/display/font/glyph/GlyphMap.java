@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.font.glyph;
+package fun.rich.utils.display.font.glyph;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import it.unimi.dsi.fastutil.chars.Char2ObjectArrayMap;

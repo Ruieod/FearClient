@@ -15,19 +15,19 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package fun.Fear.commands.argument;
+package fun.rich.commands.argument;
 
-import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
-import fun.Fear.utils.client.managers.api.command.datatypes.IDatatype;
-import fun.Fear.utils.client.managers.api.command.datatypes.IDatatypeContext;
-import fun.Fear.utils.client.managers.api.command.datatypes.IDatatypeFor;
-import fun.Fear.utils.client.managers.api.command.datatypes.IDatatypePost;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.exception.CommandInvalidTypeException;
-import fun.Fear.utils.client.managers.api.command.exception.CommandNotEnoughArgumentsException;
-import fun.Fear.utils.client.managers.api.command.exception.CommandTooManyArgumentsException;
-import fun.Fear.utils.client.managers.api.command.manager.ICommandManager;
+import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.rich.utils.client.managers.api.command.datatypes.IDatatype;
+import fun.rich.utils.client.managers.api.command.datatypes.IDatatypeContext;
+import fun.rich.utils.client.managers.api.command.datatypes.IDatatypeFor;
+import fun.rich.utils.client.managers.api.command.datatypes.IDatatypePost;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.exception.CommandInvalidTypeException;
+import fun.rich.utils.client.managers.api.command.exception.CommandNotEnoughArgumentsException;
+import fun.rich.utils.client.managers.api.command.exception.CommandTooManyArgumentsException;
+import fun.rich.utils.client.managers.api.command.manager.ICommandManager;
 
 import java.util.ArrayList;
 import java.util.Deque;

@@ -1,9 +1,9 @@
-package fun.Fear.utils.client.managers.api.command.datatypes;
+package fun.rich.utils.client.managers.api.command.datatypes;
 
-import fun.Fear.Fear;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.Fear.features.module.Module;
+import fun.rich.Rich;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.features.module.Module;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -37,6 +37,6 @@ public enum ModuleDataType implements IDatatypeFor<Module>{
     }
 
     private List<? extends Module> getModules() {
-        return Fear.getInstance().getModuleRepository().modules();
+        return Rich.getInstance().getModuleRepository().modules();
     }
 }

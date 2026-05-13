@@ -1,4 +1,4 @@
-package fun.Fear.utils.client.discord;
+package fun.rich.utils.client.discord;
 
 import com.google.common.collect.Maps;
 import lombok.experimental.UtilityClass;
@@ -11,7 +11,7 @@ import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWImage;
 import org.lwjgl.system.MemoryStack;
 import org.lwjgl.system.MemoryUtil;
-import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.interfaces.QuickImports;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;

@@ -1,8 +1,8 @@
-package fun.Fear.display.screens.clickgui.components.implement.autobuy.util.krushprovider;
+package fun.rich.display.screens.clickgui.components.implement.autobuy.util.krushprovider;
 
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.settings.AutoBuyItemSettings;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsManager;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.settings.AutoBuyItemSettings;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsManager;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 

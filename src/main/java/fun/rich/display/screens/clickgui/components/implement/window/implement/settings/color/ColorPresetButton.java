@@ -1,12 +1,12 @@
-package fun.Fear.display.screens.clickgui.components.implement.window.implement.settings.color;
+package fun.rich.display.screens.clickgui.components.implement.window.implement.settings.color;
 
 import lombok.RequiredArgsConstructor;
 import net.minecraft.client.gui.DrawContext;
 
-import fun.Fear.features.module.setting.implement.ColorSetting;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.rich.features.module.setting.implement.ColorSetting;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.display.screens.clickgui.components.AbstractComponent;
 
 @RequiredArgsConstructor
 public class ColorPresetButton extends AbstractComponent {

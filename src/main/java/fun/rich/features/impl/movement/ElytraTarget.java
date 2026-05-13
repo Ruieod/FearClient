@@ -1,16 +1,16 @@
-package fun.Fear.features.impl.movement;
+package fun.rich.features.impl.movement;
 
 import com.google.common.eventbus.Subscribe;
-import fun.Fear.display.hud.Notifications;
-import fun.Fear.events.keyboard.KeyEvent;
-import fun.Fear.features.impl.render.Hud;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.BindSetting;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.utils.client.Instance;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.client.sound.SoundManager;
+import fun.rich.display.hud.Notifications;
+import fun.rich.events.keyboard.KeyEvent;
+import fun.rich.features.impl.render.Hud;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.BindSetting;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.utils.client.Instance;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.client.sound.SoundManager;
 import net.minecraft.util.Formatting;
 
 public class ElytraTarget extends Module {

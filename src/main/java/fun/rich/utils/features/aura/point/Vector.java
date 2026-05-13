@@ -1,6 +1,6 @@
-package fun.Fear.utils.features.aura.point;
+package fun.rich.utils.features.aura.point;
 
-import fun.Fear.utils.math.time.StopWatch;
+import fun.rich.utils.math.time.StopWatch;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static fun.Fear.utils.display.interfaces.QuickImports.mc;
+import static fun.rich.utils.display.interfaces.QuickImports.mc;
 
 public class Vector {
 

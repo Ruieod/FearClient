@@ -1,4 +1,4 @@
-package fun.Fear.utils.features.autobuy;
+package fun.rich.utils.features.autobuy;
 
 public class ServerSwitchHandler {
     private static boolean waitingForServerLoad = false;

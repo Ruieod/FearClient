@@ -1,9 +1,9 @@
-package fun.Fear.utils.math.task;
+package fun.rich.utils.math.task;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
-import fun.Fear.features.module.Module;
+import fun.rich.features.module.Module;
 
 import java.util.PriorityQueue;
 

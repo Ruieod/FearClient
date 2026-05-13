@@ -1,24 +1,24 @@
-package fun.Fear.commands.defaults;
+package fun.rich.commands.defaults;
 
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.client.managers.api.command.Command;
-import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.Fear.utils.client.managers.api.command.datatypes.TabPlayerDataType;
-import fun.Fear.utils.client.managers.api.command.datatypes.TargetDataType;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.Paginator;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.Fear.utils.client.managers.api.command.manager.ICommandManager;
-import fun.Fear.common.repository.target.TargetRepository;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.client.managers.api.command.Command;
+import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.rich.utils.client.managers.api.command.datatypes.TabPlayerDataType;
+import fun.rich.utils.client.managers.api.command.datatypes.TargetDataType;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.helpers.Paginator;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.utils.client.managers.api.command.manager.ICommandManager;
+import fun.rich.common.repository.target.TargetRepository;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Stream;
 
-import static fun.Fear.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
+import static fun.rich.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
 
 public class TargetCommand extends Command implements QuickImports {
 

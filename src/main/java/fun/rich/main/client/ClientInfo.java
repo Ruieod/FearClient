@@ -1,6 +1,6 @@
-package fun.Fear.main.client;
+package fun.rich.main.client;
 
-import fun.Fear.utils.client.chat.StringHelper;
+import fun.rich.utils.client.chat.StringHelper;
 
 import java.io.File;
 

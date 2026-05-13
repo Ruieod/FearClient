@@ -1,10 +1,10 @@
-package fun.Fear.utils.display.systemrender.builders.impl;
+package fun.rich.utils.display.systemrender.builders.impl;
 
-import fun.Fear.utils.display.systemrender.renderers.impl.BuiltBlur;
-import fun.Fear.utils.display.systemrender.builders.AbstractBuilder;
-import fun.Fear.utils.display.systemrender.builders.states.QuadColorState;
-import fun.Fear.utils.display.systemrender.builders.states.QuadRadiusState;
-import fun.Fear.utils.display.systemrender.builders.states.SizeState;
+import fun.rich.utils.display.systemrender.renderers.impl.BuiltBlur;
+import fun.rich.utils.display.systemrender.builders.AbstractBuilder;
+import fun.rich.utils.display.systemrender.builders.states.QuadColorState;
+import fun.rich.utils.display.systemrender.builders.states.QuadRadiusState;
+import fun.rich.utils.display.systemrender.builders.states.SizeState;
 
 
 public final class BlurBuilder extends AbstractBuilder<BuiltBlur> {

@@ -1,9 +1,9 @@
-package fun.Fear.events.player;
+package fun.rich.events.player;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.block.Block;
-import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
+import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
 
 @Setter
 @Getter

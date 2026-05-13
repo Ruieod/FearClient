@@ -1,8 +1,8 @@
-package fun.Fear.common.animation.inovated;
+package fun.rich.common.animation.inovated;
 
 import lombok.Getter;
 import lombok.Setter;
-import fun.Fear.utils.math.calc.Calculate;
+import fun.rich.utils.math.calc.Calculate;
 
 public class InovatedAnimService {
 

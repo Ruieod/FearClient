@@ -1,4 +1,4 @@
-package fun.Fear.mixins.player.entity;
+package fun.rich.mixins.player.entity;
 
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.entity.Entity;
@@ -13,14 +13,14 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.client.managers.event.types.EventType;
-import fun.Fear.utils.interactions.item.ItemToolkit;
-import fun.Fear.events.block.BlockBreakingEvent;
-import fun.Fear.events.block.BreakBlockEvent;
-import fun.Fear.events.item.ClickSlotEvent;
-import fun.Fear.events.item.UsingItemEvent;
-import fun.Fear.events.player.AttackEvent;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.client.managers.event.types.EventType;
+import fun.rich.utils.interactions.item.ItemToolkit;
+import fun.rich.events.block.BlockBreakingEvent;
+import fun.rich.events.block.BreakBlockEvent;
+import fun.rich.events.item.ClickSlotEvent;
+import fun.rich.events.item.UsingItemEvent;
+import fun.rich.events.player.AttackEvent;
 
 @Mixin(ClientPlayerInteractionManager.class)
 public class ClientPlayerInteractionManagerMixin {

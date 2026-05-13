@@ -1,16 +1,16 @@
-package fun.Fear.features.impl.misc;
+package fun.rich.features.impl.misc;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.features.impl.movement.AutoSprint;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.BindSetting;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.utils.client.chat.ChatMessage;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.interactions.inv.InventoryResult;
-import fun.Fear.utils.interactions.inv.InventoryToolkit;
+import fun.rich.events.player.TickEvent;
+import fun.rich.features.impl.movement.AutoSprint;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.BindSetting;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.utils.client.chat.ChatMessage;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.interactions.inv.InventoryResult;
+import fun.rich.utils.interactions.inv.InventoryToolkit;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.item.Items;

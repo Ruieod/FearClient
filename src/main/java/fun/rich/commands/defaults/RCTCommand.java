@@ -1,17 +1,17 @@
-package fun.Fear.commands.defaults;
+package fun.rich.commands.defaults;
 
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.util.Formatting;
 
-import fun.Fear.utils.client.managers.api.command.Command;
-import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.common.repository.rct.RCTRepository;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.client.packet.network.Network;
-import fun.Fear.Fear;
-import fun.Fear.display.hud.Notifications;
+import fun.rich.utils.client.managers.api.command.Command;
+import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.common.repository.rct.RCTRepository;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.client.packet.network.Network;
+import fun.rich.Rich;
+import fun.rich.display.hud.Notifications;
 
 import java.util.Arrays;
 import java.util.List;
@@ -21,7 +21,7 @@ import java.util.stream.Stream;
 public class RCTCommand extends Command implements QuickImports {
     private final RCTRepository repository;
 
-    protected RCTCommand(Fear main) {
+    protected RCTCommand(Rich main) {
         super("rct");
         repository = main.getRCTRepository();
     }

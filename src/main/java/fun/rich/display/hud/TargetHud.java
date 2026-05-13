@@ -1,7 +1,7 @@
-package fun.Fear.display.hud;
+package fun.rich.display.hud;
 import com.nimbusds.jose.crypto.impl.MACProvider;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
-import fun.Fear.utils.math.time.StopWatch;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.math.time.StopWatch;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.LivingEntityRenderer;
@@ -13,22 +13,22 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
-import fun.Fear.utils.client.managers.api.draggable.AbstractDraggable;
-import fun.Fear.features.impl.combat.Aura;
-import fun.Fear.features.impl.render.Hud;
-import fun.Fear.common.animation.Animation;
-import fun.Fear.common.animation.Direction;
-import fun.Fear.common.animation.implement.Decelerate;
-import fun.Fear.utils.display.font.FontRenderer;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.Fear;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.interactions.item.ItemTask;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.display.geometry.Render2D;
-import fun.Fear.utils.display.scissor.ScissorAssist;
-import fun.Fear.utils.client.packet.network.Network;
+import fun.rich.utils.client.managers.api.draggable.AbstractDraggable;
+import fun.rich.features.impl.combat.Aura;
+import fun.rich.features.impl.render.Hud;
+import fun.rich.common.animation.Animation;
+import fun.rich.common.animation.Direction;
+import fun.rich.common.animation.implement.Decelerate;
+import fun.rich.utils.display.font.FontRenderer;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.Rich;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.interactions.item.ItemTask;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.display.geometry.Render2D;
+import fun.rich.utils.display.scissor.ScissorAssist;
+import fun.rich.utils.client.packet.network.Network;
 import java.awt.*;
 
 public class TargetHud extends AbstractDraggable {
@@ -131,7 +131,7 @@ public class TargetHud extends AbstractDraggable {
         }
 
         if (nameWidth > 50) {
-            ScissorAssist scissorManager = Fear.getInstance().getScissorManager();
+            ScissorAssist scissorManager = Rich.getInstance().getScissorManager();
             scissorManager.push(matrix.peek().getPositionMatrix(), getX(), getY(), getWidth() - 29, getHeight());
             font.drawGradientString(matrix, lastTarget.getName().getString(), getX() + 29, getY() + 9f, ColorAssist.getText(), ColorAssist.getText(0.15F));
             distancefont.drawString(matrix, "Distance: " + distanceText, getX() + 29, getY() + 19f, new Color(225, 225, 255, 255).getRGB());
@@ -205,7 +205,7 @@ public class TargetHud extends AbstractDraggable {
             float progress = (lastTarget.getItemUseTime() + tickCounter.getTickDelta(false)) / ItemTask.maxUseTick(lastItem) * 360;
             float x = getX() - (size + 5) * anim;
             float y = getY() + 4;
-            ScissorAssist scissorManager = Fear.getInstance().getScissorManager();
+            ScissorAssist scissorManager = Rich.getInstance().getScissorManager();
             scissorManager.push(matrix.peek().getPositionMatrix(), getX() - 50, getY(), 50, getHeight());
             Calculate.setAlpha(anim, () -> {
                 blur.render(ShapeProperties.create(matrix, x, y, size, size).quality(5)

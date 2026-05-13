@@ -1,11 +1,11 @@
-package fun.Fear.utils.client.managers.file;
+package fun.rich.utils.client.managers.file;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
-import fun.Fear.utils.client.managers.file.impl.*;
-import fun.Fear.Fear;
+import fun.rich.utils.client.managers.file.impl.*;
+import fun.rich.Rich;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
 public class FileRepository {
     List<ClientFile> clientFiles = new ArrayList<>();
 
-    public void setup(Fear main) {
+    public void setup(Rich main) {
         register(
                 new ModuleFile(main.getModuleRepository(), main.getDraggableRepository()),
                 new EntityESPFile(main.getBoxESPRepository()),

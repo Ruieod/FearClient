@@ -1,18 +1,18 @@
-package fun.Fear.display.screens.clickgui.components.implement.other;
+package fun.rich.display.screens.clickgui.components.implement.other;
 
 import lombok.Getter;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.math.MatrixStack;
 import org.lwjgl.glfw.GLFW;
-import fun.Fear.utils.display.font.FontRenderer;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.display.scissor.ScissorAssist;
-import fun.Fear.Fear;
-import fun.Fear.display.screens.clickgui.components.AbstractComponent;
-import fun.Fear.display.screens.clickgui.MenuScreen;
+import fun.rich.utils.display.font.FontRenderer;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.display.scissor.ScissorAssist;
+import fun.rich.Rich;
+import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.rich.display.screens.clickgui.MenuScreen;
 import java.awt.*;
 
 public class SearchComponent extends AbstractComponent {
@@ -60,7 +60,7 @@ public class SearchComponent extends AbstractComponent {
 
         Fonts.getSize(25, Fonts.Type.ICONS).drawString(context.getMatrices(), "U", x + width - 14, y + 3.5f, typing ? -1 : 0xFF878894);
         String displayText = text.equalsIgnoreCase("") && !typing ? "Search" : text;
-        ScissorAssist scissor = Fear.getInstance().getScissorManager();
+        ScissorAssist scissor = Rich.getInstance().getScissorManager();
         scissor.push(matrix.peek().getPositionMatrix(), x + 1, y, width - 3, height);
         if (typing && selectionStart != -1 && selectionEnd != -1 && selectionStart != selectionEnd) {
             int start = Math.max(0, Math.min(getStartOfSelection(), text.length()));

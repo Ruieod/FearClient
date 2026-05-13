@@ -1,4 +1,4 @@
-package fun.Fear.mixins.client.screen.ingame;
+package fun.rich.mixins.client.screen.ingame;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -13,14 +13,14 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.geometry.Render2D;
-import fun.Fear.Fear;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.events.render.DrawEvent;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.features.impl.render.CrossHair;
-import fun.Fear.features.impl.render.Hud;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.geometry.Render2D;
+import fun.rich.Rich;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.events.render.DrawEvent;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.features.impl.render.CrossHair;
+import fun.rich.features.impl.render.Hud;
 
 import java.util.ConcurrentModificationException;
 
@@ -50,7 +50,7 @@ public abstract class InGameHudMixin implements QuickImports {
             context.getMatrices().push();
             context.getMatrices().translate(0.0F, 0.0F, 400.0F);
 
-            Fear.getInstance().getDraggableRepository().draggable().forEach(draggable -> {
+            Rich.getInstance().getDraggableRepository().draggable().forEach(draggable -> {
                 if (draggable.canDraw(hud, draggable)) draggable.startAnimation();
                 else draggable.stopAnimation();
 

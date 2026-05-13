@@ -1,21 +1,21 @@
-package fun.Fear.features.impl.render;
+package fun.rich.features.impl.render;
 
-import fun.Fear.features.impl.player.FreeLook;
+import fun.rich.features.impl.player.FreeLook;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.util.math.MathHelper;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.*;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.client.Instance;
-import fun.Fear.events.keyboard.HotBarScrollEvent;
-import fun.Fear.events.keyboard.KeyEvent;
-import fun.Fear.events.render.CameraEvent;
-import fun.Fear.events.render.FovEvent;
-import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.*;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.client.Instance;
+import fun.rich.events.keyboard.HotBarScrollEvent;
+import fun.rich.events.keyboard.KeyEvent;
+import fun.rich.events.render.CameraEvent;
+import fun.rich.events.render.FovEvent;
+import fun.rich.utils.features.aura.utils.MathAngle;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class CameraSettings extends Module {

@@ -1,4 +1,4 @@
-package fun.Fear.mixins.client.screen.ingame;
+package fun.rich.mixins.client.screen.ingame;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
@@ -9,8 +9,8 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.events.container.HandledScreenEvent;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.events.container.HandledScreenEvent;
 
 @Mixin(HandledScreen.class)
 public abstract class HandledScreenMixin {

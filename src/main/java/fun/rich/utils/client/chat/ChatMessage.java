@@ -1,15 +1,15 @@
-package fun.Fear.utils.client.chat;
+package fun.rich.utils.client.chat;
 
 import net.minecraft.text.Text;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
 import net.minecraft.util.Formatting;
-import fun.Fear.utils.client.text.TextHelper;
+import fun.rich.utils.client.text.TextHelper;
 
 public class ChatMessage {
     public static MutableText brandmessage() {
-        return (MutableText) TextHelper.applyPredefinedGradient("Fear Client", "black_light_purple", true);
+        return (MutableText) TextHelper.applyPredefinedGradient("Rich Client", "black_light_purple", true);
     }
 
     public static MutableText blockesp() {
@@ -26,7 +26,7 @@ public class ChatMessage {
 
     public static void brandmessage(String message) {
         if (MinecraftClient.getInstance().player != null) {
-            Text prefix = TextHelper.applyPredefinedGradient("Fear Client -> ", "black_light_purple", true);
+            Text prefix = TextHelper.applyPredefinedGradient("Rich Client -> ", "black_light_purple", true);
             Text formattedMessage = prefix.copy().append(Text.literal(message));
             MinecraftClient.getInstance().player.sendMessage(formattedMessage, false);
         }
@@ -115,7 +115,7 @@ public class ChatMessage {
         return prefix.copy().append(Text.literal(message));
     }
 
-    public static Text ircprefixFear(String message) {
+    public static Text ircprefixRich(String message) {
         Text prefix = TextHelper.applyPredefinedGradient("Рич ", "red_orange", false);
         return prefix.copy().append(Text.literal(message));
     }

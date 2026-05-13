@@ -1,8 +1,8 @@
-package fun.Fear.display.screens.clickgui.components.implement.autobuy.items.customitem;
+package fun.rich.display.screens.clickgui.components.implement.autobuy.items.customitem;
 
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.settings.AutoBuyItemSettings;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsManager;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.settings.AutoBuyItemSettings;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.settings.AutoBuySettingsManager;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LoreComponent;
 import net.minecraft.component.type.NbtComponent;

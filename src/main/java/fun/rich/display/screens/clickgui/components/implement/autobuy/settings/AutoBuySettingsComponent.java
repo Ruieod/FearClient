@@ -1,11 +1,11 @@
-package fun.Fear.display.screens.clickgui.components.implement.autobuy.settings;
+package fun.rich.display.screens.clickgui.components.implement.autobuy.settings;
 
-import fun.Fear.display.screens.clickgui.components.AbstractComponent;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.originalitems.ItemRegistry;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.math.calc.Calculate;
+import fun.rich.display.screens.clickgui.components.AbstractComponent;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.originalitems.ItemRegistry;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.math.calc.Calculate;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import org.lwjgl.glfw.GLFW;

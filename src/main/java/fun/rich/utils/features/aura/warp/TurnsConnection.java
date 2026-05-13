@@ -1,6 +1,6 @@
-package fun.Fear.utils.features.aura.warp;
+package fun.rich.utils.features.aura.warp;
 
-import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.rich.utils.features.aura.utils.MathAngle;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
@@ -9,16 +9,16 @@ import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
 import net.minecraft.network.packet.s2c.play.PlayerPositionLookS2CPacket;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.client.managers.event.types.EventType;
-import fun.Fear.features.module.Module;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.math.task.TaskPriority;
-import fun.Fear.utils.math.task.TaskProcessor;
-import fun.Fear.Fear;
-import fun.Fear.events.packet.PacketEvent;
-import fun.Fear.events.player.*;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.client.managers.event.types.EventType;
+import fun.rich.features.module.Module;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.math.task.TaskPriority;
+import fun.rich.utils.math.task.TaskProcessor;
+import fun.rich.Rich;
+import fun.rich.events.packet.PacketEvent;
+import fun.rich.events.player.*;
 
 @Getter
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -34,7 +34,7 @@ public class TurnsConnection implements QuickImports {
 
 
     public TurnsConnection() {
-        Fear.getInstance().getEventManager().register(this);
+        Rich.getInstance().getEventManager().register(this);
     }
 
     public void setRotation(Turns value) {

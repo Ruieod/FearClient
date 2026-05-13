@@ -1,4 +1,4 @@
-package fun.Fear.common.repository.target;
+package fun.rich.common.repository.target;
 
 import java.util.ArrayList;
 import java.util.Collections;

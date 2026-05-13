@@ -1,10 +1,10 @@
-package fun.Fear.commands.defaults;
+package fun.rich.commands.defaults;
 
-import fun.Fear.features.impl.misc.TabParser;
-import fun.Fear.utils.client.managers.api.command.Command;
-import fun.Fear.utils.client.managers.api.command.argument.IArgConsumer;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.chat.ChatMessage;
+import fun.rich.features.impl.misc.TabParser;
+import fun.rich.utils.client.managers.api.command.Command;
+import fun.rich.utils.client.managers.api.command.argument.IArgConsumer;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.chat.ChatMessage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;

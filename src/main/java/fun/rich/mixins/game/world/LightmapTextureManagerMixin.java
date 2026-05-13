@@ -1,8 +1,8 @@
-package fun.Fear.mixins.game.world;
+package fun.rich.mixins.game.world;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import fun.Fear.features.impl.render.NoRender;
-import fun.Fear.features.impl.render.WorldTweaks;
+import fun.rich.features.impl.render.NoRender;
+import fun.rich.features.impl.render.WorldTweaks;
 import net.minecraft.client.render.LightmapTextureManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

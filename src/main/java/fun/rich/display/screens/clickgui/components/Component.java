@@ -1,4 +1,4 @@
-package fun.Fear.display.screens.clickgui.components;
+package fun.rich.display.screens.clickgui.components;
 
 import net.minecraft.client.gui.DrawContext;
 

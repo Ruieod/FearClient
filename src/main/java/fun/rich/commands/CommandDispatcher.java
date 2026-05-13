@@ -15,34 +15,34 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package fun.Fear.commands;
+package fun.rich.commands;
 
 import net.minecraft.util.Pair;
-import fun.Fear.Fear;
-import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
-import fun.Fear.utils.client.managers.api.command.exception.CommandNotEnoughArgumentsException;
-import fun.Fear.utils.client.managers.api.command.exception.CommandNotFoundException;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.Fear.utils.client.managers.api.command.manager.ICommandManager;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.events.chat.ChatEvent;
-import fun.Fear.events.chat.TabCompleteEvent;
-import fun.Fear.utils.display.interfaces.QuickLogger;
-import fun.Fear.commands.argument.ArgConsumer;
-import fun.Fear.commands.argument.CommandArguments;
-import fun.Fear.commands.manager.CommandRepository;
+import fun.rich.Rich;
+import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.rich.utils.client.managers.api.command.exception.CommandNotEnoughArgumentsException;
+import fun.rich.utils.client.managers.api.command.exception.CommandNotFoundException;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.utils.client.managers.api.command.manager.ICommandManager;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.events.chat.ChatEvent;
+import fun.rich.events.chat.TabCompleteEvent;
+import fun.rich.utils.display.interfaces.QuickLogger;
+import fun.rich.commands.argument.ArgConsumer;
+import fun.rich.commands.argument.CommandArguments;
+import fun.rich.commands.manager.CommandRepository;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static fun.Fear.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
+import static fun.rich.utils.client.managers.api.command.IBaritoneChatControl.FORCE_COMMAND_PREFIX;
 
 public class CommandDispatcher implements QuickLogger {
     private final ICommandManager manager;
     public static String prefix = ".";
 
     public CommandDispatcher(EventManager eventManager) {
-        this.manager = Fear.getInstance().getCommandRepository();
+        this.manager = Rich.getInstance().getCommandRepository();
         eventManager.register(this);
     }
 

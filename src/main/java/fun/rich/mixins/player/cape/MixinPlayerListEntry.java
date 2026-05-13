@@ -1,4 +1,4 @@
-package fun.Fear.mixins.player.cape;
+package fun.rich.mixins.player.cape;
 
 import com.mojang.authlib.GameProfile;
 import net.minecraft.client.network.PlayerListEntry;

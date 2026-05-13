@@ -1,10 +1,10 @@
-package fun.Fear.utils.display.interfaces;
+package fun.rich.utils.display.interfaces;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
-import fun.Fear.utils.client.chat.ChatMessage;
+import fun.rich.utils.client.chat.ChatMessage;
 
 import java.util.Arrays;
 import java.util.stream.Stream;

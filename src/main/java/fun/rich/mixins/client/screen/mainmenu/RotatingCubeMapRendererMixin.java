@@ -1,4 +1,4 @@
-package fun.Fear.mixins.client.screen.mainmenu;
+package fun.rich.mixins.client.screen.mainmenu;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.CubeMapRenderer;

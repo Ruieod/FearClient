@@ -1,8 +1,8 @@
-package fun.Fear.commands;
+package fun.rich.commands;
 
-import fun.Fear.utils.client.managers.api.command.ICommandSystem;
-import fun.Fear.utils.client.managers.api.command.argparser.IArgParserManager;
-import fun.Fear.commands.argparser.ArgParserManager;
+import fun.rich.utils.client.managers.api.command.ICommandSystem;
+import fun.rich.utils.client.managers.api.command.argparser.IArgParserManager;
+import fun.rich.commands.argparser.ArgParserManager;
 
 public enum CommandSystem implements ICommandSystem {
     INSTANCE;

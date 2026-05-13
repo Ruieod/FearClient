@@ -1,4 +1,4 @@
-package fun.Fear.utils.math.frame;
+package fun.rich.utils.math.frame;
 
 import java.util.ArrayList;
 import java.util.List;

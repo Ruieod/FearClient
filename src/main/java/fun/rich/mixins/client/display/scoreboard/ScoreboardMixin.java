@@ -1,4 +1,4 @@
-package fun.Fear.mixins.client.display.scoreboard;
+package fun.rich.mixins.client.display.scoreboard;
 
 import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.scoreboard.Team;

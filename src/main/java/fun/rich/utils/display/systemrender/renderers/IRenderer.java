@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.systemrender.renderers;
+package fun.rich.utils.display.systemrender.renderers;
 
 import org.joml.Matrix4f;
 

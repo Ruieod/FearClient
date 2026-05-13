@@ -1,8 +1,8 @@
-package fun.Fear.common.repository.staff;
+package fun.rich.common.repository.staff;
 
-import fun.Fear.Fear;
-import fun.Fear.utils.client.managers.file.FileController;
-import fun.Fear.utils.client.managers.file.impl.StaffFile;
+import fun.rich.Rich;
+import fun.rich.utils.client.managers.file.FileController;
+import fun.rich.utils.client.managers.file.impl.StaffFile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +33,7 @@ public class StaffRepository {
     }
 
     private static void save() {
-        FileController fileController = Fear.getInstance().getFileController();
+        FileController fileController = Rich.getInstance().getFileController();
         if (fileController != null) {
             fileController.saveFile(StaffFile.class);
         }

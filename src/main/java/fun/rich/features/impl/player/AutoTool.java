@@ -1,7 +1,7 @@
-package fun.Fear.features.impl.player;
+package fun.rich.features.impl.player;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.utils.interactions.inv.InventoryTask;
+import fun.rich.utils.interactions.inv.InventoryTask;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.block.BlockState;
@@ -9,17 +9,17 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
-import fun.Fear.utils.math.time.StopWatch;
-import fun.Fear.utils.math.script.Script;
-import fun.Fear.events.block.BlockBreakingEvent;
-import fun.Fear.events.keyboard.HotBarScrollEvent;
-import fun.Fear.events.player.HotBarUpdateEvent;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.events.render.ItemRendererEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.math.time.StopWatch;
+import fun.rich.utils.math.script.Script;
+import fun.rich.events.block.BlockBreakingEvent;
+import fun.rich.events.keyboard.HotBarScrollEvent;
+import fun.rich.events.player.HotBarUpdateEvent;
+import fun.rich.events.player.TickEvent;
+import fun.rich.events.render.ItemRendererEvent;
 
 import java.util.Comparator;
 import java.util.Objects;

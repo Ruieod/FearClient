@@ -1,13 +1,13 @@
-package fun.Fear.features.impl.misc;
+package fun.rich.features.impl.misc;
 
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.MultiSelectSetting;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.utils.client.chat.ChatMessage;
-import fun.Fear.utils.math.time.TimerUtil;
+import fun.rich.events.player.TickEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.MultiSelectSetting;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.utils.client.chat.ChatMessage;
+import fun.rich.utils.math.time.TimerUtil;
 import net.minecraft.client.network.PlayerListEntry;
 import net.minecraft.network.message.LastSeenMessageList;
 import net.minecraft.network.packet.c2s.play.ChatMessageC2SPacket;

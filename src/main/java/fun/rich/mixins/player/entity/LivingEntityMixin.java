@@ -1,12 +1,12 @@
-package fun.Fear.mixins.player.entity;
+package fun.rich.mixins.player.entity;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.events.block.PushEvent;
-import fun.Fear.events.item.SwingDurationEvent;
-import fun.Fear.events.player.EntityDeathEvent;
-import fun.Fear.events.player.JumpEvent;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.events.block.PushEvent;
+import fun.rich.events.item.SwingDurationEvent;
+import fun.rich.events.player.EntityDeathEvent;
+import fun.rich.events.player.JumpEvent;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.LivingEntity;

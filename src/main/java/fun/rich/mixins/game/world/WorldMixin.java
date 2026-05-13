@@ -1,4 +1,4 @@
-package fun.Fear.mixins.game.world;
+package fun.rich.mixins.game.world;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
@@ -7,9 +7,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.events.block.BlockUpdateEvent;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.events.block.BlockUpdateEvent;
 
 @Mixin(World.class)
 public abstract class WorldMixin implements QuickImports {

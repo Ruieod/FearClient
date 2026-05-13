@@ -1,17 +1,17 @@
-package fun.Fear.features.impl.misc;
+package fun.rich.features.impl.misc;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.network.packet.s2c.play.GameMessageS2CPacket;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.BooleanSetting;
-import fun.Fear.common.repository.friend.FriendUtils;
-import fun.Fear.utils.client.packet.network.Network;
-import fun.Fear.events.packet.PacketEvent;
-import fun.Fear.events.player.TickEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.BooleanSetting;
+import fun.rich.common.repository.friend.FriendUtils;
+import fun.rich.utils.client.packet.network.Network;
+import fun.rich.events.packet.PacketEvent;
+import fun.rich.events.player.TickEvent;
 
 import java.util.Arrays;
 

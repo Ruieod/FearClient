@@ -1,4 +1,4 @@
-package fun.Fear.mixins.client.mouse;
+package fun.rich.mixins.client.mouse;
 
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import net.minecraft.client.MinecraftClient;
@@ -12,11 +12,11 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.events.keyboard.HotBarScrollEvent;
-import fun.Fear.events.keyboard.KeyEvent;
-import fun.Fear.events.keyboard.MouseRotationEvent;
-import fun.Fear.events.render.FovEvent;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.events.keyboard.HotBarScrollEvent;
+import fun.rich.events.keyboard.KeyEvent;
+import fun.rich.events.keyboard.MouseRotationEvent;
+import fun.rich.events.render.FovEvent;
 
 @Mixin(Mouse.class)
 public class MouseMixin {

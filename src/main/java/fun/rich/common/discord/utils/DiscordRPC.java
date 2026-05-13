@@ -1,4 +1,4 @@
-package fun.Fear.common.discord.utils;
+package fun.rich.common.discord.utils;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;
@@ -8,7 +8,7 @@ public interface DiscordRPC extends Library {
 
     void Discord_UpdateHandlers(DiscordEventHandlers var1);
 
-    void Discord_UpdatePresence(DiscordFearPresence var1);
+    void Discord_UpdatePresence(DiscordRichPresence var1);
 
     void Discord_Respond(String var1, int var2);
 

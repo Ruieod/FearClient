@@ -1,4 +1,4 @@
-package fun.Fear.events.container;
+package fun.rich.events.container;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.client.gui.screen.Screen;
-import fun.Fear.utils.client.managers.event.events.callables.EventCancellable;
+import fun.rich.utils.client.managers.event.events.callables.EventCancellable;
 
 @EqualsAndHashCode(callSuper = true)
 @Data

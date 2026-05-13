@@ -1,4 +1,4 @@
-package fun.Fear.utils.features.price;
+package fun.rich.utils.features.price;
 
 import net.minecraft.component.ComponentMap;
 import net.minecraft.item.ItemStack;

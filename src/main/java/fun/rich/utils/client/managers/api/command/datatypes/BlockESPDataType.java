@@ -1,9 +1,9 @@
-package fun.Fear.utils.client.managers.api.command.datatypes;
+package fun.rich.utils.client.managers.api.command.datatypes;
 
 import net.minecraft.block.Block;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.Fear.Fear;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.Rich;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -25,6 +25,6 @@ public enum BlockESPDataType implements IDatatypeFor<Block> {
     }
 
     private List<? extends Block> getBlocks() {
-        return Fear.getInstance().getBoxESPRepository().blocks.keySet().stream().toList();
+        return Rich.getInstance().getBoxESPRepository().blocks.keySet().stream().toList();
     }
 }

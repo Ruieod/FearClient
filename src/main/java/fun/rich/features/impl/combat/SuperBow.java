@@ -1,13 +1,13 @@
-//package fun.Fear.common.modules.combat;
+//package fun.rich.common.modules.combat;
 //
-//import fun.Fear.common.managers.api.module.Module;
-//import fun.Fear.common.managers.api.module.ModuleCategory;
-//import fun.Fear.common.managers.api.module.setting.implement.ValueSetting;
-//import fun.Fear.common.managers.api.module.setting.implement.BooleanSetting;
-//import fun.Fear.common.managers.event.EventHandler;
-//import fun.Fear.utils.events.player.TickEvent;
-//import fun.Fear.utils.entity.PlayerInventoryUtil;
-//import fun.Fear.util.math.stopwatch.StopWatch;
+//import fun.rich.common.managers.api.module.Module;
+//import fun.rich.common.managers.api.module.ModuleCategory;
+//import fun.rich.common.managers.api.module.setting.implement.ValueSetting;
+//import fun.rich.common.managers.api.module.setting.implement.BooleanSetting;
+//import fun.rich.common.managers.event.EventHandler;
+//import fun.rich.utils.events.player.TickEvent;
+//import fun.rich.utils.entity.PlayerInventoryUtil;
+//import fun.rich.util.math.stopwatch.StopWatch;
 //import lombok.AccessLevel;
 //import lombok.Getter;
 //import lombok.experimental.FieldDefaults;

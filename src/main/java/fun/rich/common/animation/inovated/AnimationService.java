@@ -1,4 +1,4 @@
-package fun.Fear.common.animation.inovated;
+package fun.rich.common.animation.inovated;
 
 import lombok.experimental.UtilityClass;
 import net.minecraft.client.MinecraftClient;

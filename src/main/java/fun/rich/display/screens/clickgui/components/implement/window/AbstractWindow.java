@@ -1,11 +1,11 @@
-package fun.Fear.display.screens.clickgui.components.implement.window;
+package fun.rich.display.screens.clickgui.components.implement.window;
 
 import lombok.Getter;
 import net.minecraft.client.gui.DrawContext;
-import fun.Fear.common.animation.Easy.EaseBackIn;
-import fun.Fear.common.animation.Easy.Direction;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.rich.common.animation.Easy.EaseBackIn;
+import fun.rich.common.animation.Easy.Direction;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.display.screens.clickgui.components.AbstractComponent;
 
 public abstract class AbstractWindow extends AbstractComponent {
     protected boolean dragging;

@@ -1,9 +1,9 @@
-package fun.Fear.common.logger.implement;
+package fun.rich.common.logger.implement;
 
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import org.apache.logging.log4j.LogManager;
-import fun.Fear.common.logger.Logger;
+import fun.rich.common.logger.Logger;
 
 public class ConsoleLogger implements Logger {
     private final org.apache.logging.log4j.Logger logger = LogManager.getLogger("avalora");

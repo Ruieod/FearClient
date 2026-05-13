@@ -1,7 +1,7 @@
-package fun.Fear.utils.client.managers.api.command.datatypes;
+package fun.rich.utils.client.managers.api.command.datatypes;
 
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.display.interfaces.QuickImports;
 
 import java.util.stream.Stream;
 

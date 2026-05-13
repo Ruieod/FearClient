@@ -1,24 +1,24 @@
-package fun.Fear.features.impl.render;
+package fun.rich.features.impl.render;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
-import fun.Fear.features.impl.combat.TriggerBot;
-import fun.Fear.features.module.setting.implement.ColorSetting;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.client.managers.event.types.EventType;
-import fun.Fear.features.impl.combat.Aura;
-import fun.Fear.utils.features.aura.striking.StrikeManager;
-import fun.Fear.common.animation.Animation;
-import fun.Fear.common.animation.Direction;
-import fun.Fear.common.animation.implement.Decelerate;
-import fun.Fear.events.player.RotationUpdateEvent;
-import fun.Fear.events.render.WorldRenderEvent;
-import fun.Fear.Fear;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.CalcVector;
-import fun.Fear.utils.client.Instance;
-import fun.Fear.utils.math.time.StopWatch;
-import fun.Fear.utils.display.geometry.Render3D;
+import fun.rich.features.impl.combat.TriggerBot;
+import fun.rich.features.module.setting.implement.ColorSetting;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.client.managers.event.types.EventType;
+import fun.rich.features.impl.combat.Aura;
+import fun.rich.utils.features.aura.striking.StrikeManager;
+import fun.rich.common.animation.Animation;
+import fun.rich.common.animation.Direction;
+import fun.rich.common.animation.implement.Decelerate;
+import fun.rich.events.player.RotationUpdateEvent;
+import fun.rich.events.render.WorldRenderEvent;
+import fun.rich.Rich;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.CalcVector;
+import fun.rich.utils.client.Instance;
+import fun.rich.utils.math.time.StopWatch;
+import fun.rich.utils.display.geometry.Render3D;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.client.gl.ShaderProgramKeys;
@@ -30,9 +30,9 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
 import net.minecraft.util.math.Vec3d;
 import org.joml.Matrix4f;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
 import net.minecraft.util.Identifier;
 import java.awt.*;
 import java.util.ArrayList;
@@ -69,7 +69,7 @@ public class TargetESP extends Module {
 
     @EventHandler
     public void onWorldRender(WorldRenderEvent e) {
-        StrikeManager attackHandler = Fear.getInstance().getAttackPerpetrator().getAttackHandler();
+        StrikeManager attackHandler = Rich.getInstance().getAttackPerpetrator().getAttackHandler();
         StopWatch attackTimer = attackHandler.getAttackTimer();
 
         LivingEntity currentTarget = null;

@@ -1,19 +1,19 @@
-package fun.Fear.display.screens.clickgui.components.implement.settings;
+package fun.rich.display.screens.clickgui.components.implement.settings;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.ColorHelper;
 import org.lwjgl.glfw.GLFW;
 
-import fun.Fear.features.module.setting.implement.BindSetting;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.client.chat.StringHelper;
+import fun.rich.features.module.setting.implement.BindSetting;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.client.chat.StringHelper;
 
 import java.awt.*;
 
-import static fun.Fear.utils.display.font.Fonts.Type.*;
+import static fun.rich.utils.display.font.Fonts.Type.*;
 
 public class BindComponent extends AbstractSettingComponent {
     private final BindSetting setting;

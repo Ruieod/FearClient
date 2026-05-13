@@ -1,7 +1,7 @@
-package fun.Fear.utils.client.sound;
+package fun.rich.utils.client.sound;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,7 +14,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 
 
-import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.interfaces.QuickImports;
 
 @Setter
 @Getter

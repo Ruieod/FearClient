@@ -1,11 +1,11 @@
-package fun.Fear.display.screens.clickgui.components.implement.module;
+package fun.rich.display.screens.clickgui.components.implement.module;
 
-import fun.Fear.features.module.Module;
-import fun.Fear.features.impl.combat.*;
-import fun.Fear.features.impl.misc.*;
-import fun.Fear.features.impl.movement.*;
-import fun.Fear.features.impl.player.*;
-import fun.Fear.features.impl.render.*;
+import fun.rich.features.module.Module;
+import fun.rich.features.impl.combat.*;
+import fun.rich.features.impl.misc.*;
+import fun.rich.features.impl.movement.*;
+import fun.rich.features.impl.player.*;
+import fun.rich.features.impl.render.*;
 
 public class ModuleDescriptions {
     public static String getDescription(Module module) {

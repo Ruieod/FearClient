@@ -1,9 +1,9 @@
-package fun.Fear.features.module.setting;
+package fun.rich.features.module.setting;
 
-import fun.Fear.features.module.setting.implement.*;
- import fun.Fear.display.screens.clickgui.components.implement.settings.*;
-import fun.Fear.display.screens.clickgui.components.implement.settings.multiselect.MultiSelectComponent;
-import fun.Fear.display.screens.clickgui.components.implement.settings.select.SelectComponent;
+import fun.rich.features.module.setting.implement.*;
+ import fun.rich.display.screens.clickgui.components.implement.settings.*;
+import fun.rich.display.screens.clickgui.components.implement.settings.multiselect.MultiSelectComponent;
+import fun.rich.display.screens.clickgui.components.implement.settings.select.SelectComponent;
 
 import java.util.List;
 

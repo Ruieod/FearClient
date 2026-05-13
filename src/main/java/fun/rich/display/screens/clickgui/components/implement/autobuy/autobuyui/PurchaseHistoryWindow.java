@@ -1,9 +1,9 @@
-package fun.Fear.display.screens.clickgui.components.implement.autobuy.autobuyui;
+package fun.rich.display.screens.clickgui.components.implement.autobuy.autobuyui;
 
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.geometry.Render2D;
-import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.geometry.Render2D;
+import fun.rich.utils.display.shape.ShapeProperties;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.item.ItemStack;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-import static fun.Fear.utils.display.interfaces.QuickImports.rectangle;
+import static fun.rich.utils.display.interfaces.QuickImports.rectangle;
 
 public class PurchaseHistoryWindow {
     private static final List<PurchaseRecord> purchases = new CopyOnWriteArrayList<>();

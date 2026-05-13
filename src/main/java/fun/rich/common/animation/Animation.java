@@ -1,8 +1,8 @@
-package fun.Fear.common.animation;
+package fun.rich.common.animation;
 
 import lombok.Setter;
 import lombok.experimental.Accessors;
-import fun.Fear.utils.math.time.TimerUtil;
+import fun.rich.utils.math.time.TimerUtil;
 
 @Setter
 @Accessors(chain = true)

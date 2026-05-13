@@ -1,4 +1,4 @@
-package fun.Fear.mixins.player.item;
+package fun.rich.mixins.player.item;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -6,7 +6,7 @@ import net.minecraft.util.math.Vec3d;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
 
 @Mixin(Item.class)
 public class ItemMixin {

@@ -1,9 +1,9 @@
-package fun.Fear.utils.interactions.item;
+package fun.rich.utils.interactions.item;
 
 import lombok.experimental.UtilityClass;
 import net.minecraft.entity.player.ItemCooldownManager;
 import net.minecraft.item.*;
-import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.interfaces.QuickImports;
 
 @UtilityClass
 public class ItemTask implements QuickImports {

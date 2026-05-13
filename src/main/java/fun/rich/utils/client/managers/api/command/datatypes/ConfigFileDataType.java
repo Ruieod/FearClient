@@ -1,8 +1,8 @@
-package fun.Fear.utils.client.managers.api.command.datatypes;
+package fun.rich.utils.client.managers.api.command.datatypes;
 
-import fun.Fear.Fear;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.Rich;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -43,7 +43,7 @@ public enum ConfigFileDataType implements IDatatypeFor<String> {
 
     public List<String> getConfigs() {
         List<String> configs = new ArrayList<>();
-        File[] configFiles = Fear.getInstance().getClientInfoProvider().configsDir().listFiles();
+        File[] configFiles = Rich.getInstance().getClientInfoProvider().configsDir().listFiles();
 
         if (configFiles != null) {
             for (File configFile : configFiles) {

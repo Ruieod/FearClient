@@ -1,8 +1,8 @@
-package fun.Fear.utils.connection.tps;
+package fun.rich.utils.connection.tps;
 
-import fun.Fear.Fear;
-import fun.Fear.events.packet.PacketEvent;
-import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.rich.Rich;
+import fun.rich.events.packet.PacketEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
 import lombok.Getter;
 import net.minecraft.network.packet.s2c.play.WorldTimeUpdateS2CPacket;
 import net.minecraft.util.math.MathHelper;
@@ -15,7 +15,7 @@ public class TPSCalculate {
     private long timestamp;
 
     public TPSCalculate() {
-        Fear.getInstance().getEventManager().register(this);
+        Rich.getInstance().getEventManager().register(this);
     }
 
     @EventHandler

@@ -1,10 +1,10 @@
-package fun.Fear.common.localization;
+package fun.rich.common.localization;
 
 import antidaunleak.api.annotation.Native;
 import com.google.gson.reflect.TypeToken;
 import lombok.SneakyThrows;
 import net.minecraft.util.Identifier;
-import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.interfaces.QuickImports;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

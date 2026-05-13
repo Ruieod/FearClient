@@ -1,19 +1,19 @@
-package fun.Fear.display.screens.mainmenu.altscreen;
+package fun.rich.display.screens.mainmenu.altscreen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import fun.Fear.Fear;
-import fun.Fear.mixins.client.IMinecraftClient;
-import fun.Fear.display.screens.mainmenu.altscreen.impl.Account;
-import fun.Fear.display.screens.mainmenu.altscreen.impl.AccountRepository;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.geometry.Render2D;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.scissor.ScissorAssist;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.common.animation.Animation;
-import fun.Fear.common.animation.Direction;
-import fun.Fear.common.animation.implement.InOutBack;
+import fun.rich.Rich;
+import fun.rich.mixins.client.IMinecraftClient;
+import fun.rich.display.screens.mainmenu.altscreen.impl.Account;
+import fun.rich.display.screens.mainmenu.altscreen.impl.AccountRepository;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.geometry.Render2D;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.scissor.ScissorAssist;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.common.animation.Animation;
+import fun.rich.common.animation.Direction;
+import fun.rich.common.animation.implement.InOutBack;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.network.SocialInteractionsManager;
@@ -38,7 +38,7 @@ import java.util.Random;
 import java.util.UUID;
 
 public class AltScreen implements QuickImports {
-    private final AccountRepository accountRepository = Fear.getInstance().getAccountRepository();
+    private final AccountRepository accountRepository = Rich.getInstance().getAccountRepository();
     private String currentAccount = "";
     private boolean typing = false;
     private String typedText = "";
@@ -210,7 +210,7 @@ public class AltScreen implements QuickImports {
         float accountSpacing = 25;
         MatrixStack matrix = context.getMatrices();
         Matrix4f positionMatrix = matrix.peek().getPositionMatrix();
-        ScissorAssist scissorManager = Fear.getInstance().getScissorManager();
+        ScissorAssist scissorManager = Rich.getInstance().getScissorManager();
         float listY = panelY + 5;
         float listHeight = panelHeight - 31;
 
@@ -510,7 +510,7 @@ public class AltScreen implements QuickImports {
 
     private void saveAccounts() {
         try {
-            Fear.getInstance().getFileController().saveFiles();
+            Rich.getInstance().getFileController().saveFiles();
         } catch (Exception e) {
             e.printStackTrace();
         }

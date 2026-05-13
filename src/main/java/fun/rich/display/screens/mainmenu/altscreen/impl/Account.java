@@ -1,4 +1,4 @@
-package fun.Fear.display.screens.mainmenu.altscreen.impl;
+package fun.rich.display.screens.mainmenu.altscreen.impl;
 
 public class Account {
     public String name;

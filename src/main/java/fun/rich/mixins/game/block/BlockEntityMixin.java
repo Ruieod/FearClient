@@ -1,4 +1,4 @@
-package fun.Fear.mixins.game.block;
+package fun.rich.mixins.game.block;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -8,8 +8,8 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.events.block.BlockEntityProgressEvent;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.events.block.BlockEntityProgressEvent;
 
 @Mixin(BlockEntity.class)
 public class BlockEntityMixin {

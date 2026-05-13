@@ -1,10 +1,10 @@
-package fun.Fear.mixins.game.render;
+package fun.rich.mixins.game.render;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.mojang.blaze3d.systems.RenderSystem;
-import fun.Fear.features.impl.player.NoEntityTrace;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.features.impl.player.NoEntityTrace;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.render.RenderTickCounter;
@@ -23,16 +23,16 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.display.geometry.Render3D;
-import fun.Fear.events.render.AspectRatioEvent;
-import fun.Fear.events.render.FovEvent;
-import fun.Fear.events.render.WorldRenderEvent;
-import fun.Fear.utils.features.aura.utils.MathAngle;
-import fun.Fear.utils.features.aura.utils.RaycastAngle;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
-import fun.Fear.features.impl.misc.FreeCam;
-import fun.Fear.features.impl.render.NoRender;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.display.geometry.Render3D;
+import fun.rich.events.render.AspectRatioEvent;
+import fun.rich.events.render.FovEvent;
+import fun.rich.events.render.WorldRenderEvent;
+import fun.rich.utils.features.aura.utils.MathAngle;
+import fun.rich.utils.features.aura.utils.RaycastAngle;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.rich.features.impl.misc.FreeCam;
+import fun.rich.features.impl.render.NoRender;
 
 @Mixin(GameRenderer.class)
 public abstract class GameRendererMixin {

@@ -1,9 +1,9 @@
-package fun.Fear.events.keyboard;
+package fun.rich.events.keyboard;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.InputUtil;
-import fun.Fear.utils.client.managers.event.events.Event;
-import fun.Fear.utils.display.interfaces.QuickImports;
+import fun.rich.utils.client.managers.event.events.Event;
+import fun.rich.utils.display.interfaces.QuickImports;
 
 public record KeyEvent(Screen screen, InputUtil.Type type, int key, int action) implements Event, QuickImports {
     public boolean isKeyDown(int key) {

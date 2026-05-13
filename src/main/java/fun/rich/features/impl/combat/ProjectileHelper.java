@@ -1,23 +1,23 @@
-package fun.Fear.features.impl.combat;
+package fun.rich.features.impl.combat;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.common.repository.friend.Friend;
-import fun.Fear.common.repository.friend.FriendUtils;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.MultiSelectSetting;
-import fun.Fear.features.module.setting.implement.SliderSettings;
-import fun.Fear.utils.features.aura.target.TargetFinder;
-import fun.Fear.utils.features.aura.utils.MathAngle;
-import fun.Fear.utils.features.aura.warp.Turns;
-import fun.Fear.utils.features.aura.warp.TurnsConfig;
-import fun.Fear.utils.features.aura.warp.TurnsConnection;
-import fun.Fear.events.player.RotationUpdateEvent;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.utils.client.managers.event.types.EventType;
-import fun.Fear.utils.features.aura.warp.TurnsConstructor;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.math.task.TaskPriority;
+import fun.rich.common.repository.friend.Friend;
+import fun.rich.common.repository.friend.FriendUtils;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.MultiSelectSetting;
+import fun.rich.features.module.setting.implement.SliderSettings;
+import fun.rich.utils.features.aura.target.TargetFinder;
+import fun.rich.utils.features.aura.utils.MathAngle;
+import fun.rich.utils.features.aura.warp.Turns;
+import fun.rich.utils.features.aura.warp.TurnsConfig;
+import fun.rich.utils.features.aura.warp.TurnsConnection;
+import fun.rich.events.player.RotationUpdateEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.utils.client.managers.event.types.EventType;
+import fun.rich.utils.features.aura.warp.TurnsConstructor;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.math.task.TaskPriority;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.MobEntity;
@@ -179,7 +179,7 @@ public class ProjectileHelper extends Module {
             TurnsConnection.INSTANCE.rotateTo(
                     new Turns(yaw, pitch),
                     TurnsConfig.DEFAULT,
-                    fun.Fear.utils.math.task.TaskPriority.HIGH_IMPORTANCE_1,
+                    fun.rich.utils.math.task.TaskPriority.HIGH_IMPORTANCE_1,
                     this
             );
         }

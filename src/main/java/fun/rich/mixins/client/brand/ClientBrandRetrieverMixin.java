@@ -1,6 +1,6 @@
-package fun.Fear.mixins.client.brand;
+package fun.rich.mixins.client.brand;
 
-import fun.Fear.utils.interactions.simulate.Simulations;
+import fun.rich.utils.interactions.simulate.Simulations;
 import net.minecraft.client.ClientBrandRetriever;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.shape;
+package fun.rich.utils.display.shape;
 
 public interface Shape {
     void render(ShapeProperties shapeProperties);

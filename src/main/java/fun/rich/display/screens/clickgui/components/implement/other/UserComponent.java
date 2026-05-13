@@ -1,10 +1,10 @@
-package fun.Fear.display.screens.clickgui.components.implement.other;
+package fun.rich.display.screens.clickgui.components.implement.other;
 
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import net.minecraft.client.gui.DrawContext;
 
-import fun.Fear.display.screens.clickgui.components.AbstractComponent;
+import fun.rich.display.screens.clickgui.components.AbstractComponent;
 
 @Setter
 @Accessors(chain = true)

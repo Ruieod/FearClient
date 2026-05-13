@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.shape.implement;
+package fun.rich.utils.display.shape.implement;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import lombok.Setter;
@@ -6,9 +6,9 @@ import lombok.experimental.Accessors;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.RotationAxis;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.shape.Shape;
-import fun.Fear.utils.display.shape.ShapeProperties;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.shape.Shape;
+import fun.rich.utils.display.shape.ShapeProperties;
 
 @Setter
 @Accessors(chain = true)

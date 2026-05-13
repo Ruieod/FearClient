@@ -1,7 +1,7 @@
-package fun.Fear.utils.math.projection;
+package fun.rich.utils.math.projection;
 
-import fun.Fear.utils.features.aura.warp.Turns;
-import fun.Fear.utils.math.calc.Calculate;
+import fun.rich.utils.features.aura.warp.Turns;
+import fun.rich.utils.math.calc.Calculate;
 import lombok.experimental.UtilityClass;
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.render.Frustum;
@@ -13,9 +13,9 @@ import net.minecraft.util.math.Vec3d;
 import org.jetbrains.annotations.NotNull;
 import org.joml.*;
 import org.lwjgl.opengl.GL11;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.geometry.Render3D;
-import fun.Fear.utils.features.aura.utils.MathAngle;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.geometry.Render3D;
+import fun.rich.utils.features.aura.utils.MathAngle;
 
 import java.lang.Math;
 

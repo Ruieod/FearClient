@@ -1,4 +1,4 @@
-package fun.Fear.utils.display.color;
+package fun.rich.utils.display.color;
 
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;

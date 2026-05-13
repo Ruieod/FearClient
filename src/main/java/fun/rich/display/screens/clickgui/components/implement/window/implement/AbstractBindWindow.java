@@ -1,15 +1,15 @@
-package fun.Fear.display.screens.clickgui.components.implement.window.implement;
+package fun.rich.display.screens.clickgui.components.implement.window.implement;
 
 import lombok.RequiredArgsConstructor;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import org.lwjgl.glfw.GLFW;
-import fun.Fear.utils.display.font.Fonts;
-import fun.Fear.utils.display.shape.ShapeProperties;
-import fun.Fear.display.screens.clickgui.components.implement.window.AbstractWindow;
-import fun.Fear.utils.display.color.ColorAssist;
-import fun.Fear.utils.math.calc.Calculate;
-import fun.Fear.utils.client.chat.StringHelper;
+import fun.rich.utils.display.font.Fonts;
+import fun.rich.utils.display.shape.ShapeProperties;
+import fun.rich.display.screens.clickgui.components.implement.window.AbstractWindow;
+import fun.rich.utils.display.color.ColorAssist;
+import fun.rich.utils.math.calc.Calculate;
+import fun.rich.utils.client.chat.StringHelper;
 
 @RequiredArgsConstructor
 public abstract class AbstractBindWindow extends AbstractWindow {

@@ -1,4 +1,4 @@
-package fun.Fear.features.impl.misc;
+package fun.rich.features.impl.misc;
 
 import antidaunleak.api.annotation.Native;
 import lombok.AccessLevel;
@@ -9,12 +9,12 @@ import net.minecraft.network.packet.s2c.common.ResourcePackSendS2CPacket;
 
 
 
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.events.packet.PacketEvent;
-import fun.Fear.events.player.TickEvent;
-import fun.Fear.utils.math.time.TimerUtil;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.events.packet.PacketEvent;
+import fun.rich.events.player.TickEvent;
+import fun.rich.utils.math.time.TimerUtil;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ServerRPSpoofer extends Module {

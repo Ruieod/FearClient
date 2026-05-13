@@ -1,6 +1,6 @@
-package fun.Fear.common.animation.implement;
+package fun.rich.common.animation.implement;
 
-import fun.Fear.common.animation.Animation;
+import fun.rich.common.animation.Animation;
 
 public class OutBack extends Animation {
 

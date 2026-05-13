@@ -15,14 +15,14 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package fun.Fear.commands.argparser;
+package fun.rich.commands.argparser;
 
-import fun.Fear.utils.client.managers.api.command.argparser.IArgParser;
-import fun.Fear.utils.client.managers.api.command.argparser.IArgParserManager;
-import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
-import fun.Fear.utils.client.managers.api.command.exception.CommandInvalidTypeException;
-import fun.Fear.utils.client.managers.api.command.exception.CommandNoParserForTypeException;
-import fun.Fear.utils.client.managers.api.command.registry.Registry;
+import fun.rich.utils.client.managers.api.command.argparser.IArgParser;
+import fun.rich.utils.client.managers.api.command.argparser.IArgParserManager;
+import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.rich.utils.client.managers.api.command.exception.CommandInvalidTypeException;
+import fun.rich.utils.client.managers.api.command.exception.CommandNoParserForTypeException;
+import fun.rich.utils.client.managers.api.command.registry.Registry;
 
 public enum ArgParserManager implements IArgParserManager {
     INSTANCE;

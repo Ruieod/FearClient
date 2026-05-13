@@ -1,4 +1,4 @@
-package fun.Fear.utils.client.logs;
+package fun.rich.utils.client.logs;
 
 public class ConsoleColors {
     public static final String RESET = "\033[0m";

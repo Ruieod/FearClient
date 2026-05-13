@@ -1,18 +1,18 @@
-package fun.Fear.commands.manager;
+package fun.rich.commands.manager;
 
 import net.minecraft.util.Pair;
-import fun.Fear.Fear;
-import fun.Fear.utils.client.managers.api.command.ICommand;
-import fun.Fear.utils.client.managers.api.command.argument.ICommandArgument;
-import fun.Fear.utils.client.managers.api.command.exception.CommandException;
-import fun.Fear.utils.client.managers.api.command.exception.CommandUnhandledException;
-import fun.Fear.utils.client.managers.api.command.exception.ICommandException;
-import fun.Fear.utils.client.managers.api.command.helpers.TabCompleteHelper;
-import fun.Fear.utils.client.managers.api.command.manager.ICommandManager;
-import fun.Fear.utils.client.managers.api.command.registry.Registry;
-import fun.Fear.commands.argument.ArgConsumer;
-import fun.Fear.commands.argument.CommandArguments;
-import fun.Fear.commands.defaults.DefaultCommands;
+import fun.rich.Rich;
+import fun.rich.utils.client.managers.api.command.ICommand;
+import fun.rich.utils.client.managers.api.command.argument.ICommandArgument;
+import fun.rich.utils.client.managers.api.command.exception.CommandException;
+import fun.rich.utils.client.managers.api.command.exception.CommandUnhandledException;
+import fun.rich.utils.client.managers.api.command.exception.ICommandException;
+import fun.rich.utils.client.managers.api.command.helpers.TabCompleteHelper;
+import fun.rich.utils.client.managers.api.command.manager.ICommandManager;
+import fun.rich.utils.client.managers.api.command.registry.Registry;
+import fun.rich.commands.argument.ArgConsumer;
+import fun.rich.commands.argument.CommandArguments;
+import fun.rich.commands.defaults.DefaultCommands;
 
 import java.util.List;
 import java.util.Locale;
@@ -66,7 +66,7 @@ public class CommandRepository implements ICommandManager {
         List<ICommandArgument> args = pair.getRight();
         if (args.isEmpty()) {
             return new TabCompleteHelper()
-                    .addCommands(Fear.getInstance().getCommandRepository())
+                    .addCommands(Rich.getInstance().getCommandRepository())
                     .filterPrefix(label)
                     .stream();
         } else {

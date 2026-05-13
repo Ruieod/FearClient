@@ -1,15 +1,15 @@
-package fun.Fear.features.impl.movement;
+package fun.rich.features.impl.movement;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.events.packet.PacketEvent;
-import fun.Fear.utils.math.projection.Projection;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.events.packet.PacketEvent;
+import fun.rich.utils.math.projection.Projection;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.utils.client.managers.event.EventHandler;
 
 @Getter
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)

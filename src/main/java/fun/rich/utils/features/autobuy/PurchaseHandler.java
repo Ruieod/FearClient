@@ -1,8 +1,8 @@
-package fun.Fear.utils.features.autobuy;
+package fun.rich.utils.features.autobuy;
 
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.manager.AutoBuyManager;
-import fun.Fear.display.screens.clickgui.components.implement.autobuy.autobuyui.PurchaseHistoryWindow;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.items.AutoBuyableItem;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.manager.AutoBuyManager;
+import fun.rich.display.screens.clickgui.components.implement.autobuy.autobuyui.PurchaseHistoryWindow;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

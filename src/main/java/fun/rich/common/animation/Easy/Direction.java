@@ -1,4 +1,4 @@
-package fun.Fear.common.animation.Easy;
+package fun.rich.common.animation.Easy;
 
 public enum Direction {
     FORWARDS,

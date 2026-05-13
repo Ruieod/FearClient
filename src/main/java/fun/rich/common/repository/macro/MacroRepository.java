@@ -1,11 +1,11 @@
-package fun.Fear.common.repository.macro;
+package fun.rich.common.repository.macro;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.events.keyboard.KeyEvent;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.utils.display.interfaces.QuickLogger;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.events.keyboard.KeyEvent;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.utils.display.interfaces.QuickLogger;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package fun.Fear.features.module;
+package fun.rich.features.module;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -8,16 +8,16 @@ import lombok.experimental.NonFinal;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.Formatting;
 import org.lwjgl.glfw.GLFW;
-import fun.Fear.common.animation.Animation;
-import fun.Fear.common.animation.Direction;
-import fun.Fear.common.animation.implement.Decelerate;
-import fun.Fear.utils.client.sound.SoundManager;
-import fun.Fear.Fear;
-import fun.Fear.features.module.setting.SettingRepository;
-import fun.Fear.utils.client.managers.event.EventManager;
-import fun.Fear.utils.display.interfaces.QuickImports;
-import fun.Fear.display.hud.Notifications;
-import fun.Fear.features.impl.render.Hud;
+import fun.rich.common.animation.Animation;
+import fun.rich.common.animation.Direction;
+import fun.rich.common.animation.implement.Decelerate;
+import fun.rich.utils.client.sound.SoundManager;
+import fun.rich.Rich;
+import fun.rich.features.module.setting.SettingRepository;
+import fun.rich.utils.client.managers.event.EventManager;
+import fun.rich.utils.display.interfaces.QuickImports;
+import fun.rich.display.hud.Notifications;
+import fun.rich.features.impl.render.Hud;
 
 @Getter
 @Setter
@@ -81,7 +81,7 @@ public class Module extends SettingRepository implements QuickImports {
     }
 
     private void toggleSilent(boolean activate) {
-        EventManager eventManager = Fear.getInstance().getEventManager();
+        EventManager eventManager = Rich.getInstance().getEventManager();
         if (activate) {
             eventManager.register(this);
         } else {

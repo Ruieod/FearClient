@@ -1,11 +1,11 @@
-package fun.Fear.mixins.client.screen.ingame;
+package fun.rich.mixins.client.screen.ingame;
 
 import net.minecraft.client.gui.hud.BossBarHud;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import fun.Fear.features.impl.render.Hud;
+import fun.rich.features.impl.render.Hud;
 
 @Mixin(BossBarHud.class)
 public class BossBarHudMixin {

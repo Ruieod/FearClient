@@ -1,8 +1,8 @@
-package fun.Fear.display.screens.clickgui.components.implement.window.implement.module;
+package fun.rich.display.screens.clickgui.components.implement.window.implement.module;
 
 import lombok.RequiredArgsConstructor;
-import fun.Fear.features.module.Module;
-import fun.Fear.display.screens.clickgui.components.implement.window.implement.AbstractBindWindow;
+import fun.rich.features.module.Module;
+import fun.rich.display.screens.clickgui.components.implement.window.implement.AbstractBindWindow;
 
 @RequiredArgsConstructor
 public class ModuleBindWindow extends AbstractBindWindow {

@@ -1,18 +1,18 @@
-package fun.Fear.features.impl.movement;
+package fun.rich.features.impl.movement;
 
 import antidaunleak.api.annotation.Native;
-import fun.Fear.utils.interactions.interact.PlayerInteractionHelper;
+import fun.rich.utils.interactions.interact.PlayerInteractionHelper;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import net.minecraft.block.Blocks;
 
-import fun.Fear.utils.client.managers.event.EventHandler;
-import fun.Fear.features.module.Module;
-import fun.Fear.features.module.ModuleCategory;
-import fun.Fear.features.module.setting.implement.SelectSetting;
-import fun.Fear.utils.interactions.simulate.Simulations;
-import fun.Fear.utils.client.Instance;
-import fun.Fear.events.player.TickEvent;
+import fun.rich.utils.client.managers.event.EventHandler;
+import fun.rich.features.module.Module;
+import fun.rich.features.module.ModuleCategory;
+import fun.rich.features.module.setting.implement.SelectSetting;
+import fun.rich.utils.interactions.simulate.Simulations;
+import fun.rich.utils.client.Instance;
+import fun.rich.events.player.TickEvent;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class NoWeb extends Module {
