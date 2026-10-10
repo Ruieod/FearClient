@@ -31,6 +31,7 @@ import java.util.Deque;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ThreadLocalRandom;
 
 public final class DungeonBot {
     private static final DungeonBot instance = new DungeonBot();
@@ -47,6 +48,7 @@ public final class DungeonBot {
     private Runnable afterTeleport;
     private boolean teleportingHome;
     private boolean respawnRequested;
+    private long lastRtpMillis;
     private TransferMode mode;
     private ContainerTransfer transfer;
     private BlockPos currentContainer;
@@ -69,7 +71,10 @@ public final class DungeonBot {
 
     public String status() {
         if (!isRunning()) return "DungeonBot: " + state.label;
-        return "DungeonBot: " + state.label + " | данжей: " + dungeonsLooted + " | циклов: " + cycles;
+        String status = "DungeonBot: " + state.label + " | данжей: " + dungeonsLooted + " | циклов: " + cycles;
+        int remainingTicks = rtpCooldownRemainingTicks();
+        if (remainingTicks <= 0) return status;
+        return status + " | rtp через " + remainingTicks / 20 + "с";
     }
 
     public void toggle() {
@@ -87,6 +92,7 @@ public final class DungeonBot {
 
         dungeonsLooted = 0;
         cycles = 0;
+        lastRtpMillis = 0;
         notify(Text.literal("Запущен.").formatted(Formatting.GREEN));
         beginRtp();
     }
@@ -134,6 +140,7 @@ public final class DungeonBot {
             case teleporting -> tickTeleporting(player, world);
             case settling -> tickCooldown();
             case scanning -> tickScanning(player, world);
+            case exploring -> tickExploring(player, world);
             case next_container -> tickNextContainer(player, world);
             case walking -> tickWalking(player, world);
             case opening -> tickOpening(client, player);
@@ -144,7 +151,14 @@ public final class DungeonBot {
     }
 
     private void beginRtp() {
+        int remainingTicks = rtpCooldownRemainingTicks();
+        if (remainingTicks > 0) {
+            waitThen(BotState.cooldown, remainingTicks, this::beginRtp);
+            return;
+        }
+
         cycles++;
+        lastRtpMillis = System.currentTimeMillis();
         teleportingHome = false;
         sendTeleport(BotConfig.get().rtpCommand, () -> setState(BotState.scanning));
     }
@@ -183,8 +197,8 @@ public final class DungeonBot {
             return;
         }
 
-        notify(Text.literal("Телепорт не сработал, повторяю.").formatted(Formatting.GRAY));
-        waitThen(BotState.cooldown, config.rtpCooldownSeconds * 20, this::beginRtp);
+        notify(Text.literal("Телепорт не сработал, повторю после кд.").formatted(Formatting.GRAY));
+        beginRtp();
     }
 
     private void tickCooldown() {
@@ -196,16 +210,62 @@ public final class DungeonBot {
     }
 
     private void tickScanning(ClientPlayerEntity player, ClientWorld world) {
-        BotConfig config = BotConfig.get();
-        int chunkRadius = MinecraftClient.getInstance().options.getClampedViewDistance();
-        List<Dungeon> dungeons = WorldScanner.findDungeons(world, player.getBlockPos(), chunkRadius, config.dungeonChestRadius, lootedChests);
+        List<Dungeon> dungeons = scanDungeons(player, world);
 
         if (dungeons.isEmpty()) {
-            notify(Text.literal("Данжей рядом нет, новый rtp.").formatted(Formatting.GRAY));
-            waitThen(BotState.cooldown, config.rtpCooldownSeconds * 20, this::beginRtp);
+            beginExploring();
             return;
         }
 
+        queueDungeons(dungeons);
+    }
+
+    private void beginExploring() {
+        setState(BotState.exploring);
+        exploreStep(MinecraftClient.getInstance().player);
+    }
+
+    private void tickExploring(ClientPlayerEntity player, ClientWorld world) {
+        Pathfinder pathfinder = Pathfinders.get();
+
+        if (rtpCooldownRemainingTicks() <= 0) {
+            pathfinder.stop();
+            beginRtp();
+            return;
+        }
+
+        if (stateTicks % Math.max(1, BotConfig.get().rescanIntervalTicks) == 0) {
+            List<Dungeon> dungeons = scanDungeons(player, world);
+            if (!dungeons.isEmpty()) {
+                pathfinder.stop();
+                queueDungeons(dungeons);
+                return;
+            }
+        }
+
+        if (stateTicks > 20 && !pathfinder.isActive()) exploreStep(player);
+    }
+
+    private void exploreStep(ClientPlayerEntity player) {
+        double angle = ThreadLocalRandom.current().nextDouble(Math.PI * 2.0);
+        int distance = BotConfig.get().exploreStepBlocks;
+        int targetX = player.getBlockX() + (int) Math.round(Math.cos(angle) * distance);
+        int targetZ = player.getBlockZ() + (int) Math.round(Math.sin(angle) * distance);
+        Pathfinders.get().goTowards(targetX, targetZ);
+    }
+
+    private List<Dungeon> scanDungeons(ClientPlayerEntity player, ClientWorld world) {
+        int chunkRadius = MinecraftClient.getInstance().options.getClampedViewDistance();
+        return WorldScanner.findDungeons(world, player.getBlockPos(), chunkRadius, BotConfig.get().dungeonChestRadius, lootedChests);
+    }
+
+    private int rtpCooldownRemainingTicks() {
+        long elapsedMillis = System.currentTimeMillis() - lastRtpMillis;
+        long remainingMillis = BotConfig.get().rtpCooldownSeconds * 1000L - elapsedMillis;
+        return remainingMillis <= 0 ? 0 : (int) (remainingMillis / 50L) + 1;
+    }
+
+    private void queueDungeons(List<Dungeon> dungeons) {
         containerQueue.clear();
         for (Dungeon dungeon : dungeons) containerQueue.addAll(dungeon.chests());
 
@@ -265,8 +325,6 @@ public final class DungeonBot {
     }
 
     private void finishQueue(ClientPlayerEntity player) {
-        BotConfig config = BotConfig.get();
-
         if (mode == TransferMode.put) {
             notify(Text.literal("Сундуки дома забиты. Стоп.").formatted(Formatting.RED));
             stop();
@@ -280,13 +338,13 @@ public final class DungeonBot {
             return;
         }
 
-        notify(Text.literal("В данжах пусто, новый rtp.").formatted(Formatting.GRAY));
-        waitThen(BotState.cooldown, config.rtpCooldownSeconds * 20, this::beginRtp);
+        notify(Text.literal("В данжах пусто, ищу дальше.").formatted(Formatting.GRAY));
+        beginExploring();
     }
 
     private void finishDeposit() {
-        notify(Text.literal("Лут сложен, следующий круг.").formatted(Formatting.GREEN));
-        waitThen(BotState.cooldown, BotConfig.get().rtpCooldownSeconds * 20, this::beginRtp);
+        notify(Text.literal("Лут сложен, rtp после кд.").formatted(Formatting.GREEN));
+        beginRtp();
     }
 
     private void tickWalking(ClientPlayerEntity player, ClientWorld world) {
@@ -386,7 +444,7 @@ public final class DungeonBot {
         player.requestRespawn();
         client.setScreen(null);
         notify(Text.literal("Умер, начинаю заново.").formatted(Formatting.RED));
-        waitThen(BotState.cooldown, BotConfig.get().rtpCooldownSeconds * 20, this::beginRtp);
+        waitThen(BotState.cooldown, 60, this::beginRtp);
     }
 
     private boolean isInReach(ClientPlayerEntity player, BlockPos pos) {

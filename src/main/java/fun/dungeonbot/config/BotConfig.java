@@ -30,7 +30,9 @@ public final class BotConfig {
     public int teleportTimeoutSeconds = 25;
     public int teleportMinDistance = 48;
     public int settleSeconds = 4;
-    public int rtpCooldownSeconds = 8;
+    public int rtpCooldownSeconds = 80;
+    public int exploreStepBlocks = 96;
+    public int rescanIntervalTicks = 40;
     public int pathTimeoutSeconds = 120;
     public boolean showHud = true;
 

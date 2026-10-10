@@ -5,6 +5,8 @@ import net.minecraft.util.math.BlockPos;
 public interface Pathfinder {
     void goNear(BlockPos target);
 
+    void goTowards(int x, int z);
+
     boolean isActive();
 
     void stop();

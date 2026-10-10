@@ -6,6 +6,7 @@ public enum BotState {
     teleporting("телепорт"),
     settling("прогрузка"),
     scanning("поиск данжей"),
+    exploring("брожу и ищу"),
     next_container("выбор сундука"),
     walking("иду к сундуку"),
     opening("открываю"),
