@@ -103,7 +103,7 @@ public class Aura extends Module {
     private FovCircleRenderer fovCircleRenderer;
 
     SelectSetting aimMode = new SelectSetting("Наводка", "Выберите тип наводки")
-            .value("FunTime", "Legit Snap", "ReallyWorld", "HolyWorld", "SpookyTime", "CakeWorld", "Human")
+            .value("FunTime", "Legit Snap", "ReallyWorld", "HolyWorld", "SpookyTime", "CakeWorld", "Human", "Grim")
             .selected("FunTime");
 
     MultiSelectSetting targetType = new MultiSelectSetting("Тип таргета", "Фильтрует весь список целей по типу")
@@ -363,7 +363,7 @@ public class Aura extends Module {
                 }
             }
 
-            case "ReallyWorld", "SpookyTime", "CakeWorld", "Human" -> {
+            case "ReallyWorld", "SpookyTime", "CakeWorld", "Human", "Grim" -> {
                 controller.rotateTo(rotation, target, 1, rotationConfig, TaskPriority.HIGH_IMPORTANCE_1, this);
             }
 
@@ -438,6 +438,7 @@ public class Aura extends Module {
         boolean visibleCorrection = !correctionType.isSelected("Not visible");
         boolean freeCorrection = !aimMode.isSelected("Legit") && correctionType.isSelected("Free");
         if (TargetStrafe.getInstance().isState() && TargetStrafe.getInstance().mode.isSelected("Grim") && target !=null) { freeCorrection = false; }
+        if (aimMode.isSelected("Grim")) freeCorrection = false;
         return new TurnsConfig(getSmoothMode(), visibleCorrection, freeCorrection);
     }
 
@@ -461,6 +462,7 @@ public class Aura extends Module {
             case "Legit Snap" -> new SnapAngle();
             case "Matrix" -> new MatrixAngle();
             case "Human" -> new HumanAngle();
+            case "Grim" -> new GrimAngle();
             default -> new LinearConstructor();
         };
     }
