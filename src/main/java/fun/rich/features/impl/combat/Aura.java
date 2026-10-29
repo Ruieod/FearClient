@@ -103,7 +103,7 @@ public class Aura extends Module {
     private FovCircleRenderer fovCircleRenderer;
 
     SelectSetting aimMode = new SelectSetting("Наводка", "Выберите тип наводки")
-            .value("FunTime", "Legit Snap", "ReallyWorld", "HolyWorld", "SpookyTime", "CakeWorld")
+            .value("FunTime", "Legit Snap", "ReallyWorld", "HolyWorld", "SpookyTime", "CakeWorld", "Human")
             .selected("FunTime");
 
     MultiSelectSetting targetType = new MultiSelectSetting("Тип таргета", "Фильтрует весь список целей по типу")
@@ -363,7 +363,7 @@ public class Aura extends Module {
                 }
             }
 
-            case "ReallyWorld", "SpookyTime", "CakeWorld" -> {
+            case "ReallyWorld", "SpookyTime", "CakeWorld", "Human" -> {
                 controller.rotateTo(rotation, target, 1, rotationConfig, TaskPriority.HIGH_IMPORTANCE_1, this);
             }
 
@@ -460,6 +460,7 @@ public class Aura extends Module {
             case "Snap" -> new SnapAngle();
             case "Legit Snap" -> new SnapAngle();
             case "Matrix" -> new MatrixAngle();
+            case "Human" -> new HumanAngle();
             default -> new LinearConstructor();
         };
     }
